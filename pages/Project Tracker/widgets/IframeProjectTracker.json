@@ -1,0 +1,58 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 106,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "displayName": "Iframe",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.5ed210e31889ad556e4ca851edd0dd70.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "r13wyiyk1x",
+  "leftColumn": 0,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "parentColumnSpace": 11.421875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "embed"
+  ],
+  "source": "https://onedrive.live.com/embed?resid=EE766452A541A116%21108&authkey=%21AM31G-TjHmVmndQ&em=2&AllowTyping=True&ActiveCell='Project%20schedule'!A2&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True",
+  "srcDoc": "",
+  "tags": [
+    "Display"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.542dc4e979f061c70c19af83e2460c35.svg",
+  "topRow": 1,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "ka7yo5btgu",
+  "widgetName": "IframeProjectTracker"
+}

@@ -1,0 +1,3 @@
+SELECT {{this.params.primaryKeyField}}
+FROM {{this.params.table}}
+WHERE {{this.params.where}};

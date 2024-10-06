@@ -1,0 +1,83 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "bottomRow": 16,
+  "defaultOptionValue": "report_en_doc",
+  "displayName": "Category Slider",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.25523f57d90b1423ede18a53df0618b4.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "gc7a8nm6vf",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Language & File Format",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onChange": "{{ReportSearchDownload.run()}}",
+  "options": [
+    {
+      "label": "EN (DOC)",
+      "value": "report_en_doc"
+    },
+    {
+      "label": "EN (PDF)",
+      "value": "report_en_pdf"
+    },
+    {
+      "label": "AR (DOC)",
+      "value": "report_sa_doc"
+    },
+    {
+      "label": "AR (PDF)",
+      "value": "report_sa_pdf"
+    }
+  ],
+  "parentColumnSpace": 11.421875,
+  "parentId": "ih21cnqult",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "searchTags": [
+    "range"
+  ],
+  "shouldScroll": false,
+  "shouldTruncate": false,
+  "showMarksLabel": true,
+  "sliderSize": "m",
+  "tags": [
+    "Sliders"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.06a850cb6ec6946f666e3f6cdce9f5da.svg",
+  "topRow": 8,
+  "type": "CATEGORY_SLIDER_WIDGET",
+  "version": 1,
+  "widgetId": "dxfbqj75uf",
+  "widgetName": "CategorySliderLanguageFile"
+}

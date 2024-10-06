@@ -1,0 +1,22 @@
+SELECT
+    report_id,
+    report_number,
+    report_type,
+    insertion_date,
+    sent_date,
+		case_id_min,
+		case_id_max,
+    report_en_doc,
+    report_en_pdf,
+    report_sa_doc,
+    report_sa_pdf
+
+FROM
+    reports
+WHERE
+    ({{SelectReportTypeDownload.selectedOptionValue}} = 'ALL' OR report_type = {{SelectReportTypeDownload.selectedOptionValue}}) AND 
+    ({{SelectMonth.selectedOptionValue}} = 0 OR month = {{SelectMonth.selectedOptionValue}}) AND 
+    ({{SelectWeekday.selectedOptionValue}} = 0 OR day = {{SelectWeekday.selectedOptionValue}}) AND 
+    ({{SelectWeek.selectedOptionValue}} = 0 OR week = {{SelectWeek.selectedOptionValue}}) AND 
+    {{DatePickerFrom.selectedDate}} > insertion_date AND 
+    {{DatePickerTo.selectedDate}} < insertion_date

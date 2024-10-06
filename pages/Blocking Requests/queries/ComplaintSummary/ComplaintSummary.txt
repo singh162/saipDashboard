@@ -1,0 +1,19 @@
+SELECT 
+    id AS `#`,
+    complaint_date AS `Date`,
+    DAYNAME(complaint_date) AS `Day`,  -- Extracting the day of the week from the date
+    complaint_category AS `Classification`,
+    number_of_sites AS `Number of Websites`,
+		number_of_violating_sites AS `Number of Violating Websites`,
+		violation_percentage AS `Quality`,
+    complaint_sub_duration AS `Duration from Receiving to Submitting Request`,
+    complaint_resolve_duration_from_sub AS `Duration from Submitting Request to Block`,
+    complaint_resolve_duration_from_receive AS `Total Duration`,
+		complaint_application_number as `Application No`
+    #,SEC_TO_TIME(TIME_TO_SEC(complaint_sub_duration) + TIME_TO_SEC(complaint_resolve_duration_from_sub)) AS `Total Duration from Receiving Request to Executing Block`
+FROM 
+    complaints_tat
+WHERE 
+    complaint_date BETWEEN {{StartDate_CSummary.selectedDate}} AND {{EndDate_CSummary.selectedDate}} and complainant = {{ComplainantSelection.selectedOptionValue}}
+ORDER BY 
+    complaint_date;

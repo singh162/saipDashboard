@@ -1,0 +1,13 @@
+SELECT DISTINCT 
+    CASE 
+        WHEN day = 1 THEN 'Sunday'
+        WHEN day = 2 THEN 'Monday'
+        WHEN day = 3 THEN 'Tuesday'
+        WHEN day = 4 THEN 'Wednesday'
+        WHEN day = 5 THEN 'Thursday'
+        WHEN day = 6 THEN 'Friday'
+        WHEN day = 7 THEN 'Saturday'
+    END AS name,
+		day AS code
+FROM reports
+ORDER BY day;

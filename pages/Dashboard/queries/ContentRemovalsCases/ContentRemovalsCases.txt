@@ -1,0 +1,7 @@
+SELECT 
+    IFNULL(COUNT(id), 0) AS total_requests_last_7_days,
+    IFNULL(SUM(number_of_cases), 0) AS total_cases_last_7_days
+FROM 
+    content_removal
+WHERE 
+    request_date >= CURDATE() - INTERVAL 7 DAY;

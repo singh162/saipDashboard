@@ -1,0 +1,781 @@
+{
+  "animateLoading": true,
+  "autoGenerateForm": true,
+  "backgroundColor": "#fff",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "",
+  "bottomRow": 58,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+    },
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "displayName": "JSON Form",
+  "dynamicBindingPathList": [
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "resetButtonStyles.buttonColor"
+    },
+    {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.session_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.session_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.session_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_date.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_date.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_time.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_time.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_time.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complainant.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complainant.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complainant.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_code.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_code.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_code.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_category.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_category.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_category.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.received_during_work_hours.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.received_during_work_hours.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.number_of_sites.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.number_of_sites.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.number_of_sites.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.violation_percentage.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.violation_percentage.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.violation_percentage.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.number_of_violating_sites.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.number_of_violating_sites.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.number_of_violating_sites.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_date.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_date.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_time.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_time.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_time.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_application_number.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_application_number.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_application_number.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_duration.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_duration.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_duration.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_date.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_date.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_time.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_time.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_time.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_duration_from_sub.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_duration_from_sub.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_duration_from_sub.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_duration_from_receive.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_duration_from_receive.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_duration_from_receive.accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.received_during_work_hours.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_sub_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.complaint_resolve_date.defaultValue"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": true,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.6bacf7df.svg",
+  "isLoading": false,
+  "isVisible": "true",
+  "key": "h9l9ozr8op",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onSubmit": "{{complaintsTat.blockingturnAroundRequest('insert');}}",
+  "parentColumnSpace": 16.3125,
+  "parentId": "qda0i163zo",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Reset",
+  "resetButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "SECONDARY"
+  },
+  "rightColumn": 64,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "complainant": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complainant",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complainant))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complainant",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complainant",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complainant",
+          "position": 3,
+          "sourceData": "MBC"
+        },
+        "complaint_application_number": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_application_number",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_application_number))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_application_number",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Application Number",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_application_number",
+          "position": 12
+        },
+        "complaint_category": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_category",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_category))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_category",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Category",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_category",
+          "position": 5
+        },
+        "complaint_code": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_code",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_code))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_code",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Code",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_code",
+          "position": 4,
+          "sourceData": "MBC-297"
+        },
+        "complaint_date": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_date",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
+          "dataType": "string",
+          "dateFormat": "YYYY-MM-DD",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.complaint_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "complaint_date",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Complaint Date",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
+          "originalIdentifier": "complaint_date",
+          "position": 1,
+          "shortcuts": false,
+          "sourceData": "2024-02-04",
+          "timePrecision": "minute"
+        },
+        "complaint_resolve_date": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_resolve_date",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
+          "dataType": "string",
+          "dateFormat": "YYYY-MM-DD",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.complaint_resolve_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "complaint_resolve_date",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Complaint Resolve Date",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
+          "originalIdentifier": "complaint_resolve_date",
+          "position": 14,
+          "shortcuts": false,
+          "sourceData": "2024-02-04",
+          "timePrecision": "minute"
+        },
+        "complaint_resolve_duration_from_receive": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_resolve_duration_from_receive",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_resolve_duration_from_receive))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_resolve_duration_from_receive",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Resolve Duration From Receive",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_resolve_duration_from_receive",
+          "position": 17,
+          "sourceData": "06:28\r"
+        },
+        "complaint_resolve_duration_from_sub": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_resolve_duration_from_sub",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_resolve_duration_from_sub))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_resolve_duration_from_sub",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Resolve Duration From Sub",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_resolve_duration_from_sub",
+          "position": 16,
+          "sourceData": "02:40"
+        },
+        "complaint_resolve_time": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_resolve_time",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_resolve_time))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_resolve_time",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Resolve Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_resolve_time",
+          "position": 15,
+          "sourceData": "17:29:00"
+        },
+        "complaint_sub_date": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_sub_date",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
+          "dataType": "string",
+          "dateFormat": "YYYY-MM-DD",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.complaint_sub_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "complaint_sub_date",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Complaint Sub Date",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
+          "originalIdentifier": "complaint_sub_date",
+          "position": 10,
+          "shortcuts": false,
+          "sourceData": "2024-02-04",
+          "timePrecision": "minute"
+        },
+        "complaint_sub_duration": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_sub_duration",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_sub_duration))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_sub_duration",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Sub Duration",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_sub_duration",
+          "position": 13,
+          "sourceData": "03:48"
+        },
+        "complaint_sub_time": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_sub_time",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_sub_time))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_sub_time",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Sub Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_sub_time",
+          "position": 11,
+          "sourceData": "14:49:00"
+        },
+        "complaint_time": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "complaint_time",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.complaint_time))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "complaint_time",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Complaint Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "complaint_time",
+          "position": 2,
+          "sourceData": "11:01:00"
+        },
+        "number_of_sites": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "number_of_sites",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.number_of_sites))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "number_of_sites",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Number Of Sites",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "number_of_sites",
+          "position": 7,
+          "sourceData": 11
+        },
+        "number_of_violating_sites": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "number_of_violating_sites",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.number_of_violating_sites))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "number_of_violating_sites",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Number Of Violating Sites",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "number_of_violating_sites",
+          "position": 9,
+          "sourceData": 10
+        },
+        "received_during_work_hours": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "received_during_work_hours",
+          "alignWidget": "LEFT",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "boolean",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.received_during_work_hours))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Switch",
+          "identifier": "received_during_work_hours",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Received During Work Hours",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "received_during_work_hours",
+          "position": 6,
+          "sourceData": false
+        },
+        "session_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "session_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.session_id))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "session_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Session Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "session_id",
+          "position": 0,
+          "sourceData": 1
+        },
+        "violation_percentage": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "accessor": "violation_percentage",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.violation_percentage))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "violation_percentage",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Violation Percentage",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "violation_percentage",
+          "position": 8,
+          "sourceData": "91%"
+        }
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(insert_form_CTAT.sourceData, insert_form_CTAT.formData, insert_form_CTAT.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "col1": 5,
+        "col2": "skill B",
+        "col3": 9,
+        "col4": true
+      }
+    }
+  },
+  "scrollContents": true,
+  "showReset": true,
+  "sourceData": "{{_.omit(data_table_CTAT.tableData[0], \"customColumn1\", \"id\")}}",
+  "submitButtonLabel": "Submit",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY"
+  },
+  "title": "Insert Row",
+  "topRow": 0,
+  "type": "JSON_FORM_WIDGET",
+  "version": 1,
+  "widgetId": "qozedm3l5v",
+  "widgetName": "insert_form_CTAT"
+}

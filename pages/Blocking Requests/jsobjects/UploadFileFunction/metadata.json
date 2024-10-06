@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_8dbc257c-74be-4388-ad03-6d97cc097fdc",
+  "id": "Blocking Requests_UploadFileFunction",
+  "unpublishedCollection": {
+    "name": "UploadFileFunction",
+    "pageId": "Blocking Requests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "primarykey",
+        "value": "''"
+      },
+      {
+        "name": "insertRowData",
+        "value": "[]"
+      },
+      {
+        "name": "insertTable",
+        "value": "''"
+      }
+    ]
+  }
+}

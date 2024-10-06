@@ -1,0 +1,933 @@
+{
+  "animateLoading": true,
+  "autoGenerateForm": true,
+  "backgroundColor": "#fff",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 4,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+    },
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "displayName": "JSON Form",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "resetButtonStyles.buttonColor"
+    },
+    {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_domain_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_domain_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_domain_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_whois_server.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_whois_server.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_whois_server.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_url.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_url.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_url.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.domain_updated_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.domain_updated_date.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.domain_updated_date.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.domain_creation_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.domain_creation_date.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.domain_creation_date.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_name.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_name.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_name.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_iana_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_iana_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_iana_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_abuse_contact_email.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_abuse_contact_email.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_abuse_contact_email.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_abuse_contact_phone.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_abuse_contact_phone.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrar_abuse_contact_phone.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_registrant_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_registrant_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_registrant_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_name.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_name.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_name.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_organization.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_organization.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_organization.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_street.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_street.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_street.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_city.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_city.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_city.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_state_province.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_state_province.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_state_province.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_postal_code.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_postal_code.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_postal_code.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_country.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_country.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_country.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_phone.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_phone.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_phone.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_phone_ext.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_phone_ext.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_phone_ext.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_fax.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_fax.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_fax.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_fax_ext.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_fax_ext.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_fax_ext.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_email.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_email.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registrant_email.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_admin_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_admin_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.registry_admin_id.borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": true,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.34c54aae7fdde5e91750190831917417.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nfwa70cvxu",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onSubmit": "{{CaseReports.run();\nCaseData.run();\nJSObjectCasePreview.categorizeData();}}",
+  "originalBottomRow": 184,
+  "originalTopRow": 0,
+  "parentColumnSpace": 11.421875,
+  "parentId": "0auq5tgya1",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Reset",
+  "resetButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "SECONDARY"
+  },
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormBase.sourceData, JSONFormBase.formData, JSONFormBase.fieldState)}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormBase.sourceData, JSONFormBase.formData, JSONFormBase.fieldState)}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "domain_creation_date": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "domain_creation_date",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.domain_creation_date))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "domain_creation_date",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Domain Creation Date",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "domain_creation_date",
+          "position": 4,
+          "sourceData": "2016-08-10T16:44:02Z"
+        },
+        "domain_updated_date": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "domain_updated_date",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.domain_updated_date))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "domain_updated_date",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Domain Updated Date",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "domain_updated_date",
+          "position": 3,
+          "sourceData": "2020-11-25T05:30:12Z"
+        },
+        "registrant_city": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_city",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_city))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_city",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant City",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_city",
+          "position": 13,
+          "sourceData": "Panama"
+        },
+        "registrant_country": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_country",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_country))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_country",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Country",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_country",
+          "position": 16,
+          "sourceData": "PA"
+        },
+        "registrant_email": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_email",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_email))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Email Input",
+          "iconAlign": "left",
+          "identifier": "registrant_email",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Email",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_email",
+          "position": 21,
+          "sourceData": "y2mate.com.3trkbhnekpcgv@domains-anonymizer.com"
+        },
+        "registrant_fax": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_fax",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_fax))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_fax",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Fax",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_fax",
+          "position": 19
+        },
+        "registrant_fax_ext": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_fax_ext",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_fax_ext))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_fax_ext",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Fax Ext",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_fax_ext",
+          "position": 20
+        },
+        "registrant_name": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_name",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_name))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_name",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_name",
+          "position": 10,
+          "sourceData": "Private Whois"
+        },
+        "registrant_organization": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_organization",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_organization))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_organization",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Organization",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_organization",
+          "position": 11,
+          "sourceData": "GLOBAL DOMAIN PRIVACY SERVICES INC"
+        },
+        "registrant_phone": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_phone",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_phone))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_phone",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Phone",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_phone",
+          "position": 17,
+          "sourceData": "1.469225052"
+        },
+        "registrant_phone_ext": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_phone_ext",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_phone_ext))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_phone_ext",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Phone Ext",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_phone_ext",
+          "position": 18
+        },
+        "registrant_postal_code": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_postal_code",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_postal_code))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_postal_code",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Postal Code",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_postal_code",
+          "position": 15
+        },
+        "registrant_state_province": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_state_province",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_state_province))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_state_province",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant State Province",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_state_province",
+          "position": 14
+        },
+        "registrant_street": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrant_street",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrant_street))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrant_street",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrant Street",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrant_street",
+          "position": 12,
+          "sourceData": "Tower Financial Center Flr 35, 50th St y E. Mendez St"
+        },
+        "registrar_abuse_contact_email": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrar_abuse_contact_email",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrar_abuse_contact_email))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Email Input",
+          "iconAlign": "left",
+          "identifier": "registrar_abuse_contact_email",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrar Abuse Contact Email",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrar_abuse_contact_email",
+          "position": 7,
+          "sourceData": "abuse@pananames.com"
+        },
+        "registrar_abuse_contact_phone": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrar_abuse_contact_phone",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrar_abuse_contact_phone))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrar_abuse_contact_phone",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrar Abuse Contact Phone",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrar_abuse_contact_phone",
+          "position": 8,
+          "sourceData": "1.469225052"
+        },
+        "registrar_iana_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrar_iana_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrar_iana_id))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrar_iana_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrar Iana Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrar_iana_id",
+          "position": 6,
+          "sourceData": "1449"
+        },
+        "registrar_name": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrar_name",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrar_name))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrar_name",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrar Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrar_name",
+          "position": 5,
+          "sourceData": "URL SOLUTIONS INC."
+        },
+        "registrar_url": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrar_url",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrar_url))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrar_url",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrar Url",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrar_url",
+          "position": 2,
+          "sourceData": "http://www.pananames.com"
+        },
+        "registrar_whois_server": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registrar_whois_server",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registrar_whois_server))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registrar_whois_server",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registrar Whois Server",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registrar_whois_server",
+          "position": 1,
+          "sourceData": "whois.pananames.com"
+        },
+        "registry_admin_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registry_admin_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registry_admin_id))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registry_admin_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registry Admin Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registry_admin_id",
+          "position": 22
+        },
+        "registry_domain_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registry_domain_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registry_domain_id))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registry_domain_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registry Domain Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registry_domain_id",
+          "position": 0,
+          "sourceData": "2051113775_DOMAIN_COM-VRSN"
+        },
+        "registry_registrant_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "accessor": "registry_registrant_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.registry_registrant_id))(JSONFormHosting.sourceData, JSONFormHosting.formData, JSONFormHosting.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "registry_registrant_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Registry Registrant Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "registry_registrant_id",
+          "position": 9
+        }
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONFormBase.sourceData, JSONFormBase.formData, JSONFormBase.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "case_category": "Website",
+        "entry_id": 1,
+        "incident_date": "2024-07-22T23:41:00Z",
+        "store_name": "Laroza",
+        "updated_at": "2024-07-22T23:41:00Z",
+        "website_domain": "g.laroza.net",
+        "website_link": "https://g.laroza.net",
+        "website_logo": "https://g.laroza.net/uploads/custom-logo.png"
+      }
+    }
+  },
+  "scrollContents": true,
+  "showReset": false,
+  "sourceData": "{{JSObjectCasePreview.categorizeData()[0].Registrar}}",
+  "submitButtonLabel": "Refresh",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY"
+  },
+  "tags": [
+    "Layout"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.1092bbfe332a9ea2da2aa7e3efd01db2.svg",
+  "title": "",
+  "topRow": 0,
+  "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
+  "version": 1,
+  "widgetId": "49ww16b1as",
+  "widgetName": "JSONFormHosting"
+}

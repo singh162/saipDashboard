@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_5d6ea9fa-6e2d-4408-84c1-2fffde642612",
+  "id": "Tools_GetDomains",
+  "unpublishedCollection": {
+    "name": "GetDomains",
+    "pageId": "Tools",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "tableData",
+        "value": "[]"
+      }
+    ]
+  }
+}

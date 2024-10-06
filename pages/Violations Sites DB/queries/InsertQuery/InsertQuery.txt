@@ -1,0 +1,26 @@
+INSERT INTO violations_sites_main (
+	website_domain,
+	website_logo,
+	website_link,
+	store_name,
+	case_category,
+	associated_listing_name,
+	associated_listing_profile_link,
+	incident_date,
+	updated_at,
+	top_level_domain,
+	subdomain
+)
+VALUES (
+	'{{insert_form.formData.website_domain}}',
+	'{{insert_form.formData.website_logo}}',
+	'{{insert_form.formData.website_link}}',
+	'{{insert_form.formData.store_name}}',
+	'{{insert_form.formData.case_category}}',
+	'{{insert_form.formData.associated_listing_name}}',
+	'{{insert_form.formData.associated_listing_profile_link}}',
+	'{{insert_form.formData.incident_date}}',
+	'{{insert_form.formData.updated_at}}',
+	'{{insert_form.formData.top_level_domain}}',
+	'{{insert_form.formData.subdomain}}'
+);

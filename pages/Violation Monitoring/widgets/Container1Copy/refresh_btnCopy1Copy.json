@@ -1,0 +1,36 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "edit",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 56,
+  "onClick": "{{navigateTo('Sited Tech Profiler DB', {}, 'SAME_WINDOW');}}",
+  "parentColumnSpace": 12.0703125,
+  "parentId": "x0n1jbvdwz",
+  "parentRowSpace": 10,
+  "rightColumn": 60,
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "a59g2c2y6q",
+  "widgetName": "refresh_btnCopy1Copy"
+}

@@ -1,0 +1,3 @@
+SELECT DISTINCT report_type AS name, report_type AS code
+FROM reports
+ORDER BY report_type;

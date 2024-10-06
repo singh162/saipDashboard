@@ -1,0 +1,21 @@
+SELECT 
+    entry_id AS id,
+    CASE 
+        WHEN case_category = 'Social Profile' THEN identified_user_name 
+        ELSE store_name 
+    END AS name,
+    website_logo AS img,
+		website_classification as websiteClassification
+    FROM 
+    violations_sites_main
+WHERE 
+    website_logo IS NOT NULL 
+    AND 
+    (
+			(case_category = 'Social Profile' AND identified_user_name IS NOT NULL) 
+			OR 
+			(case_category <> 'Social Profile' AND store_name IS NOT NULL)
+		)
+ORDER BY 
+    incident_date DESC
+LIMIT 10;

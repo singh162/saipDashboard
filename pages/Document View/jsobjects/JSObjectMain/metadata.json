@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_d915ae8e-27b7-46f1-bce5-9e2da29303c0",
+  "id": "Document View_JSObjectMain",
+  "unpublishedCollection": {
+    "name": "JSObjectMain",
+    "pageId": "Document View",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "url",
+        "value": "\"\""
+      }
+    ]
+  }
+}

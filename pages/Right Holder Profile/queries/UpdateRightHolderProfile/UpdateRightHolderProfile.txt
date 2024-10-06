@@ -1,0 +1,18 @@
+UPDATE taoq_research.rightHolderProfile
+SET
+  rightHolderUserId = '{{this.params.rightHolderUserId}}',
+  fullName = '{{this.params.fullName}}',
+  company_name = '{{this.params.company_name}}',
+  rightHolderName = '{{this.params.rightHolderName}}',
+  email = '{{this.params.email}}',
+  phoneNumber = '{{this.params.phoneNumber}}',
+  address = '{{this.params.address}}',
+  city = '{{this.params.city}}',
+  state = '{{this.params.state}}',
+  country = '{{this.params.country}}',
+  acknowledgement = '{{this.params.acknowledgement}}',
+  digitalSignature = '{{this.params.digitalSignature}}',
+  document = '{{this.params.document}}',
+  updated_at = CURRENT_TIMESTAMP
+WHERE
+  id = '{{this.params.id}}';

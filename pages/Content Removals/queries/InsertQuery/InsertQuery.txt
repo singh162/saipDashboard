@@ -1,0 +1,26 @@
+INSERT INTO content_removal (
+	request_number,
+	number_of_cases,
+	request_date,
+	basket_cases,
+	amazon_cases,
+	on_sale_cases,
+	open_market_cases,
+	used_and_new_cases,
+	noon_cases,
+	site_cases,
+	contact_date_amazon
+)
+VALUES (
+	'{{insert_form.formData.request_number}}',
+	'{{insert_form.formData.number_of_cases}}',
+	'{{insert_form.formData.request_date}}',
+	'{{insert_form.formData.basket_cases}}',
+	'{{insert_form.formData.amazon_cases}}',
+	'{{insert_form.formData.on_sale_cases}}',
+	'{{insert_form.formData.open_market_cases}}',
+	'{{insert_form.formData.used_and_new_cases}}',
+	'{{insert_form.formData.noon_cases}}',
+	'{{insert_form.formData.site_cases}}',
+	'{{insert_form.formData.contact_date_amazon}}'
+);

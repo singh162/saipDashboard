@@ -1,0 +1,7 @@
+SELECT 
+    server_location_v4 AS location,
+    COUNT(*) AS count
+FROM 
+    violations_sites_main
+GROUP BY 
+    server_location_v4;

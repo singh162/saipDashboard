@@ -1,0 +1,5 @@
+SELECT * FROM complaints
+WHERE reporter like '%{{data_table_Complaints.searchText || ""}}%'
+ORDER BY {{data_table_Complaints.sortOrder.column || 'report_entry_data'}} {{data_table_Complaints.sortOrder.order || "ASC"}}
+LIMIT {{data_table_Complaints.pageSize}}
+OFFSET {{(data_table_Complaints.pageNo - 1) * data_table_Complaints.pageSize}};

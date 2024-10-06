@@ -1,0 +1,9 @@
+SELECT 
+    violating_content_classification AS x,
+    COUNT(*) AS y
+FROM 
+    violations_sites_main
+GROUP BY 
+    violating_content_classification
+ORDER BY 
+    y DESC;

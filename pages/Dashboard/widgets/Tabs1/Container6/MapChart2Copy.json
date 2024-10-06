@@ -1,0 +1,87 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 33,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "colorRange": [
+    {
+      "code": "#FFD74D",
+      "maxValue": 1,
+      "minValue": 0.5
+    },
+    {
+      "code": "#FB8C00",
+      "maxValue": 2,
+      "minValue": 1
+    },
+    {
+      "code": "#E65100",
+      "maxValue": 3,
+      "minValue": 2
+    }
+  ],
+  "data": "{{JSObjectDashboard.getMapData(\"ServerMapV6\")}}",
+  "displayName": "Map Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "data"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.b1d511ef5f5ccead9820e3f4bf393381.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5cmhzpa4xv",
+  "leftColumn": 0,
+  "mapTitle": "Servers",
+  "mapType": "WORLD",
+  "minWidth": 450,
+  "mobileBottomRow": 57,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 25,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "originalBottomRow": 146,
+  "originalTopRow": 117,
+  "parentColumnSpace": 4.4296875,
+  "parentId": "hcckwvj4td",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 32,
+  "searchTags": [
+    "graph",
+    "visuals",
+    "visualisations"
+  ],
+  "showLabels": true,
+  "tags": [
+    "Display"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.ce80e3c5d01fe182e07c4e48df5bb6d8.svg",
+  "topRow": 4,
+  "type": "MAP_CHART_WIDGET",
+  "version": 1,
+  "widgetId": "xw6lxwf7mo",
+  "widgetName": "MapChart2Copy"
+}

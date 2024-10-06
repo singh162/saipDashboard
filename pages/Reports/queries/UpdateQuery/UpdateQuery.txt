@@ -1,0 +1,13 @@
+UPDATE reports SET
+		report_type = '{{update_form.fieldState.report_type.isVisible ? update_form.formData.report_type : update_form.sourceData.report_type}}',
+		report_number = '{{update_form.fieldState.report_number.isVisible ? update_form.formData.report_number : update_form.sourceData.report_number}}',
+    report_en_doc = '{{update_form.fieldState.report_en_doc.isVisible ? update_form.formData.report_en_doc : update_form.sourceData.report_en_doc}}',
+		report_en_pdf = '{{update_form.fieldState.report_en_pdf.isVisible ? update_form.formData.report_en_pdf : update_form.sourceData.report_en_pdf}}',
+		report_sa_doc = '{{update_form.fieldState.report_sa_doc.isVisible ? update_form.formData.report_sa_doc : update_form.sourceData.report_sa_doc}}',
+		report_sa_pdf = '{{update_form.fieldState.report_sa_pdf.isVisible ? update_form.formData.report_sa_pdf : update_form.sourceData.report_sa_pdf}}',
+		insertion_date = '{{update_form.fieldState.insertion_date.isVisible ? update_form.formData.insertion_date : update_form.sourceData.insertion_date}}',
+		updation_date = '{{update_form.fieldState.updation_date.isVisible ? update_form.formData.updation_date : update_form.sourceData.updation_date}}',
+		sent_date = '{{update_form.fieldState.sent_date.isVisible ? update_form.formData.sent_date : update_form.sourceData.sent_date}}',
+		month = '{{update_form.fieldState.month.isVisible ? update_form.formData.month : update_form.sourceData.month}}',
+		week = '{{update_form.fieldState.week.isVisible ? update_form.formData.week : update_form.sourceData.week}}'
+  WHERE report_id = {{data_table.selectedRow.report_id}};

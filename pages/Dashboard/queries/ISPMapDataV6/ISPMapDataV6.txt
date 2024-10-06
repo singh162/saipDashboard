@@ -1,0 +1,9 @@
+SELECT 
+    asn_country_v6 AS id,
+    ROUND(3 * COUNT(*) / SUM(COUNT(*)) OVER (), 2) AS value
+FROM 
+    violations_sites_main
+WHERE
+    asn_country_v6 != NULL OR asn_country_v6 != ""
+GROUP BY 
+    asn_country_v6;

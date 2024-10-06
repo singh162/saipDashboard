@@ -1,0 +1,3 @@
+SELECT COUNT(DISTINCT website_domain) AS total_websites_last_7_days
+FROM violations_sites_main
+WHERE incident_date >= NOW() - INTERVAL 7 DAY;

@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_d7273134-7648-43a1-9732-6fcd959b895f",
+  "id": "File Uploader_UploadFieldData",
+  "unpublishedCollection": {
+    "name": "UploadFieldData",
+    "pageId": "File Uploader",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "insertRowData",
+        "value": "[]"
+      },
+      {
+        "name": "exitsRecord",
+        "value": "[]"
+      },
+      {
+        "name": "insertTable",
+        "value": "''"
+      },
+      {
+        "name": "primarykey",
+        "value": "''"
+      }
+    ]
+  }
+}

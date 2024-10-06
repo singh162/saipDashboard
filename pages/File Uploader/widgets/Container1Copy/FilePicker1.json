@@ -1,0 +1,84 @@
+{
+  "allowedFileTypes": "[\".csv\"]",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "displayName": "FilePicker",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "allowedFileTypes"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Array",
+  "files": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.b08ce7590c570fc5b7ffa528c70d35bf.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": "true",
+  "isVisible": "true",
+  "key": "gulbe7icyt",
+  "label": "Select File",
+  "leftColumn": 46,
+  "maxFileSize": "10",
+  "maxNumFiles": "1",
+  "minWidth": 120,
+  "mobileBottomRow": 27,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 36,
+  "mobileTopRow": 23,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onFilesSelected": "{{UploadFieldData.handleFileUpload();}}",
+  "originalBottomRow": 18,
+  "originalTopRow": 14,
+  "parentColumnSpace": 10.71875,
+  "parentId": "nzfrk7jovu",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "searchTags": [
+    "upload"
+  ],
+  "selectedFiles": [],
+  "tags": [
+    "Inputs"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.164363adea04c44e54b1fd47657a579e.svg",
+  "topRow": 6,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "fi09zr1ntc",
+  "widgetName": "FilePicker1"
+}

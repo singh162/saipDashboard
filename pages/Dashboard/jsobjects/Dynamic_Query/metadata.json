@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_47c023dd-296a-4efc-9fa0-94e43bb4cf15",
+  "id": "Dashboard_Dynamic_Query",
+  "unpublishedCollection": {
+    "name": "Dynamic_Query",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "where",
+        "value": "''"
+      },
+      {
+        "name": "seletFilter",
+        "value": "'Month'"
+      },
+      {
+        "name": "statusMessage",
+        "value": "''"
+      }
+    ]
+  }
+}

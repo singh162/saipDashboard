@@ -1,0 +1,26 @@
+INSERT INTO reports (
+	report_type,
+	report_number,
+	report_en_doc,
+	report_en_pdf,
+	report_sa_doc,
+	report_sa_pdf,
+	insertion_date,
+	updation_date,
+	sent_date,
+	month,
+	week
+)
+VALUES (
+	'{{insert_form.formData.report_type}}',
+	'{{insert_form.formData.report_number}}',
+	'{{insert_form.formData.report_en_doc}}',
+	'{{insert_form.formData.report_en_pdf}}',
+	'{{insert_form.formData.report_sa_doc}}',
+	'{{insert_form.formData.report_sa_pdf}}',
+	'{{insert_form.formData.insertion_date}}',
+	'{{insert_form.formData.updation_date}}',
+	'{{insert_form.formData.sent_date}}',
+	'{{insert_form.formData.month}}',
+	'{{insert_form.formData.week}}'
+);

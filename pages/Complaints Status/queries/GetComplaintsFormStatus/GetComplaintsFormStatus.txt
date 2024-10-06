@@ -1,0 +1,8 @@
+SELECT complaint_status.complaint_status_id,complaints_form.complaint_form_id,complaints_form.complaint_Case_id, rightHolder.username,complaints_form.infringing_url, complaints_form.original_work,complaints_form.description, complaints_form.documentProof FROM complaints_form
+INNER JOIN complaint_status on complaint_status.complaint_form_id = complaints_form.complaint_form_id
+INNER JOIN 
+rightHolder on rightHolder.id = complaints_form.rightHolderUserId
+WHERE complaint_status.status ='InProgress'  and rightHolder.username like '%{{Table1.searchText || ""}}%'
+ORDER BY {{Table1.sortOrder.column || 'rightHolder.username'}} {{Table1.sortOrder.order || "ASC"}}
+LIMIT {{Table1.pageSize}}
+OFFSET {{(Table1.pageNo - 1) * Table1.pageSize}};

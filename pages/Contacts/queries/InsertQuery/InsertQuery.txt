@@ -1,0 +1,26 @@
+INSERT INTO contacts (
+	entity_name,
+	entity_type,
+	person_name,
+	position,
+	department,
+	address,
+	phone_number,
+	email,
+	website,
+	social_media_url,
+	additional_info
+)
+VALUES (
+	'{{insert_form.formData.entity_name}}',
+	'{{insert_form.formData.entity_type}}',
+	'{{insert_form.formData.person_name}}',
+	'{{insert_form.formData.position}}',
+	'{{insert_form.formData.department}}',
+	'{{insert_form.formData.address}}',
+	'{{insert_form.formData.phone_number}}',
+	'{{insert_form.formData.email}}',
+	'{{insert_form.formData.website}}',
+	'{{insert_form.formData.social_media_url}}',
+	'{{insert_form.formData.additional_info}}'
+);

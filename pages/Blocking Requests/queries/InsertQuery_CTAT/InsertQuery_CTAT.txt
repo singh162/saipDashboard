@@ -1,0 +1,26 @@
+INSERT INTO complaints_tat (
+	complainant,
+	session_id,
+	complaint_date,
+	complaint_time,
+	complaint_code,
+	complaint_category,
+	received_during_work_hours,
+	number_of_sites,
+	violation_percentage,
+	number_of_violating_sites,
+	complaint_sub_date
+)
+VALUES (
+	'{{complaintsTat.insertBuildData.complainant}}',
+	'{{complaintsTat.insertBuildData.session_id}}',
+	'{{complaintsTat.insertBuildData.complaint_date}}',
+	'{{complaintsTat.insertBuildData.complaint_time}}',
+	'{{complaintsTat.insertBuildData.complaint_code}}',
+	'{{complaintsTat.insertBuildData.complaint_category}}',
+	'{{complaintsTat.insertBuildData.received_during_work_hours}}',
+	'{{complaintsTat.insertBuildData.number_of_sites}}',
+	'{{complaintsTat.insertBuildData.violation_percentage}}',
+	'{{complaintsTat.insertBuildData.number_of_violating_sites}}',
+	'{{complaintsTat.insertBuildData.complaint_sub_date}}'
+);

@@ -1,0 +1,10 @@
+SELECT 
+    entry_id AS id,
+    identified_user_name AS name,
+    website_logo AS img
+FROM 
+    violations_sites_main
+WHERE case_category = "Social Profile"
+ORDER BY 
+    incident_date DESC
+LIMIT 10;

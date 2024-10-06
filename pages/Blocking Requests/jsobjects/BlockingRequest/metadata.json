@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_9ccdfaab-46b5-4268-b2be-e0b7378684d9",
+  "id": "Blocking Requests_BlockingRequest",
+  "unpublishedCollection": {
+    "name": "BlockingRequest",
+    "pageId": "Blocking Requests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "insertBuildData",
+        "value": "{\n  reporter: \"\",\n  number_of_sites: 0,\n  type_of_material: \"\",\n  report_number: \"\",\n  incoming_number: \"\",\n  date: \"\",\n  non_working_sites: 0,\n  blocked_sites: 0,\n  not_violating: 0,\n  submitted_for_blocking: 0,\n  blocking_letter_request_number: \"\",\n  site_inspection_date: \"\",\n  employee: \"\",\n  notes: \"\"\n}"
+      },
+      {
+        "name": "updateBuildData",
+        "value": "{}"
+      }
+    ]
+  }
+}

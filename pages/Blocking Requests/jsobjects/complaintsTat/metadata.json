@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_63756677-fe31-471b-a1c1-f8b6d1fd61b0",
+  "id": "Blocking Requests_complaintsTat",
+  "unpublishedCollection": {
+    "name": "complaintsTat",
+    "pageId": "Blocking Requests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "insertBuildData",
+        "value": "{\n  session_id: null,\n  complaint_date: \"\",\n  complaint_time: \"\",\n  complainant: \"\",\n  complaint_code: \"\",\n  complaint_category: \"\",\n  received_during_work_hours: 0,\n  number_of_sites: 0,\n  violation_percentage: \"\",\n  number_of_violating_sites: 0,\n  complaint_sub_date: \"\",\n  complaint_sub_time: \"\",\n  complaint_application_number: null,\n  complaint_sub_duration: \"\",\n  complaint_resolve_date: \"\",\n  complaint_resolve_time: \"\",\n  complaint_resolve_duration_from_sub: \"\",\n  complaint_resolve_duration_from_receive: \"\"\n}"
+      },
+      {
+        "name": "updateBuildData",
+        "value": "{}"
+      }
+    ]
+  }
+}

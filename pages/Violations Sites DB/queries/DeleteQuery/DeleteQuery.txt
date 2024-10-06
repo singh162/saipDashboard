@@ -1,0 +1,2 @@
+DELETE FROM violations_sites_main
+  WHERE entry_id = {{data_table.triggeredRow.entry_id}};

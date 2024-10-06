@@ -1,0 +1,1 @@
+SELECT * FROM violations_sites_main, violations_sites_tech where violations_sites_main.entry_id = {{CaseSelect.selectedOptionValue}} and violations_sites_tech.entry_id = {{CaseSelect.selectedOptionValue}}

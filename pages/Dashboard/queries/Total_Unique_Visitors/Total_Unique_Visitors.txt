@@ -1,0 +1,21 @@
+SELECT 
+    SUM(
+        CASE 
+            WHEN RIGHT(unique_visitors, 1) = 'K' THEN CAST(LEFT(unique_visitors, LENGTH(unique_visitors) - 1) AS FLOAT) * 1000
+            WHEN RIGHT(unique_visitors, 1) = 'M' THEN CAST(LEFT(unique_visitors, LENGTH(unique_visitors) - 1) AS FLOAT) * 1000000
+            WHEN RIGHT(unique_visitors, 1) = 'B' THEN CAST(LEFT(unique_visitors, LENGTH(unique_visitors) - 1) AS FLOAT) * 1000000000
+            WHEN RIGHT(unique_visitors, 1) = 'T' THEN CAST(LEFT(unique_visitors, LENGTH(unique_visitors) - 1) AS FLOAT) * 1000000000000
+            ELSE CAST(unique_visitors AS FLOAT)
+        END
+    ) AS total_visitors,
+    AVG(
+        CASE 
+            WHEN RIGHT(unique_visitors, 1) = 'K' THEN CAST(LEFT(unique_visitors, LENGTH(unique_visitors) - 1) AS FLOAT) * 1000
+            WHEN RIGHT(unique_visitors, 1) = 'M' THEN CAST(LEFT(unique_visitors, LENGTH(unique_visitors) - 1) AS FLOAT) * 1000000
+            WHEN RIGHT(unique_visitors, 1) = 'B' THEN CAST(LEFT(unique_visitors, LENGTH(unique_visitors) - 1) AS FLOAT) * 1000000000
+            WHEN RIGHT(unique_visitors, 1) = 'T' THEN CAST(LEFT(unique_visitors, LENGTH(unique_visitors) - 1) AS FLOAT) * 1000000000000
+            ELSE CAST(unique_visitors AS FLOAT)
+        END
+    ) AS avg_visitors_per_site
+FROM 
+    violations_sites_main;

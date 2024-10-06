@@ -1,0 +1,5 @@
+SELECT 
+    COUNT(report_entry_data) AS complaints_received,
+    MIN(DATE(date)) AS oldest_date
+FROM 
+    complaints;

@@ -1,0 +1,12 @@
+INSERT INTO site_status (
+	reporter,
+	report_code,
+	report_date,
+	site_status,
+	website_url)
+VALUES (
+	'{{WebsiteStatus.insertBuildData.reporter}}',
+	'{{WebsiteStatus.insertBuildData.report_code}}',
+	'{{WebsiteStatus.insertBuildData.report_date}}',
+	'{{WebsiteStatus.insertBuildData.site_status}}',
+	'{{WebsiteStatus.insertBuildData.website_url}}');

@@ -1,0 +1,9 @@
+SELECT 
+    SUBSTRING_INDEX(SUBSTRING_INDEX(server_location_v4, '(', -1), ')', 1) AS id,
+    ROUND(3 * COUNT(*) / SUM(COUNT(*)) OVER (), 2) AS value
+FROM 
+    violations_sites_main
+WHERE
+    server_location_v4 != NULL OR server_location_v4 != ""
+GROUP BY 
+    id;

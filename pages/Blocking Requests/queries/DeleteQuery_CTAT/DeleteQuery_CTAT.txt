@@ -1,0 +1,2 @@
+DELETE FROM complaints_tat
+  WHERE id = {{data_table_CTAT.triggeredRow.id}};

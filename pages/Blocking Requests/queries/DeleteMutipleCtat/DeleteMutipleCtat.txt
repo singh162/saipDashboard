@@ -1,0 +1,2 @@
+DELETE FROM complaints_tat
+  WHERE id in ({{this.params.id}});

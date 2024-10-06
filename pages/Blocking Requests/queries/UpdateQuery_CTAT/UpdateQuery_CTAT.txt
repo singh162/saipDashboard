@@ -1,0 +1,13 @@
+UPDATE complaints_tat SET
+		complainant = '{{complaintsTat.updateBuildData.complainant}}',
+		session_id = '{{complaintsTat.updateBuildData.session_id}}',
+    complaint_date = '{{complaintsTat.updateBuildData.complaint_date}}',
+		complaint_time = '{{complaintsTat.updateBuildData.complaint_time}}',
+		complaint_code = '{{complaintsTat.updateBuildData.complaint_code}}',
+		complaint_category = '{{complaintsTat.updateBuildData.complaint_category}}',
+		received_during_work_hours = '{{complaintsTat.updateBuildData.received_during_work_hours}}',
+		number_of_sites = '{{complaintsTat.updateBuildData.number_of_sites}}',
+		violation_percentage = '{{complaintsTat.updateBuildData.violation_percentage}}',
+		number_of_violating_sites = '{{complaintsTat.updateBuildData.number_of_violating_sites}}',
+		complaint_sub_date = '{{complaintsTat.updateBuildData.complaint_sub_date}}'
+  WHERE id = {{data_table_CTAT.triggeredRow.id}};

@@ -1,0 +1,11 @@
+SELECT DISTINCT 
+    CASE 
+        WHEN week = 1 THEN '1st'
+        WHEN week = 2 THEN '2nd'
+        WHEN week = 3 THEN '3rd'
+        WHEN week = 4 THEN '4th'
+        WHEN week = 5 THEN '5th'
+    END AS name,
+		week AS code
+FROM reports
+ORDER BY week;

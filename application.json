@@ -1,0 +1,107 @@
+{
+  "appIsExample": false,
+  "appLayout": {
+    "type": "FLUID"
+  },
+  "applicationDetail": {
+    "navigationSetting": {
+      "colorStyle": "theme",
+      "itemStyle": "text",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "sidebar",
+      "orientation": "side",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    }
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#C7F3E3",
+  "embedSetting": {
+    "height": "720px",
+    "showNavigationBar": true,
+    "width": "1024px"
+  },
+  "evaluationVersion": 2,
+  "icon": "arrow-left",
+  "pages": [
+    {
+      "id": "Dashboard",
+      "isDefault": true
+    },
+    {
+      "id": "Violation Monitoring",
+      "isDefault": false
+    },
+    {
+      "id": "Blocking Requests",
+      "isDefault": false
+    },
+    {
+      "id": "Content Removals",
+      "isDefault": false
+    },
+    {
+      "id": "Complaints Status",
+      "isDefault": false
+    },
+    {
+      "id": "Right Holder Profile",
+      "isDefault": false
+    },
+    {
+      "id": "Sited Tech Profiler DB",
+      "isDefault": false
+    },
+    {
+      "id": "Document View",
+      "isDefault": false
+    },
+    {
+      "id": "Tools",
+      "isDefault": false
+    },
+    {
+      "id": "File Uploader",
+      "isDefault": false
+    },
+    {
+      "id": "Case Preview",
+      "isDefault": false
+    },
+    {
+      "id": "Reports",
+      "isDefault": false
+    },
+    {
+      "id": "Violations Sites DB",
+      "isDefault": false
+    },
+    {
+      "id": "Contacts",
+      "isDefault": false
+    },
+    {
+      "id": "Project Tracker",
+      "isDefault": false
+    }
+  ],
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "colorStyle": "theme",
+      "itemStyle": "text",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "sidebar",
+      "orientation": "side",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    }
+  }
+}

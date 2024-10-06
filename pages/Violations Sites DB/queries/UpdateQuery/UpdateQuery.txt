@@ -1,0 +1,13 @@
+UPDATE violations_sites_main SET
+		website_domain = '{{update_form.fieldState.website_domain.isVisible ? update_form.formData.website_domain : update_form.sourceData.website_domain}}',
+		website_logo = '{{update_form.fieldState.website_logo.isVisible ? update_form.formData.website_logo : update_form.sourceData.website_logo}}',
+    website_link = '{{update_form.fieldState.website_link.isVisible ? update_form.formData.website_link : update_form.sourceData.website_link}}',
+		store_name = '{{update_form.fieldState.store_name.isVisible ? update_form.formData.store_name : update_form.sourceData.store_name}}',
+		case_category = '{{update_form.fieldState.case_category.isVisible ? update_form.formData.case_category : update_form.sourceData.case_category}}',
+		associated_listing_name = '{{update_form.fieldState.associated_listing_name.isVisible ? update_form.formData.associated_listing_name : update_form.sourceData.associated_listing_name}}',
+		associated_listing_profile_link = '{{update_form.fieldState.associated_listing_profile_link.isVisible ? update_form.formData.associated_listing_profile_link : update_form.sourceData.associated_listing_profile_link}}',
+		incident_date = '{{update_form.fieldState.incident_date.isVisible ? update_form.formData.incident_date : update_form.sourceData.incident_date}}',
+		updated_at = '{{update_form.fieldState.updated_at.isVisible ? update_form.formData.updated_at : update_form.sourceData.updated_at}}',
+		top_level_domain = '{{update_form.fieldState.top_level_domain.isVisible ? update_form.formData.top_level_domain : update_form.sourceData.top_level_domain}}',
+		subdomain = '{{update_form.fieldState.subdomain.isVisible ? update_form.formData.subdomain : update_form.sourceData.subdomain}}'
+  WHERE entry_id = {{data_table.selectedRow.entry_id}};

@@ -1,0 +1,41 @@
+INSERT INTO test_taoq_reach.complaints_form (
+	complaint_id, 
+	name, 
+	holderName, 
+	company_name, 
+	category_type, 
+	description, 
+	email, 
+	phone_number, 
+	address, 
+	city, 
+	state, 
+	country, 
+	acknowledgment, 
+	original_work, 
+	digital_signature, 
+	infringing_url, 
+	file_data, 
+	inserted_at, 
+	updated_at
+) VALUES (
+	'{{this.params.complaint_id}}',        -- UUID for complaint_id
+	'{{this.params.name}}',                -- Name field
+	'{{this.params.holderName}}',          -- HolderName field
+	'{{this.params.company_name}}',        -- Company name
+	'{{this.params.category_type}}',       -- Category type (from Select2 widget)
+	'{{this.params.description}}',         -- Description field
+	'{{this.params.email}}',               -- Email field
+	'{{this.params.phone_number}}',        -- Phone number field
+	'{{this.params.address}}',             -- Address field
+	'{{this.params.city}}',                -- City field
+	'{{this.params.state}}',               -- State field
+	'{{this.params.country}}',             -- Country field
+	'{{this.params.acknowledgment}}',      -- Acknowledgment flag
+	'{{this.params.original_work}}',       -- Original work field
+	'{{this.params.digital_signature}}',   -- Digital signature field
+	'{{this.params.infringing_url}}',      -- Infringing URL field
+	'{{this.params.file_data}}',           -- File data (adjust as needed)
+	'{{this.params.inserted_at}}',         -- Inserted timestamp
+	'{{this.params.updated_at}}'           -- Updated timestamp
+);

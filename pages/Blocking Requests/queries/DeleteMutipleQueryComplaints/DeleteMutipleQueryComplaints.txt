@@ -1,0 +1,2 @@
+DELETE FROM complaints
+  WHERE report_entry_data in ({{this.params.id}});

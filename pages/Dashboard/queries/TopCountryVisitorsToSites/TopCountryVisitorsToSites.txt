@@ -1,0 +1,7 @@
+SELECT 
+		top_organic_country_visitor as x,
+    COUNT(top_organic_country_visitor) as y
+FROM 
+    violations_sites_main
+Where top_organic_country_visitor !=""
+Group By top_organic_country_visitor ORDER by y desc;

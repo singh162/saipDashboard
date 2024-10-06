@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_82e680ca-75ca-4154-a6da-a6a0714f98c3",
+  "id": "Reports_JSObjectMain",
+  "unpublishedCollection": {
+    "name": "JSObjectMain",
+    "pageId": "Reports",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "url",
+        "value": "\"\""
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+INSERT INTO complaints (
+	reporter,
+	number_of_sites,
+	type_of_material,
+	report_number,
+	incoming_number,
+	date,
+	non_working_sites,
+	blocked_sites,
+	not_violating,
+	submitted_for_blocking,
+	blocking_letter_request_number,
+	site_inspection_date,
+	employee,
+	notes
+)
+VALUES (
+	'{{BlockingRequest.insertBuildData.reporter}}',
+	'{{BlockingRequest.insertBuildData.number_of_sites}}',
+	'{{BlockingRequest.insertBuildData.type_of_material}}',
+	'{{BlockingRequest.insertBuildData.report_number}}',
+	'{{BlockingRequest.insertBuildData.incoming_number}}',
+	'{{BlockingRequest.insertBuildData.date}}',
+	'{{BlockingRequest.insertBuildData.non_working_sites}}',
+	'{{BlockingRequest.insertBuildData.blocked_sites}}',
+	'{{BlockingRequest.insertBuildData.not_violating}}',
+	'{{BlockingRequest.insertBuildData.submitted_for_blocking}}',
+	'{{BlockingRequest.insertBuildData.blocking_letter_request_number}}',
+	'{{BlockingRequest.insertBuildData.site_inspection_date}}',
+	'{{BlockingRequest.insertBuildData.employee}}',
+	'{{BlockingRequest.insertBuildData.notes}}'
+);

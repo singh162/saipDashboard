@@ -1,0 +1,15 @@
+UPDATE complaints SET
+		reporter = '{{BlockingRequest.updateBuildData.reporter}}',
+		number_of_sites = '{{BlockingRequest.updateBuildData.number_of_sites}}',
+    type_of_material = '{{BlockingRequest.updateBuildData.type_of_material}}',
+		report_number = '{{BlockingRequest.updateBuildData.report_number}}',
+		incoming_number = '{{BlockingRequest.updateBuildData.incoming_number}}',
+		date = '{{BlockingRequest.updateBuildData.date}}',
+		non_working_sites = '{{BlockingRequest.updateBuildData.non_working_sites}}',
+		blocked_sites = '{{BlockingRequest.updateBuildData.blocked_sites}}',
+		not_violating = '{{BlockingRequest.updateBuildData.not_violating}}',
+		submitted_for_blocking = '{{BlockingRequest.updateBuildData.submitted_for_blocking}}',
+		blocking_letter_request_number = '{{BlockingRequest.updateBuildData.blocking_letter_request_number}}',
+		employee ='{{BlockingRequest.updateBuildData.employee}}',
+		notes ='{{BlockingRequest.updateBuildData.notes}}'
+  WHERE report_entry_data = {{data_table_Complaints.triggeredRow.report_entry_data}};

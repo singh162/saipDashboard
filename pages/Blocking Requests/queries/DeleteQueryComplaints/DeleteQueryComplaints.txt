@@ -1,0 +1,2 @@
+DELETE FROM complaints
+  WHERE report_entry_data = {{data_table_Complaints.triggeredRow.report_entry_data}};

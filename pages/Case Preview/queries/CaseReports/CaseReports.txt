@@ -1,0 +1,16 @@
+SELECT
+    r.report_id,
+		r.report_number,
+		r.report_type,
+    r.insertion_date,
+    r.sent_date,
+    r.report_en_doc,
+    r.report_en_pdf,
+    r.report_sa_doc,
+    r.report_sa_pdf
+FROM
+    reports r, violations_sites_main v
+WHERE
+    r.case_id_min <= {{CaseSelect.selectedOptionValue}} AND
+    r.case_id_max >= {{CaseSelect.selectedOptionValue}} AND 
+		v.entry_id = {{CaseSelect.selectedOptionValue}}

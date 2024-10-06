@@ -1,0 +1,6 @@
+SELECT 
+    COUNT(id) AS total_requests,
+    SUM(number_of_cases) AS total_cases,
+    MIN(DATE(request_date)) AS oldest_date
+FROM 
+    content_removal;

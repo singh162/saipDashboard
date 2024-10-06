@@ -1,0 +1,16 @@
+		SELECT 
+  violation_severity As x,
+    COUNT(*) AS y,
+    CASE 
+        WHEN violation_severity = 'Very Low' THEN 'Very Low (Scam/Fake)'
+        WHEN violation_severity = 'Low' THEN 'Low (One of Cases/V Few/User Dont Understand IP Violation)'
+        WHEN violation_severity = 'Medium' THEN 'Medium (Referring to Piracy Sources)'
+        WHEN violation_severity = 'High' THEN 'High (Hosting Piracy Sources)'
+        WHEN violation_severity = 'Very High' THEN 'Very High (Blatant Activity and Use Advance Mechanism to by pass ISP Restrictions)'
+    END AS detailed_label
+FROM 
+    violations_sites_main
+GROUP BY 
+    x, detailed_label
+ORDER BY 
+    y DESC;

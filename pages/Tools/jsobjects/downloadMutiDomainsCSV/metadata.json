@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_9b5c05a9-ef5a-4dc0-91d9-dbdd15a2a32b",
+  "id": "Tools_downloadMutiDomainsCSV",
+  "unpublishedCollection": {
+    "name": "downloadMutiDomainsCSV",
+    "pageId": "Tools",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "domainArray",
+        "value": "[]"
+      },
+      {
+        "name": "buildTableData",
+        "value": "[]"
+      }
+    ]
+  }
+}

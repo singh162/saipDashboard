@@ -1,0 +1,1 @@
+SELECT DISTINCT website_domain as name, entry_id as value FROM violations_sites_main;

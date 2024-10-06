@@ -1,0 +1,81 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "\"\"",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.c94480439adb48de6883bb496aa5ef7d.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "l4okaj5n5g",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Search Dates",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 11.421875,
+  "parentId": "0iy4ro0oqf",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{[\n\t\t{\n\t\t\t\"name\": \"None\",\n\t\t\t\"code\": \"\"\n\t\t},\n    {\n        \"name\": \"Past 1 Day\",\n        \"code\": \"after:\" + new Date(Date.now() - 86400000).toISOString().split(\"T\")[0] + \" before:\" + new Date().toISOString().split(\"T\")[0]\n    },\n    {\n        \"name\": \"Past 1 Week\",\n        \"code\": \"after:\" + new Date(Date.now() - 604800000).toISOString().split(\"T\")[0] + \" before:\" + new Date().toISOString().split(\"T\")[0]\n    },\n    {\n        \"name\": \"Past 1 Month\",\n        \"code\": \"after:\" + new Date(Date.now() - 2629800000).toISOString().split(\"T\")[0] + \" before:\" + new Date().toISOString().split(\"T\")[0]\n    },\n    {\n        \"name\": \"Past 3 Months\",\n        \"code\": \"after:\" + new Date(Date.now() - 7889400000).toISOString().split(\"T\")[0] + \" before:\" + new Date().toISOString().split(\"T\")[0]\n    },\n    {\n        \"name\": \"Past 6 Months\",\n        \"code\": \"after:\" + new Date(Date.now() - 15778800000).toISOString().split(\"T\")[0] + \" before:\" + new Date().toISOString().split(\"T\")[0]\n    },\n    {\n        \"name\": \"Past 1 Year\",\n        \"code\": \"after:\" + new Date(Date.now() - 31557600000).toISOString().split(\"T\")[0] + \" before:\" + new Date().toISOString().split(\"T\")[0]\n    },\n    {\n        \"name\": \"Past 2 Years\",\n        \"code\": \"after:\" + new Date(Date.now() - 63115200000).toISOString().split(\"T\")[0] + \" before:\" + new Date().toISOString().split(\"T\")[0]\n    },\n    {\n        \"name\": \"Past 5 Years\",\n        \"code\": \"after:\" + new Date(Date.now() - 157788000000).toISOString().split(\"T\")[0] + \" before:\" + new Date().toISOString().split(\"T\")[0]\n    }\n]\n}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "36zechjh51",
+  "widgetName": "SelectSearchDate"
+}

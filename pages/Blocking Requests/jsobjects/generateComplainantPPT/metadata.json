@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_e89f4571-90a4-4565-86b1-a0cc826390d0",
+  "id": "Blocking Requests_generateComplainantPPT",
+  "unpublishedCollection": {
+    "name": "generateComplainantPPT",
+    "pageId": "Blocking Requests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "statusMessage",
+        "value": "''"
+      },
+      {
+        "name": "requestData",
+        "value": "{}"
+      },
+      {
+        "name": "isDownloadPPtLoading",
+        "value": "true"
+      }
+    ]
+  }
+}

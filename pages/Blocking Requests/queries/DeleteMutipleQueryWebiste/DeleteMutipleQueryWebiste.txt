@@ -1,0 +1,2 @@
+DELETE FROM site_status
+  WHERE id in ({{this.params.id}});

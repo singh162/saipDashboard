@@ -1,0 +1,5 @@
+SELECT * FROM complaints_tat
+WHERE complainant like '%{{data_table_CTAT.searchText || ""}}%'
+ORDER BY {{data_table_CTAT.sortOrder.column || 'id'}} {{data_table_CTAT.sortOrder.order || "ASC"}}
+LIMIT {{data_table_CTAT.pageSize}}
+OFFSET {{(data_table_CTAT.pageNo - 1) * data_table_CTAT.pageSize}};

@@ -1,0 +1,87 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 70,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "colorRange": [
+    {
+      "code": "#FFD74D",
+      "maxValue": 1,
+      "minValue": 0.5
+    },
+    {
+      "code": "#FB8C00",
+      "maxValue": 2,
+      "minValue": 1
+    },
+    {
+      "code": "#E65100",
+      "maxValue": 3,
+      "minValue": 2
+    }
+  ],
+  "data": "{{JSObjectDashboard.getMapData(\"ISPMapDataV4\")}}",
+  "displayName": "Map Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "data"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.b1d511ef5f5ccead9820e3f4bf393381.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "v5pbzm2nl7",
+  "leftColumn": 32,
+  "mapTitle": "ISP",
+  "mapType": "WORLD",
+  "minWidth": 450,
+  "mobileBottomRow": 73,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 41,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "originalBottomRow": 70,
+  "originalTopRow": 40,
+  "parentColumnSpace": 9.234375,
+  "parentId": "xemi5nx7i7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "graph",
+    "visuals",
+    "visualisations"
+  ],
+  "showLabels": true,
+  "tags": [
+    "Display"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.ce80e3c5d01fe182e07c4e48df5bb6d8.svg",
+  "topRow": 40,
+  "type": "MAP_CHART_WIDGET",
+  "version": 1,
+  "widgetId": "0t7g1a296p",
+  "widgetName": "MapChart1"
+}

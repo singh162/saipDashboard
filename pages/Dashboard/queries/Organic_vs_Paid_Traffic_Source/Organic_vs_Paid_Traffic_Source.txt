@@ -1,0 +1,14 @@
+SELECT 
+    DATE_FORMAT(incident_date, '%Y-%m') AS month,
+    'Organic' AS source_type,
+    SUM(CAST(organic_search_traffic AS DECIMAL)) AS total
+FROM violations_sites_main
+GROUP BY month
+UNION ALL
+SELECT 
+    DATE_FORMAT(incident_date, '%Y-%m') AS month,
+    'Paid' AS source_type,
+    SUM(CAST(paid_search_traffic AS DECIMAL)) AS total
+FROM violations_sites_main
+GROUP BY month
+ORDER BY month, source_type;

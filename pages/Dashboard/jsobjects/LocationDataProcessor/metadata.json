@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66a6404ed83bce5fe8f822e7_3bff37af-bcbb-4b4c-ae8b-d9807673cb15",
+  "id": "Dashboard_LocationDataProcessor",
+  "unpublishedCollection": {
+    "name": "LocationDataProcessor",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

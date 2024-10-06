@@ -1,0 +1,3 @@
+SELECT COUNT(report_entry_data) AS complaints_recieved_last_7_days
+FROM complaints
+WHERE date >= NOW() - INTERVAL 7 DAY;

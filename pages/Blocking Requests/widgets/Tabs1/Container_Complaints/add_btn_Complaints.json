@@ -1,0 +1,37 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "add",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 59,
+  "onClick": "{{showModal(Insert_Modal_Complaints.name);}}",
+  "parentColumnSpace": 12.0703125,
+  "parentId": "qt197uc8pl",
+  "parentRowSpace": 10,
+  "rightColumn": 61,
+  "tooltip": "Add s",
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "2qcjdotjt7",
+  "widgetName": "add_btn_Complaints"
+}

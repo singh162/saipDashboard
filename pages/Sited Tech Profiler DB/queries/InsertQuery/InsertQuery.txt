@@ -1,0 +1,26 @@
+INSERT INTO violations_sites_tech (
+	website_domain,
+	miscellaneous_unclassified,
+	widgets,
+	analytics,
+	comment_systems,
+	security,
+	font_scripts,
+	cdn,
+	marketing_automation,
+	advertising,
+	webcams
+)
+VALUES (
+	'{{insert_form.formData.website_domain}}',
+	'{{insert_form.formData.miscellaneous_unclassified}}',
+	'{{insert_form.formData.widgets}}',
+	'{{insert_form.formData.analytics}}',
+	'{{insert_form.formData.comment_systems}}',
+	'{{insert_form.formData.security}}',
+	'{{insert_form.formData.font_scripts}}',
+	'{{insert_form.formData.cdn}}',
+	'{{insert_form.formData.marketing_automation}}',
+	'{{insert_form.formData.advertising}}',
+	'{{insert_form.formData.webcams}}'
+);

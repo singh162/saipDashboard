@@ -1,0 +1,5 @@
+SELECT 
+    DISTINCT complainant AS name,
+    complainant AS code
+FROM 
+    complaints_tat;

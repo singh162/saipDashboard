@@ -1,0 +1,5 @@
+SELECT 
+    COUNT(DISTINCT website_domain) AS total_websites_identified,
+    MIN(DATE(incident_date)) AS oldest_date
+FROM 
+    violations_sites_main;

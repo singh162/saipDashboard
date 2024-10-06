@@ -1,0 +1,13 @@
+UPDATE violations_sites_tech SET
+		website_domain = '{{update_form.fieldState.website_domain.isVisible ? update_form.formData.website_domain : update_form.sourceData.website_domain}}',
+		miscellaneous_unclassified = '{{update_form.fieldState.miscellaneous_unclassified.isVisible ? update_form.formData.miscellaneous_unclassified : update_form.sourceData.miscellaneous_unclassified}}',
+    widgets = '{{update_form.fieldState.widgets.isVisible ? update_form.formData.widgets : update_form.sourceData.widgets}}',
+		analytics = '{{update_form.fieldState.analytics.isVisible ? update_form.formData.analytics : update_form.sourceData.analytics}}',
+		comment_systems = '{{update_form.fieldState.comment_systems.isVisible ? update_form.formData.comment_systems : update_form.sourceData.comment_systems}}',
+		security = '{{update_form.fieldState.security.isVisible ? update_form.formData.security : update_form.sourceData.security}}',
+		font_scripts = '{{update_form.fieldState.font_scripts.isVisible ? update_form.formData.font_scripts : update_form.sourceData.font_scripts}}',
+		cdn = '{{update_form.fieldState.cdn.isVisible ? update_form.formData.cdn : update_form.sourceData.cdn}}',
+		marketing_automation = '{{update_form.fieldState.marketing_automation.isVisible ? update_form.formData.marketing_automation : update_form.sourceData.marketing_automation}}',
+		advertising = '{{update_form.fieldState.advertising.isVisible ? update_form.formData.advertising : update_form.sourceData.advertising}}',
+		webcams = '{{update_form.fieldState.webcams.isVisible ? update_form.formData.webcams : update_form.sourceData.webcams}}'
+  WHERE entry_id = {{data_table.selectedRow.entry_id}};
