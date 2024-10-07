@@ -1,11 +1,13 @@
 {
-  "allowedFileTypes": [],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 22,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "displayName": "FilePicker",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -14,27 +16,25 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTyping": true,
-  "fileDataType": "Base64",
-  "files": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "hideCard": false,
-  "iconSVG": "/static/media/icon.b08ce7590c570fc5b7ffa528c70d35bf.svg",
+  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
   "isDefaultClickDisabled": true,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
   "isVisible": true,
-  "key": "duhv2tao8g",
-  "label": "Select Files",
-  "leftColumn": 13,
-  "maxFileSize": 5,
-  "maxNumFiles": 1,
+  "key": "yk221118yx",
+  "leftColumn": 31,
   "minWidth": 120,
-  "mobileBottomRow": 28,
-  "mobileLeftColumn": 4,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 24,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -43,25 +43,26 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 29,
-  "originalTopRow": 25,
-  "parentColumnSpace": 6.9375,
-  "parentId": "1rxo3v1u8z",
-  "parentRowSpace": 10,
+  "onClick": "{{closeModal(Modal5.name);}}",
+  "parentId": "ak48v0ppo9",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
   "renderMode": "CANVAS",
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 29,
+  "rightColumn": 47,
   "searchTags": [
-    "upload"
+    "click",
+    "submit"
   ],
-  "selectedFiles": [],
   "tags": [
-    "Inputs"
+    "Buttons"
   ],
-  "thumbnailSVG": "/static/media/thumbnail.164363adea04c44e54b1fd47657a579e.svg",
-  "topRow": 25,
-  "type": "FILE_PICKER_WIDGET_V2",
+  "text": "Close",
+  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
+  "topRow": 18,
+  "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "v9bcvmeilp",
-  "widgetName": "FilePicker1"
+  "widgetId": "6n7tprz79j",
+  "widgetName": "Button7"
 }

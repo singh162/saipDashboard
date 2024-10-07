@@ -45,14 +45,16 @@
     "acknowledgement",
     "digitalSignature",
     "document",
+    "copyRightLetter",
     "inserted_at",
     "updated_at",
     "customColumn1",
-    "customColumn2",
-    "copyRightLetter"
+    "customColumn2"
   ],
-  "columnUpdatedAt": 1727940629601,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1728298088926,
+  "columnWidthMap": {
+    "rightHolderName": 262
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
@@ -322,7 +324,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
+      "columnType": "image",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"copyRightLetter\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -340,7 +342,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "copyRightLetter",
+      "label": "Copyright Letter",
       "notation": "standard",
       "originalId": "copyRightLetter",
       "sticky": "",

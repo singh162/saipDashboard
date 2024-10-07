@@ -46,7 +46,7 @@
     "customColumn1",
     "Status"
   ],
-  "columnUpdatedAt": 1727693469972,
+  "columnUpdatedAt": 1728300829143,
   "columnWidthMap": {
     "StatusUpdatedBy": 247,
     "customColumn2": 243,
@@ -183,8 +183,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 48,
-  "originalTopRow": 7,
+  "originalBottomRow": 51,
+  "originalTopRow": 10,
   "parentColumnSpace": 14.807510375976562,
   "parentId": "66b5tl342b",
   "parentRowSpace": 10,
@@ -397,7 +397,7 @@
       "alias": "Status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : \"#ef4444\") ))}}",
+      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
       "currencyCode": "USD",
@@ -651,7 +651,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Evidence By Team",
+      "label": "Evidence By SAIP",
       "notation": "standard",
       "onClick": "{{showModal(Modal4.name);}}",
       "originalId": "statusProff",

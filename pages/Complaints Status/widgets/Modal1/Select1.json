@@ -64,7 +64,7 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Approved\",\n    \"code\": \"approved\"\n  },\n  {\n    \"name\": \"Rejected\",\n    \"code\": \"rejected\"\n  },\n\t{\n    \"name\": \"InProgress\",\n    \"code\": \"inprogress\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"Approved\",\n    \"code\": \"approved\"\n  },\n  {\n    \"name\": \"Rejected\",\n    \"code\": \"rejected\"\n  },\n\t{\n    \"name\": \"InProgress\",\n    \"code\": \"inprogress\"\n  },\n\t{\n    \"name\": \"Submitted For Blocking\",\n    \"code\": \"Blocking\"\n  },\n\t{\n    \"name\": \"Blocked\",\n    \"code\": \"Blocked\"\n  }\n]",
   "tags": [
     "Suggested",
     "Select"

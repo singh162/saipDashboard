@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 41,
+  "bottomRow": 240,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 410,
+      "bottomRow": 240,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -28,11 +28,11 @@
       "isDisabled": false,
       "isLoading": false,
       "isVisible": true,
-      "key": "3nh1mssax9",
+      "key": "71mrz0cj4y",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 0,
+      "minHeight": 240,
       "minWidth": 450,
       "mobileBottomRow": 0,
       "mobileLeftColumn": 0,
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "ip2mmxcwea",
+      "parentId": "dlltsvzif9",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,8 +56,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "1rxo3v1u8z",
-      "widgetName": "Canvas1"
+      "widgetId": "6cwjfw2x8p",
+      "widgetName": "Canvas10"
     }
   ],
   "detachFromLayout": true,
@@ -68,17 +68,16 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 410,
+  "height": 240,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "key": "91nqpvfh96",
+  "key": "ed0eb45fzp",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 410,
   "mobileBottomRow": 0,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 0,
@@ -109,7 +108,7 @@
   "topRow": 0,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "ip2mmxcwea",
-  "widgetName": "Modal1",
-  "width": 456
+  "widgetId": "dlltsvzif9",
+  "widgetName": "Modal6",
+  "width": 778
 }
