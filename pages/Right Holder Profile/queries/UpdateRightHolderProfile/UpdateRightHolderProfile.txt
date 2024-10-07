@@ -1,4 +1,4 @@
-UPDATE taoq_research.rightHolderProfile
+UPDATE test_taoq_reach.rightHolderProfile
 SET
   rightHolderUserId = '{{this.params.rightHolderUserId}}',
   fullName = '{{this.params.fullName}}',
