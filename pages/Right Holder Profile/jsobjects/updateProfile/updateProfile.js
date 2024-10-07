@@ -17,6 +17,7 @@ export default {
 			const country = Select2Copy.selectedOptionLabel;
 			const acknowledgement = Checkbox1Copy.isChecked;
 			const digitalSignature = Input11.text;
+			const status = Select1.selectedOptionLabel;
 			const document = FilePicker1.files.length > 0 ? FilePicker1.files[0].data : Table1.triggeredRow.document;
 
 			// Validating required fields
@@ -72,6 +73,10 @@ export default {
 				showAlert("Digital Signature is required", "error");
 				isUpdate = false;
 			}
+			if(!status){
+				showAlert("Status is required", "error");
+				isUpdate = false;
+			}
 
 			// If the validation failed, stop the update process
 			if (isUpdate) {
@@ -89,6 +94,7 @@ export default {
 					state: state,
 					country: country,
 					acknowledgement: acknowledgement,
+					Status:status,
 					digitalSignature: digitalSignature,
 					document: document,
 				});
@@ -97,6 +103,7 @@ export default {
 					showAlert("Update successful", "success");
 					await RightHolderInfo.run();
 					closeModal(Modal4.name);
+					await SendEmail.run();
 				} else {
 					showAlert("Update failed", "error");
 				}

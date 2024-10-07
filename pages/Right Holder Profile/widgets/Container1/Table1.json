@@ -48,10 +48,11 @@
     "copyRightLetter",
     "inserted_at",
     "updated_at",
+    "Status",
     "customColumn1",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1728298088926,
+  "columnUpdatedAt": 1728332861064,
   "columnWidthMap": {
     "rightHolderName": 262
   },
@@ -143,11 +144,23 @@
     },
     {
       "key": "primaryColumns.copyRightLetter.computedValue"
+    },
+    {
+      "key": "primaryColumns.Status.computedValue"
+    },
+    {
+      "key": "primaryColumns.Status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Status.textColor"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.Status.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -195,6 +208,40 @@
   "parentId": "4vthayxaq4",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "Status": {
+      "alias": "Status",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "Status",
+      "index": 17,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Status",
+      "notation": "standard",
+      "originalId": "Status",
+      "sticky": "",
+      "textColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.backgroundColor)))}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "acknowledgement": {
       "alias": "acknowledgement",
       "allowCellWrapping": false,
@@ -416,7 +463,7 @@
       "notation": "standard",
       "onClick": "{{resetWidget(\"Modal3\", true).then(() => {\n  showModal(Modal3.name);\n});}}",
       "originalId": "customColumn1",
-      "sticky": "",
+      "sticky": "right",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -455,7 +502,7 @@
       "notation": "standard",
       "onClick": "{{showModal(Modal5.name);}}",
       "originalId": "customColumn2",
-      "sticky": "",
+      "sticky": "right",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
