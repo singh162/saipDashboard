@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_d8413ee5-f256-4bdb-8a49-46e23d90af00",
+  "id": "Complaints Status_DownloadXlsx",
+  "unpublishedCollection": {
+    "name": "DownloadXlsx",
+    "pageId": "Complaints Status",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
