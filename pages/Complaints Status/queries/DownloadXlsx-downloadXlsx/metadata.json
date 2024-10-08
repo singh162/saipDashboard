@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_2d568b76-baea-414e-b861-990f3ca8de2a",
-  "id": "Complaints Status_DownloadXlsx.myFun2",
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_769748b6-449a-4137-a3ec-ccf6a835995e",
+  "id": "Complaints Status_DownloadXlsx.downloadXlsx",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "DownloadXlsx.myFun2",
-    "name": "myFun2",
+    "fullyQualifiedName": "DownloadXlsx.downloadXlsx",
+    "name": "downloadXlsx",
     "pageId": "Complaints Status",
     "userSetOnLoad": false
   }

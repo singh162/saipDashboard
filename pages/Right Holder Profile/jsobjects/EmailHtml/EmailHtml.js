@@ -38,7 +38,7 @@ body {
 <body>
 <div class="container">
     <div class="header">
-        Dear ${Input3.text},
+        Dear ${appsmith.store.rightHolderNameEmail},
     </div>
     <div class="content">
         <p>We are pleased to inform you that your profile has been successfully approved by the SAIP team.</p>
@@ -91,7 +91,7 @@ body {
 		<body>
 			<div class="container">
 				<div class="header">
-					Dear ${Input3.text},
+					Dear ${appsmith.store.rightHolderNameEmail},
 						</div>
 		<div class="content">
 			<p>We regret to inform you that your profile has not been approved by the SAIP team due to insufficient information or documentation.</p>
