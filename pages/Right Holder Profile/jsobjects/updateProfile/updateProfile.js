@@ -1,7 +1,8 @@
 export default {
 	updateRightHolderProfile: async () => {
 		try {
-
+			storeValue("rightHolderNameEmail", Input3.text);
+			storeValue("RegisterationInfo",Select1.selectedOptionLabel);
 			let isUpdate = true; // Flag to check if we should proceed with the update
 			// Extracting values from widgets
 			const id = Table1.triggeredRow.id;
@@ -106,7 +107,7 @@ export default {
 					console.log("tyestemail",Table1.triggeredRow.Status,	Select1.selectedOptionLabel);
 					if(appsmith.store.intialStatus !== Select1.selectedOptionLabel && Select1.selectedOptionLabel!=="InProgress"){
 						console.log("this app");
-						storeValue("rightHolderNameEmail",rightHolderName);
+
 						console.log("this app",appsmith.store.rightHolderNameEmail);
 
 						await SendEmail.run();

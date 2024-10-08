@@ -26,7 +26,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "yk55k7a6qy",
   "leftColumn": 53,
   "minWidth": 120,
@@ -42,7 +42,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{DownloadXlsx.downloadXlsx();}}",
+  "onClick": "",
   "originalBottomRow": 9,
   "originalTopRow": 5,
   "parentColumnSpace": 20.728515625,

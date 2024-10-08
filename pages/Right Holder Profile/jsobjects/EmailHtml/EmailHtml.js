@@ -1,5 +1,5 @@
 export default {
-	emailTemplate:Select1.selectedOptionLabel === "Approved" ? `<!DOCTYPE html>
+	emailTemplate:appsmith.store.RegisterationInfo === "Approved" ? `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
