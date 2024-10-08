@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -15,6 +15,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
@@ -23,8 +24,8 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "dwkn64avtl",
-  "leftColumn": 1,
+  "key": "v49br0hhqn",
+  "leftColumn": 18,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,10 +42,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "overflow": "NONE",
-  "parentId": "ak48v0ppo9",
+  "parentId": "hvgx71d4si",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 41,
+  "rightColumn": 39,
   "searchTags": [
     "typography",
     "paragraph",
@@ -55,14 +56,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Modal Title",
+  "text": "Update Status",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 1,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "73ej3vkiwg",
-  "widgetName": "Text6"
+  "widgetId": "zdfientmn5",
+  "widgetName": "Text1Copy"
 }

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT complaint_status.complaint_status_id,complaints_form.complaint_form_id,complaints_form.complaint_Case_id, rightHolder.username,complaints_form.infringing_url, complaints_form.original_work,complaints_form.description, complaints_form.documentProof FROM complaints_form\nINNER JOIN complaint_status on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nINNER JOIN \nrightHolder on rightHolder.id = complaints_form.rightHolderUserId\nWHERE complaint_status.status ='InProgress'  and rightHolder.username like '%{{Table1.searchText || \"\"}}%'\nORDER BY {{Table1.sortOrder.column || 'rightHolder.username'}} {{Table1.sortOrder.order || \"ASC\"}}\nLIMIT {{Table1.pageSize}}\nOFFSET {{(Table1.pageNo - 1) * Table1.pageSize}};",
+      "body": "SELECT \ncomplaint_status.complaint_status_id,complaints_form.complaint_form_id,complaints_form.complaint_Case_id, rightHolder.username,complaints_form.infringing_url, complaints_form.original_work,complaints_form.description, complaints_form.documentProof FROM complaints_form\nINNER JOIN complaint_status on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nINNER JOIN \nrightHolder on rightHolder.id = complaints_form.rightHolderUserId\nWHERE complaint_status.status ='InProgress'  and rightHolder.username like '%{{Table1.searchText || \"\"}}%'\nORDER BY {{Table1.sortOrder.column || 'rightHolder.username'}} {{Table1.sortOrder.order || \"ASC\"}}\nLIMIT {{Table1.pageSize}}\nOFFSET {{(Table1.pageNo - 1) * Table1.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -13,7 +13,7 @@
           "value": false
         }
       ],
-      "timeoutInMillisecond": 10000
+      "timeoutInMillisecond": 100000
     },
     "confirmBeforeExecute": false,
     "datasource": {

@@ -6,6 +6,11 @@
     "pageId": "Complaints Status",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "mutipleUpdate",
+        "value": "false"
+      }
+    ]
   }
 }

@@ -2,7 +2,6 @@ export default {
 	updateRightHolderProfile: async () => {
 		try {
 			let isUpdate = true; // Flag to check if we should proceed with the update
-
 			// Extracting values from widgets
 			const id = Table1.triggeredRow.id;
 			const rightHolderUserId = Table1.triggeredRow.rightHolderUserId;
@@ -103,7 +102,12 @@ export default {
 					showAlert("Update successful", "success");
 					await RightHolderInfo.run();
 					closeModal(Modal4.name);
-					await SendEmail.run();
+					console.log("tyestemail",Table1.triggeredRow.Status,	Select1.selectedOptionLabel);
+					if(appsmith.store.intialStatus !== Select1.selectedOptionLabel && Select1.selectedOptionLabel!=="InProgress"){
+
+						await SendEmail.run();
+						showAlert("Email has been sent to the right holder","info");
+					}
 				} else {
 					showAlert("Update failed", "error");
 				}

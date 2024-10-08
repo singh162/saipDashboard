@@ -1,11 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
+  "bottomRow": 19,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonStyle": "PRIMARY",
-  "buttonVariant": "SECONDARY",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "displayName": "Button",
   "dynamicBindingPathList": [
@@ -14,6 +14,11 @@
     },
     {
       "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -28,12 +33,12 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "yk221118yx",
-  "leftColumn": 31,
+  "key": "gjturdjgq3",
+  "leftColumn": 47,
   "minWidth": 120,
   "mobileBottomRow": 22,
-  "mobileLeftColumn": 31,
-  "mobileRightColumn": 47,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onCanvasUI": {
@@ -43,14 +48,16 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal5.name);}}",
-  "parentId": "ak48v0ppo9",
+  "onClick": "{{updateStatus.updateMutipleStatus()}}",
+  "originalBottomRow": 19,
+  "originalTopRow": 15,
+  "parentId": "6lpfnsnb4a",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 47,
+  "rightColumn": 63,
   "searchTags": [
     "click",
     "submit"
@@ -58,11 +65,11 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Close",
+  "text": "Confirm",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 18,
+  "topRow": 15,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "6n7tprz79j",
-  "widgetName": "Button7"
+  "widgetId": "o0y942uu0t",
+  "widgetName": "Button4Copy"
 }

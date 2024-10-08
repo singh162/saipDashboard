@@ -161,6 +161,9 @@
     },
     {
       "key": "primaryColumns.Status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -461,7 +464,7 @@
       "label": "Edit",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{resetWidget(\"Modal3\", true).then(() => {\n  showModal(Modal3.name);\n});}}",
+      "onClick": "{{resetWidget(\"Modal3\", true).then(() => {\n\tstoreValue(\"initialStatus\", Table1.triggeredRow.Status);\n\tshowModal(Modal3.name);\n});}}",
       "originalId": "customColumn1",
       "sticky": "right",
       "textSize": "0.875rem",

@@ -5,13 +5,14 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "testData",
+      "body": "{{EmailHtml.emailTemplate}}",
       "encodeParamsToggle": true,
       "formData": {
         "command": "SEND",
         "send": {
-          "bodyType": "text/plain",
+          "bodyType": "text/html",
           "from": "saip@naxap.com",
+          "subject": "Profile {{Select1.selectedOptionLabel}} Notification",
           "to": "jasmeet.singh@bytescare.com"
         }
       },
@@ -25,7 +26,14 @@
       "name": "GMAIL",
       "pluginId": "smtp-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.send.subject"
+      },
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "SendEmail",
     "pageId": "Right Holder Profile",

@@ -1,0 +1,8 @@
+UPDATE test_taoq_reach.complaint_status
+SET 
+  status = '{{this.params.status}}',
+  reason_of_approve_reject = '{{this.params.reason_of_approve_reject}}',
+  updated_at = '{{this.params.updated_at}}',
+	status_updated_by ='{{this.params.status_updated_by}}'
+WHERE 
+  complaint_status_id in ({{this.params.statusId}});

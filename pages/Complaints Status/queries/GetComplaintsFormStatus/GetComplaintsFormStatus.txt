@@ -1,4 +1,5 @@
-SELECT complaint_status.complaint_status_id,complaints_form.complaint_form_id,complaints_form.complaint_Case_id, rightHolder.username,complaints_form.infringing_url, complaints_form.original_work,complaints_form.description, complaints_form.documentProof FROM complaints_form
+SELECT 
+complaint_status.complaint_status_id,complaints_form.complaint_form_id,complaints_form.complaint_Case_id, rightHolder.username,complaints_form.infringing_url, complaints_form.original_work,complaints_form.description, complaints_form.documentProof FROM complaints_form
 INNER JOIN complaint_status on complaint_status.complaint_form_id = complaints_form.complaint_form_id
 INNER JOIN 
 rightHolder on rightHolder.id = complaints_form.rightHolderUserId

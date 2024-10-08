@@ -16,6 +16,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -43,7 +48,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{updateStatus.Button4onClick();}}",
+  "onClick": "{{updateStatus.Button4onClick()}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "8cnshjddr3",

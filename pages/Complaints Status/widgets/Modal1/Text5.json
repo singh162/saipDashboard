@@ -15,6 +15,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "0.875rem",
@@ -23,7 +28,7 @@
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "true",
   "key": "hln7b1j7vl",
   "leftColumn": 4,
   "maxDynamicHeight": 9000,

@@ -63,7 +63,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Are you sure want to {{Select1.selectedOptionValue}} this complaint",
+  "text": "Are you sure want to {{Select1.selectedOptionLabel}} this complaint",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",

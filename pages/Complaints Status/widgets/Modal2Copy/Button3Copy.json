@@ -1,11 +1,13 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 19,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "TERTIARY",
-  "displayName": "Icon button",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -20,20 +22,19 @@
     }
   ],
   "hideCard": false,
-  "iconName": "cross",
-  "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
-  "iconSize": 24,
+  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
+  "isDefaultClickDisabled": true,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "z9trqzcq68",
-  "leftColumn": 58,
-  "minWidth": 50,
-  "mobileBottomRow": 4,
-  "mobileLeftColumn": 58,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 0,
+  "key": "gjturdjgq3",
+  "leftColumn": 31,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -42,11 +43,16 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal5.name);}}",
-  "parentId": "ak48v0ppo9",
+  "onClick": "{{ValidateMutipleStatus.onCloseConfirmationModel();}}",
+  "originalBottomRow": 19,
+  "originalTopRow": 15,
+  "parentId": "6lpfnsnb4a",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
   "renderMode": "CANVAS",
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
+  "rightColumn": 47,
   "searchTags": [
     "click",
     "submit"
@@ -54,10 +60,11 @@
   "tags": [
     "Buttons"
   ],
-  "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 0,
-  "type": "ICON_BUTTON_WIDGET",
+  "text": "Close",
+  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
+  "topRow": 15,
+  "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "uoo0lwdymz",
-  "widgetName": "IconButton5"
+  "widgetId": "x4o91iozxc",
+  "widgetName": "Button3Copy"
 }
