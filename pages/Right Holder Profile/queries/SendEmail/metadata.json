@@ -13,7 +13,7 @@
           "bodyType": "text/html",
           "from": "saip@naxap.com",
           "subject": "Profile {{Select1.selectedOptionLabel}} Notification",
-          "to": "jasmeet.singh@bytescare.com"
+          "to": "puneet@bytescare.com"
         }
       },
       "paginationType": "NONE",
