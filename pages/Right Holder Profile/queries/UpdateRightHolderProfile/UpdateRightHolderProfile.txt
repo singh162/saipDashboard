@@ -12,6 +12,7 @@ SET
   country = '{{this.params.country}}',
   acknowledgement = '{{this.params.acknowledgement}}',
 	Status='{{this.params.Status}}',
+	reasonStatus='{{this.params.reasonStatus}}',
   digitalSignature = '{{this.params.digitalSignature}}',
   document = '{{this.params.document}}',
   updated_at = CURRENT_TIMESTAMP

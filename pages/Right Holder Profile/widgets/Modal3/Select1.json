@@ -55,8 +55,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "code",
+  "optionValue": "name",
   "originalBottomRow": 117,
   "originalTopRow": 110,
   "parentColumnSpace": 11.4375,
@@ -70,7 +70,7 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"InProgress\",\n    \"code\": \"InProgress\"\n  },\n  {\n    \"name\": \"Approved\",\n    \"code\": \"Approved\"\n  },\n  {\n    \"name\": \"Rejected\",\n    \"code\": \"Rejected\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"Under Review\",\n    \"code\": \"Under Review\"\n  },\n  {\n    \"name\": \"Approved\",\n    \"code\": \"Approved\"\n  },\n  {\n    \"name\": \"Rejected\",\n    \"code\": \"Rejected\"\n  }\n]",
   "tags": [
     "Suggested",
     "Select"

@@ -1,0 +1,11 @@
+SELECT 
+  count(*)
+FROM 
+    complaints_form cf
+INNER JOIN 
+    complaint_status cs ON cs.complaint_form_id = cf.complaint_form_id
+INNER JOIN 
+    rightHolder rh ON rh.id = cf.rightHolderUserId
+WHERE 
+    cs.status = '{{buildTableData.status}}' 
+    {{buildTableData.table1QueryWhere}};

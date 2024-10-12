@@ -1,1 +1,1 @@
-SELECT * FROM rightHolderProfile where id='{{this.params.id}}';
+Delete FROM rightHolderProfile where id='{{this.params.id}}';

@@ -33,11 +33,9 @@
   "columnOrder": [
     "SNO",
     "columnName",
-    "_20a_sa",
-    "dataadamtvshop_com",
-    "wevilst_com"
+    "g_laroza_net"
   ],
-  "columnUpdatedAt": 1726998965910,
+  "columnUpdatedAt": 1728459036053,
   "columnWidthMap": {
     "fmovies_ps": 462.99999999999994
   },
@@ -68,13 +66,7 @@
       "key": "primaryColumns.columnName.computedValue"
     },
     {
-      "key": "primaryColumns._20a_sa.computedValue"
-    },
-    {
-      "key": "primaryColumns.dataadamtvshop_com.computedValue"
-    },
-    {
-      "key": "primaryColumns.wevilst_com.computedValue"
+      "key": "primaryColumns.g_laroza_net.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -151,40 +143,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "_20a_sa": {
-      "alias": "20a.sa",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{Table5.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"20a.sa\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "_20a_sa",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "20a.sa",
-      "notation": "standard",
-      "originalId": "20a.sa",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "columnName": {
       "alias": "columnName",
       "allowCellWrapping": false,
@@ -216,21 +174,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "dataadamtvshop_com": {
-      "alias": "dataadamtvshop.com",
+    "g_laroza_net": {
+      "alias": "g.laroza.net",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table5.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dataadamtvshop.com\"]))}}",
+      "computedValue": "{{Table5.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"g.laroza.net\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "dataadamtvshop_com",
-      "index": 3,
+      "id": "g_laroza_net",
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -239,43 +197,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "dataadamtvshop.com",
+      "label": "g.laroza.net",
       "notation": "standard",
-      "originalId": "dataadamtvshop.com",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "wevilst_com": {
-      "alias": "wevilst.com",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{Table5.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wevilst.com\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "wevilst_com",
-      "index": 4,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "wevilst.com",
-      "notation": "standard",
-      "originalId": "wevilst.com",
+      "originalId": "g.laroza.net",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

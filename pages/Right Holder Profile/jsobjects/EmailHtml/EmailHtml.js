@@ -42,6 +42,7 @@ body {
     </div>
     <div class="content">
         <p>We are pleased to inform you that your profile has been successfully approved by the SAIP team.</p>
+        <p> Now you can log in to add the complaints. </p> 
         <p>Thank you for submitting all the required information and documentation.</p>
     </div>
     <div class="footer">

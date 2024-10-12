@@ -1,0 +1,7 @@
+UPDATE test_taoq_reach.complaint_status
+SET 
+  status = '{{this.params.status}}',
+  updated_at = '{{this.params.updated_at}}',
+	status_updated_by ='{{this.params.status_updated_by}}'
+WHERE 
+  complaint_status_id = '{{this.params.complaint_status_id}}';

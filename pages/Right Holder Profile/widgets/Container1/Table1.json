@@ -49,10 +49,11 @@
     "inserted_at",
     "updated_at",
     "Status",
+    "reasonStatus",
     "customColumn1",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1728332861064,
+  "columnUpdatedAt": 1728656723584,
   "columnWidthMap": {
     "rightHolderName": 262
   },
@@ -153,6 +154,9 @@
     },
     {
       "key": "primaryColumns.Status.textColor"
+    },
+    {
+      "key": "primaryColumns.reasonStatus.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -172,6 +176,12 @@
     },
     {
       "key": "primaryColumns.customColumn2.onClick"
+    },
+    {
+      "key": "primaryColumns.document.onClick"
+    },
+    {
+      "key": "primaryColumns.copyRightLetter.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -215,7 +225,7 @@
       "alias": "Status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
+      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'Under Review' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
       "currencyCode": "USD",
@@ -394,6 +404,7 @@
       "isVisible": true,
       "label": "Copyright Letter",
       "notation": "standard",
+      "onClick": "{{showModal(viewCopyRightModule.name);}}",
       "originalId": "copyRightLetter",
       "sticky": "",
       "textColor": "",
@@ -464,7 +475,7 @@
       "label": "Edit",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{resetWidget(\"Modal3\", true).then(() => {\n\tstoreValue(\"initialStatus\", Table1.triggeredRow.Status);\n\tshowModal(Modal3.name);\n});}}",
+      "onClick": "{{resetWidget(\"Modal3\", true).then(() => {\n\tstoreValue(\"initialStatus\", Table1.triggeredRow.Status);\n\tstoreValue(\"rightHolderNameEmail\", Input3.text);\n\tstoreValue(\"RegisterationInfo\",Select1.selectedOptionLabel);\n\tshowModal(Modal3.name);\n});}}",
       "originalId": "customColumn1",
       "sticky": "right",
       "textSize": "0.875rem",
@@ -564,8 +575,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Document Proof",
+      "label": "Identification Proof",
       "notation": "standard",
+      "onClick": "{{showModal(viewIdentificationProofModule.name);}}",
       "originalId": "document",
       "sticky": "",
       "textSize": "0.875rem",
@@ -729,6 +741,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "reasonStatus": {
+      "alias": "reasonStatus",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reasonStatus\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "reasonStatus",
+      "index": 18,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Reason By SAIP",
+      "notation": "standard",
+      "originalId": "reasonStatus",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "rightHolderName": {
       "alias": "rightHolderName",
       "allowCellWrapping": false,
@@ -858,6 +904,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "tableData": "{{RightHolderInfo.data}}",
   "tags": [
     "Suggested",

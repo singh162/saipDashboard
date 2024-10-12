@@ -208,7 +208,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1723307247114,
+  "columnUpdatedAt": 1728476602727,
   "columnWidthMap": {
     "asn_name_v6": 197,
     "customColumn1": 72.00000000000001,
@@ -3392,7 +3392,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Incident",
       "notation": "standard",
       "originalId": "incident_date",

@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{DeleteRightHolderProfile.run({\n  id: Table1.triggeredRow.id\n}).then(() => {\n  showAlert('Record Deleted Succesfully', 'success');\n});}}",
+  "onClick": "{{DeleteRightHolderProfile.run({\n  id: Table1.triggeredRow.id\n}).then(() => {\n  showAlert('Record Deleted Succesfully', 'success');\n  closeModal(Modal5.name);\n  RightHolderInfo.run();\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "6wi012uv10",

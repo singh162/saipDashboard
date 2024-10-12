@@ -3,8 +3,8 @@
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 130,
-  "defaultCheckedState": true,
+  "bottomRow": 137,
+  "defaultCheckedState": false,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
     {
@@ -12,6 +12,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconSVG": "/static/media/icon.57df02ed5f94295f286d31eb27a0bb9f.svg",
@@ -42,8 +43,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 130,
-  "originalTopRow": 126,
+  "originalBottomRow": 137,
+  "originalTopRow": 133,
   "parentColumnSpace": 12.15625,
   "parentId": "cobguphdou",
   "parentRowSpace": 10,
@@ -57,7 +58,7 @@
     "Toggles"
   ],
   "thumbnailSVG": "/static/media/thumbnail.aa4d27836e27bb6c4c45db14dee8f2b2.svg",
-  "topRow": 126,
+  "topRow": 133,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
   "widgetId": "bkhsrsj868",

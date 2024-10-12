@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal4.name);}}",
+  "onClick": "{{closeModal(Modal4.name).then(() => {\n  showModal(Modal3.name);\n});}}",
   "originalBottomRow": 24,
   "originalTopRow": 20,
   "parentId": "q3skik6l3v",

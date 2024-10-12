@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 126,
+  "bottomRow": 131,
   "boxShadow": "none",
   "defaultText": "{{Table1.triggeredRow.digitalSignature}}",
   "displayName": "Input",
@@ -52,8 +52,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 126,
-  "originalTopRow": 119,
+  "originalBottomRow": 131,
+  "originalTopRow": 124,
   "parentColumnSpace": 6.9375,
   "parentId": "cobguphdou",
   "parentRowSpace": 10,
@@ -73,7 +73,7 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 119,
+  "topRow": 124,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "o1m4k5ssff",

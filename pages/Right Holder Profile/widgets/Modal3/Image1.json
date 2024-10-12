@@ -13,7 +13,11 @@
       "key": "image"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -40,6 +44,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onClick": "{{showModal(editIdentificationProofModue.name);}}",
   "originalBottomRow": 118,
   "originalTopRow": 106,
   "parentColumnSpace": 11.4375,
