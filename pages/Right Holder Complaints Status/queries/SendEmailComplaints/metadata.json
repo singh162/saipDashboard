@@ -12,7 +12,7 @@
         "send": {
           "bodyType": "text/html",
           "from": "saip@naxap.com",
-          "to": "jasmeet@bytescare.com"
+          "to": "puneet@bytescare.com"
         }
       },
       "paginationType": "NONE",
