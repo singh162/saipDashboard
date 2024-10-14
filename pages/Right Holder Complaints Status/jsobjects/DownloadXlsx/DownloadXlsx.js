@@ -1,34 +1,46 @@
 export default {
-	async downloadXlsx() {
+	downloadStatus:"",
+	async downloadXlsxFile() {
+		try {				
+			showAlert("Xlsx Report has being ","success");
+
+			if(Tabs1.selectedTab === "Pending Complaints"){
+				this.downloadStatus="Under Review"
+			}
+			else if(Tabs1.selectedTab === "Approved Complaints"){
+				this.downloadStatus='Approved'
+			}
+			else if(Tabs1.selectedTab === "Rejected Complaints"){
+				this.downloadStatus='Rejected'
+			}
+			else if(Tabs1.selectedTab === "Submitted for Blocking Complaints"){
+				this.downloadStatus='Submitted for Blocking'
+			}
+			else if(Tabs1.selectedTab === "Blocked Complaints"){
+				this.downloadStatus='Blocked'
+			}
+			let buffer = await DownloadExcel.run();
+			if (buffer) {
+				download(buffer, `${this.downloadStatus.replace(/\s+/g, '')}.xlsx`);
+				showAlert("Xlsx Report Generated Successfully","success");
+			} else {
+				showAlert("Failed to download the Excel file", "error");
+			}
+		} catch (error) {
+			console.error(`Error generating XLSX: ${error.message}`);
+			showAlert(`Error generating XLSX: ${error.message}`, "error");
+		}
+	},
+	async downloadAllXlsxFile() {
 		try {
-			// Initialize a new workbook
-			const workbook = new ExcelJS.Workbook();
-			const worksheet = workbook.addWorksheet("Case Details");
-
-			// Fetch the data
-			let data = await DownloadReportQuery.run();
-			const excelData = data.map(item => [
-				item.RequestId,
-				item.ReasonForApproveAndReject,
-				item.HolderName,
-				item.CaseId,
-				item.CategoryType,
-				item.Description,
-				item.OrginalWebsite,
-				item.InfringingUrl,
-				item.Status,
-				item.StatusUpdatedBy,
-				item.ReportedDate,
-				item.EvidenceBySaip,
-				item.EvidenceByRightHolder
-			]);
-
-			const fileData = {
-				data: excelData,
-				fileName: 'data.xlsx',
-				fileType: 'xlsx'
-			};
-			download(fileData.data,fileData.fileName,fileData.fileType);
+			showAlert("Xlsx Report has being ","success");
+			let buffer = await DownloadAllExcel.run();
+			if (buffer) {
+				download(buffer, 'Complaints.xlsx');
+				showAlert("Xlsx Report Generated Successfully","success");
+			} else {
+				showAlert("Failed to download the Excel file", "error");
+			}
 		} catch (error) {
 			console.error(`Error generating XLSX: ${error.message}`);
 			showAlert(`Error generating XLSX: ${error.message}`, "error");

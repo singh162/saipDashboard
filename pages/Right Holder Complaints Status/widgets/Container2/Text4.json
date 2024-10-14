@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 10,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "71xvlfq2qk",
-  "leftColumn": 14,
+  "leftColumn": 12,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 9,
-  "originalTopRow": 1,
+  "originalBottomRow": 10,
+  "originalTopRow": 2,
   "overflow": "NONE",
   "parentColumnSpace": 15.320053100585938,
   "parentId": "66b5tl342b",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 56,
+  "rightColumn": 57,
   "searchTags": [
     "typography",
     "paragraph",
@@ -61,10 +61,10 @@
     "Content"
   ],
   "text": "Review and Progress Update on Website Complaints",
-  "textAlign": "LEFT",
+  "textAlign": "CENTER",
   "textColor": "#006d6a",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 1,
+  "topRow": 2,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -1,0 +1,4 @@
+{
+	"isAll":false,
+	"status":'{{DownloadXlsx.downloadStatus}}'
+}

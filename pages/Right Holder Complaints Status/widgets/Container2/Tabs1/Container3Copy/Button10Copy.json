@@ -37,7 +37,7 @@
   "isLoading": false,
   "isVisible": "{{handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2.selectedRows.length >0 ? true: false}}",
   "key": "naihqdsri6",
-  "leftColumn": 47,
+  "leftColumn": 35,
   "minWidth": 120,
   "mobileBottomRow": 6,
   "mobileLeftColumn": 48,
