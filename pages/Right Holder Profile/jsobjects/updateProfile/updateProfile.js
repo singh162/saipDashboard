@@ -79,7 +79,7 @@ export default {
 			showAlert("Status is required", "error");
 			isUpdate = false;
 		}
-		if(!statusReason){
+		if(status === "Rejected" && !statusReason){
 			showAlert("Reason For Status is required", "error");
 			isUpdate = false;
 		}
@@ -127,7 +127,7 @@ export default {
 				country: country,
 				acknowledgement: acknowledgement,
 				Status: status,
-				reasonStatus :statusReason,
+				reasonStatus :statusReason ? statusReason : null,
 				digitalSignature: digitalSignature,
 				document: document,
 			});

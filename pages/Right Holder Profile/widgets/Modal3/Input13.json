@@ -16,9 +16,17 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconAlign": "left",
@@ -28,9 +36,9 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{Select1.selectedOptionLabel === \"Rejected\"}}",
   "key": "klye664t9q",
-  "label": "Reason for Status",
+  "label": "Reason for Rejection",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
