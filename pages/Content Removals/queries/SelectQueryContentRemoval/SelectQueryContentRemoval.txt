@@ -1,0 +1,5 @@
+SELECT * FROM contact_removal
+WHERE request_number LIKE '%{{data_table.searchText || ""}}%'
+ORDER BY {{data_table.sortOrder.column || 'request_number'}} {{data_table.sortOrder.order || "ASC"}}
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

@@ -6,6 +6,11 @@
     "pageId": "Content Removals",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "insertBuildData",
+        "value": "{\n  number_of_cases: \"\",\n  request_number: \"\",\n  request_date: \"\",\n  basket_cases: \"\",\n  amazon_cases: \"\",\n  on_sale_cases: \"\",\n  open_market_cases: \"\",\n  used_and_new_cases: \"\",\n  noon_cases: \"\",\n  site_cases: \"\",\n  contact_date_amazon: \"\",\n  contact_date_on_sale: \"\",\n  contact_date_used_and_new: \"\",\n  contact_date_basket: \"\",\n  contact_date_noon: \"\",\n  contact_date_open_market: \"\",\n  inquired_owners_number_of_cases: \"\",\n  inquired_owners_date: \"\",\n  blocked_number_of_cases: \"\",\n  blocked_date: \"\",\n  blocked_letter_number: \"\",\n  violation_unproven_number_of_sites: \"\",\n  duplicate_number_of_cases: \"\"\n}"
+      }
+    ]
   }
 }

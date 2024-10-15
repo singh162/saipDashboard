@@ -2,7 +2,7 @@ export default {
 	downloadStatus:"",
 	async downloadXlsxFile() {
 		try {				
-			showAlert("Xlsx Report has being ","success");
+			showAlert("Xlsx Report has being downoading","success");
 
 			if(Tabs1.selectedTab === "Pending Complaints"){
 				this.downloadStatus="Under Review"
@@ -33,7 +33,7 @@ export default {
 	},
 	async downloadAllXlsxFile() {
 		try {
-			showAlert("Xlsx Report has being ","success");
+			showAlert("Xlsx Report has being downoading ","success");
 			let buffer = await DownloadAllExcel.run();
 			if (buffer) {
 				download(buffer, 'Complaints.xlsx');

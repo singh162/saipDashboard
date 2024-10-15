@@ -1,16 +1,19 @@
 {
-  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_ac23ae29-7887-46ec-a15b-67f8f4043851",
-  "id": "Content Removals_ContactRemoval.contentRemoval",
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_33ac721b-5182-4484-8dfe-425514b57fc8",
+  "id": "Content Removals_ContactRemoval.validateData",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [],
+      "jsArguments": [
+        {
+          "name": "data"
+        }
+      ],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
-    "clientSideExecution": true,
     "collectionId": "Content Removals_ContactRemoval",
     "confirmBeforeExecute": false,
     "datasource": {
@@ -24,8 +27,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "ContactRemoval.contentRemoval",
-    "name": "contentRemoval",
+    "fullyQualifiedName": "ContactRemoval.validateData",
+    "name": "validateData",
     "pageId": "Content Removals",
     "userSetOnLoad": false
   }
