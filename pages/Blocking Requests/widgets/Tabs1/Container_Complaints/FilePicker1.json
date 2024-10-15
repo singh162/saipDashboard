@@ -37,7 +37,7 @@
   "isVisible": true,
   "key": "rn0lpemz4l",
   "label": "Upload Insert File",
-  "leftColumn": 44,
+  "leftColumn": 39,
   "maxFileSize": "10",
   "maxNumFiles": 1,
   "minWidth": 120,
@@ -59,7 +59,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 54,
+  "rightColumn": 49,
   "searchTags": [
     "upload"
   ],

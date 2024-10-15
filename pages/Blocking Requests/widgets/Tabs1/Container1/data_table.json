@@ -4,7 +4,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "3",
-  "bottomRow": 86,
+  "bottomRow": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -472,7 +472,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{SelectQuerySiteStatus.data}}",
   "textSize": "0.875rem",
-  "topRow": 7,
+  "topRow": 10,
   "totalRecordsCount": "{{CountSiteStatus.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 3,

@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_7ac679c6-3a0c-48e9-af63-d50752f4ec6e",
+  "id": "Blocking Requests_downloadXlsx",
+  "unpublishedCollection": {
+    "name": "downloadXlsx",
+    "pageId": "Blocking Requests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "blockingData",
+        "value": "[]"
+      }
+    ]
+  }
+}

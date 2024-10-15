@@ -22,7 +22,7 @@
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 61,
+  "leftColumn": 62,
   "onClick": "{{SelectQueryComplaints.run()}}",
   "parentColumnSpace": 12.0703125,
   "parentId": "qt197uc8pl",
