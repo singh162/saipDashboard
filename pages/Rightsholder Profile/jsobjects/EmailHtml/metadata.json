@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_e2891ddb-6d1a-48d0-8c76-015e7a237a38",
+  "id": "Rightsholder Profile_EmailHtml",
+  "unpublishedCollection": {
+    "name": "EmailHtml",
+    "pageId": "Rightsholder Profile",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "emailTemplate",
+        "value": "appsmith.store.RegisterationInfo === \"Approved\" ? `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Profile Approval Notification</title>\n<style>\nbody {\n    font-family: Arial, sans-serif;\n    line-height: 1.6;\n    color: #333;\n}\n.container {\n    max-width: 600px;\n    margin: 0 auto;\n    padding: 20px;\n    border: 1px solid #ddd;\n    border-radius: 8px;\n}\n.header {\n    font-size: 18px;\n    font-weight: bold;\n    margin-bottom: 10px;\n}\n.content {\n    margin-bottom: 20px;\n}\n.content p {\n    margin: 10px 0;\n}\n.footer {\n    font-size: 14px;\n    margin-top: 20px;\n}\n</style>\n</head>\n<body>\n<div class=\"container\">\n    <div class=\"header\">\n        Dear ${appsmith.store.rightHolderNameEmail},\n    </div>\n    <div class=\"content\">\n        <p>We are pleased to inform you that your profile has been successfully approved by the SAIP team.</p>\n        <p> Now you can log in to add the complaints. </p> \n        <p>Thank you for submitting all the required information and documentation.</p>\n    </div>\n    <div class=\"footer\">\n        <p>Best regards,</p>\n        <p>SAIP Team</p>\n    </div>\n</div>\n</body>\n</html>\n` : `<!DOCTYPE html>\n\t\t\t\t<html lang=\"en\">\n\t\t\t\t\t<head>\n\t\t\t\t\t<meta charset=\"UTF-8\">\n\t\t\t\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t\t\t\t\t\t<title>Profile Disapproval Notification</title>\n\t\t<style>\n\t\t\t\t\t\t\t\tbody {\n\t\t\t\t\t\t\t\t\tfont-family: Arial, sans-serif;\n\t\t\t\t\t\t\t\t\tline-height: 1.6;\n\t\t\t\t\t\t\t\t\tcolor: #333;\n\t\t\t\t\t\t\t\t}\n\t\t.container {\n\t\t\tmax-width: 600px;\n\t\t\tmargin: 0 auto;\n\t\t\tpadding: 20px;\n\t\t\tborder: 1px solid #ddd;\n\t\t\tborder-radius: 8px;\n\t\t}\n\t\t.header {\n\t\t\tfont-size: 18px;\n\t\t\tfont-weight: bold;\n\t\t\tmargin-bottom: 10px;\n\t\t}\n\t\t.content {\n\t\t\tmargin-bottom: 20px;\n\t\t}\n\t\t.content p {\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.footer {\n\t\t\tfont-size: 14px;\n\t\t\tmargin-top: 20px;\n\t\t}\n\t\t</style>\n\t\t</head>\n\t\t<body>\n\t\t\t<div class=\"container\">\n\t\t\t\t<div class=\"header\">\n\t\t\t\t\tDear ${appsmith.store.rightHolderNameEmail},\n\t\t\t\t\t\t</div>\n\t\t<div class=\"content\">\n\t\t\t<p>We regret to inform you that your profile has not been approved by the SAIP team due to insufficient information or documentation.</p>\n\t\t<p>For further assistance and clarification, we kindly encourage you to reach out to the SAIP team directly.</p>\n\t\t\t</div>\n\t\t\t<div class=\"footer\">\n\t\t\t<p>Best regards,</p>\n\t\t\t<p>SAIP Team</p>\n\t\t\t</div>\n\t\t\t</div>\n\t\t\t</body>\n\t\t\t</html>`"
+      }
+    ]
+  }
+}
