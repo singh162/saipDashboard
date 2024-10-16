@@ -5,14 +5,14 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "{{EmailTemplate.emailTemplate}}",
+      "body": "{{EmailTemplate.emailTemplate()}}",
       "encodeParamsToggle": true,
       "formData": {
         "command": "SEND",
         "send": {
           "bodyType": "text/html",
           "from": "saip@naxap.com",
-          "to": "puneet@bytescare.com"
+          "to": "jasmeet.singh@bytescare.com"
         }
       },
       "paginationType": "NONE",

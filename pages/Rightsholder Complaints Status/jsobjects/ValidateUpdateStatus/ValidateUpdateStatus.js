@@ -1,5 +1,5 @@
 export default {
-	Button2onClick () {
+	async Button2onClick () {
 		//	write code here
 		let isValid= true;
 		if(Select1.selectedOptionLabel === "Approved" || 
@@ -26,12 +26,15 @@ export default {
 				showAlert("Please select the on atleast one status","error")
 			}
 		}
-		let tableObject=handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
+		let tableObject=await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
 		if(isValid){
-			storeValue("complaintStatus",Select1.selectedOptionLabel);
-			storeValue("EmailCaseId",tableObject.triggeredRow.complaint_Case_id);
-			storeValue("EmailInfringingUrl",tableObject.triggeredRow.infringing_url);
+			await storeValue("complaintStatus",Select1.selectedOptionLabel);
+			// await storeValue("EmailCaseId",tableObject.triggeredRow.complaint_Case_id);
+			// await storeValue("EmailInfringingUrl",tableObject.triggeredRow.infringing_url);
+			await storeValue("SelectedTableObject",tableObject);
 			showModal(Modal2.name);
+
+
 		}
 	},
 	onCloseStatusModel(){

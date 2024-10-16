@@ -1,6 +1,6 @@
 export default {
-	Button2onClick () {
-		let tableObject=handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
+	async Button2onClick () {
+		let tableObject= await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
 		//	write code here
 		let isValid= true;
 		if(Select1Copy.selectedOptionLabel === "Approved" || 
@@ -24,16 +24,16 @@ export default {
 			}
 		}
 		if(isValid){
-			storeValue("complaintStatus",Select1Copy.selectedOptionLabel);
-			let caseId=[];
-			let url = [];
-			for(let i=0;i<tableObject.selectedRows;i++){
-				caseId=caseId.concat(tableObject.selectedRows[i].complaint_Case_id);
-				url = url.concat(tableObject.selectedRows[i].infringing_url);
-			}
-			storeValue("EmailCaseId",caseId)
-			storeValue("EmailInfringingUrl",url)
-
+			await storeValue("complaintStatus",Select1Copy.selectedOptionLabel);
+			// let caseId=[];
+			// let url = [];
+			// for(let i=0;i<tableObject.selectedRows;i++){
+			// caseId=caseId.concat(tableObject.selectedRows[i].complaint_Case_id);
+			// url = url.concat(tableObject.selectedRows[i].infringing_url);
+			// }
+			// await storeValue("EmailCaseId",caseId)
+			// await storeValue("EmailInfringingUrl",url)
+			await storeValue("SelectedTableObject",tableObject);
 			showModal(Modal2Copy.name);		
 		}
 	},

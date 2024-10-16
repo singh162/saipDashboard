@@ -37,6 +37,8 @@ export default {
 																					 updated_at: moment().format('YYYY-MM-DD HH:mm:ss')});
 			}
 			showAlert("Update Mutiple Status Sucessfully Submitted","warning");
+			await SendEmailComplaints.run()
+			showAlert("email sent successfully","success");
 			closeModal(Modal2Copy.name);
 			closeModal(Modal1Copy.name);
 			resetWidget(Modal1Copy.name);
@@ -78,6 +80,8 @@ export default {
 					});
 			}
 			showAlert("Update Status Sucessfully Submitted","info");
+			await SendEmailComplaints.run()
+			showAlert("email sent successfully","success");
 			closeModal(Modal2.name);
 			closeModal(Modal1.name);
 			resetWidget(Modal1.name);

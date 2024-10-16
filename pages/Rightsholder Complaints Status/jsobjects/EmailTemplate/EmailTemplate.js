@@ -1,24 +1,38 @@
 export default {
-	async handleTable(){
-		let tableObject= await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
-		return tableObject;
-	},
-	emailTemplate: (() => {
+	emailTemplate() {
 		const status = appsmith.store.complaintStatus;
 		const holderName = buildTableData.emailHolderName;
-		const emailCaseId = appsmith.store.EmailCaseId;
-		const emailUrls = appsmith.store.EmailInfringingUrl;
-		let tableObject = this.handleTable();
+		let tableObject = appsmith.store.SelectedTableObject;
+		let emailCaseId;
+		let emailUrls;
+		if(tableObject && tableObject.selectedRows.length>1){
+			let caseId=[];
+			let url = [];
+			for(let i=0;i<tableObject.selectedRows.length;i++){
+				caseId=caseId.concat(tableObject.selectedRows[i].complaint_Case_id);
+				url = url.concat(tableObject.selectedRows[i].infringing_url);
+			}
+			emailCaseId = caseId;
+			emailUrls = url;
+			console.log("email mutiple",emailCaseId,emailUrls);
+		}
+		else{
+			emailCaseId = tableObject.triggeredRow.complaint_Case_id;
+			emailUrls = tableObject.triggeredRow.infringing_url;
+			console.log("email single",tableObject.selectedRow,emailCaseId,emailUrls)
+		}
+
 		// Handling plural case for multiple complaints
-		const casePlural = tableObject.selectedRows.length > 1 ? 
+		console.log("tableObjectsss",tableObject);
+		const casePlural =tableObject ? tableObject.selectedRows.length > 0 ? 
 					`these Case Id's ${emailCaseId}` : 
-		`Case Id (${emailCaseId})`;
+		`Case Id (${emailCaseId}`: "";
 
 		// Handling multiple URLs
-		const urlPlural = tableObject.selectedRows.length > 1 ? 
+		const urlPlural = tableObject ? tableObject.selectedRows.length > 0 ? 
 					`URLs: ${emailUrls.join(', ')}` : 
-		`URL: ${emailUrls}`;
-
+		`URL: ${emailUrls}` : "";
+		console.log("casePlural",tableObject.selectedRows.length,casePlural,urlPlural,"urlPlural");
 		const templateStyles = `
             <style>
                 body {
@@ -68,6 +82,17 @@ export default {
 
 		// Status specific content with Infringing URL
 		switch (status) {
+			case "Under Review":
+				emailBody = `
+                   <div class="content">
+            <p>We wanted to inform you that your complaints regarding ${casePlural} are currently under review by the SAIP team.</p>
+            <p>Our team is carefully reviewing the following ${urlPlural} and the provided documentation.</p>
+            <p>We appreciate your patience during this process and will notify you as soon as a decision is made.</p>
+            <p>If you have any additional information to provide, please feel free to reply to this message.</p>
+            <p>Thank you for your cooperation.</p>
+        </div>
+                `;
+				break;
 			case "Approved":
 				emailBody = `
                     <div class="content">
@@ -132,5 +157,5 @@ export default {
             </body>
             </html>
         `;
-	})()
+	}
 }
