@@ -1,4 +1,4 @@
-INSERT INTO contact_removal (
+INSERT INTO content_removal (
 	number_of_cases,
 	request_number,
 	request_date,

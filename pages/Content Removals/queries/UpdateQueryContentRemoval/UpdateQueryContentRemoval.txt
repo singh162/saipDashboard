@@ -1,4 +1,4 @@
-UPDATE contact_removal SET
+UPDATE content_removal SET
     number_of_cases = '{{ContactRemoval.updateBuildData.number_of_cases}}',
     request_number = '{{ContactRemoval.updateBuildData.request_number}}',
     request_date = '{{ContactRemoval.updateBuildData.request_date}}',

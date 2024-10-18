@@ -133,6 +133,9 @@
     },
     {
       "key": "primaryColumns.status.textColor"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -178,6 +181,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onSearchTextChanged": "{{}}",
   "originalBottomRow": 69,
   "originalTopRow": 5,
   "parentColumnSpace": 20.728515625,

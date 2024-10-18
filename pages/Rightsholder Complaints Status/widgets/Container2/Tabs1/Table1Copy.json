@@ -442,7 +442,7 @@
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
   "topRow": 5,
-  "totalRecordsCount": "{{Table1Copy.pageNo}}",
+  "totalRecordsCount": "{{countTable1RequestData.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

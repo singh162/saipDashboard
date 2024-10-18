@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM contact_removal\nWHERE request_number LIKE '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'request_number'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};\n",
+      "body": "SELECT * FROM content_removal\nWHERE request_number LIKE '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'request_number'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 100000
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "SelectQueryContentRemoval",
     "pageId": "Content Removals",
     "userSetOnLoad": false

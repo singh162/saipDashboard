@@ -333,9 +333,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "onSubmit"
-    },
-    {
       "key": "schema.__root_schema__.children.request_date.defaultValue"
     }
   ],
@@ -355,7 +352,7 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+  "onSubmit": "{{ContactRemoval.contentRemoval('insert');}}",
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
   "parentRowSpace": 10,
@@ -367,7 +364,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
-  "rightColumn": 64,
+  "rightColumn": 63,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",

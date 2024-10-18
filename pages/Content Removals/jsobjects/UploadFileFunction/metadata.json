@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_eddb1d4f-4aa9-4fc3-9557-c0f3eaacf035",
+  "id": "Content Removals_UploadFileFunction",
+  "unpublishedCollection": {
+    "name": "UploadFileFunction",
+    "pageId": "Content Removals",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "primarykey",
+        "value": "''"
+      },
+      {
+        "name": "insertRowData",
+        "value": "[]"
+      },
+      {
+        "name": "insertTable",
+        "value": "''"
+      }
+    ]
+  }
+}

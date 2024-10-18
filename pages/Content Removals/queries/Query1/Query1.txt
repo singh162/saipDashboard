@@ -1,0 +1,1 @@
+SELECT * FROM complaint_status LIMIT 10;

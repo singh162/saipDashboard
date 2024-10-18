@@ -157,6 +157,9 @@
     },
     {
       "key": "primaryColumns.reasonStatus.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -215,8 +218,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 117,
-  "originalTopRow": 67,
+  "originalBottomRow": 56,
+  "originalTopRow": 6,
   "parentColumnSpace": 11.53955078125,
   "parentId": "4vthayxaq4",
   "parentRowSpace": 10,
@@ -913,7 +916,7 @@
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
   "topRow": 6,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "{{countRightHolder.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

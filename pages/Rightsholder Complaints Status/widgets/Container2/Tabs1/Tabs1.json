@@ -335,7 +335,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onTabSelected": "{{buildTableData.requestTableData()}}",
-  "originalBottomRow": 99,
+  "originalBottomRow": 100,
   "originalTopRow": 16,
   "parentColumnSpace": 21.375,
   "parentId": "66b5tl342b",

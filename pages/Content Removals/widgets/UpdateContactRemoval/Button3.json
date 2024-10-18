@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal1.name);}}",
+  "onClick": "{{showModal(UpdateContentRemovalConferm.name);}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "emmm8e3vqz",

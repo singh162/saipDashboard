@@ -30,6 +30,7 @@ export default {
 		const errors = [];
 
 		// Validate 'request_number' (required)
+		console.log("request_number",typeof data.request_number);
 		if (!data.request_number || typeof data.request_number !== 'string') {
 			errors.push("Request number is required and must be a string");
 		}
@@ -168,8 +169,8 @@ export default {
 	},
 
 	async updateData() {
-		this.updateBuildData = this.buildUpdateObject();
-
+		this.updateBuildData = await this.buildUpdateObject();
+		console.log("	this.updateBuildData",	this.updateBuildData);
 		const errors = this.validateData(this.updateBuildData);
 		if (errors.length > 0) {
 			return showAlert(`Validation Errors: ${errors.join(", ")}`, 'error');
@@ -179,9 +180,26 @@ export default {
 			await UpdateQueryContentRemoval.run();
 			showAlert('Data updated successfully!', 'success');
 			await SelectQueryContentRemoval.run();
-			closeModal(Update_Modal_ContentRemoval.name);
+			closeModal(UpdateQueryContentRemoval.name);
+			closeModal(UpdateContentRemovalConferm.name);
 		} catch (error) {
 			showAlert('Error updating data: ' + error.message, 'error');
+		}
+	},
+	// Function to handle mutilple deletion
+	async deleteMutipleData(idPass) {
+		if (!idPass) {
+			return showAlert('id is required for deletion', 'error');
+		}
+
+		try {
+			idPass = idPass.join(", ");
+			await DeleteMutipleContentRemoval.run({id:idPass});
+			showAlert('Data deleted successfully!', 'success');
+			closeModal(DeleteMutipleConfirmation.name);
+			await SelectQueryContentRemoval.run();
+		} catch (error) {
+			showAlert('Error deleting data: ' + error.message, 'error');
 		}
 	},
 
@@ -191,11 +209,161 @@ export default {
 		}
 
 		try {
-			await DeleteQueryContentRemoval.run({ id });
+			await DeleteQuery.run({ id });
 			showAlert('Data deleted successfully!', 'success');
 			await SelectQueryContentRemoval.run();
+			closeModal("")
 		} catch (error) {
 			showAlert('Error deleting data: ' + error.message, 'error');
+		}
+	},
+	buildContentRemoval: function(rows){
+		const intFields = [
+			'id',
+			'number_of_cases',
+			'basket_cases',
+			'amazon_cases',
+			'on_sale_cases',
+			'open_market_cases',
+			'used_and_new_cases',
+			'noon_cases',
+			'site_cases',
+			'inquired_owners_number_of_cases',
+			'blocked_number_of_cases',
+			'violation_unproven_number_of_sites',
+			'duplicate_number_of_cases'
+		];
+
+		const dateFields = [
+			'request_date',
+			'contact_date_amazon',
+			'contact_date_on_sale',
+			'contact_date_used_and_new',
+			'contact_date_basket',
+			'contact_date_noon',
+			'contact_date_open_market',
+			'inquired_owners_date',
+			'blocked_date'
+		];
+
+		// Iterate through each object in the array
+		rows.forEach(row => {
+			// Iterate through each field in the object
+			Object.keys(row).forEach(key => {
+				if (dateFields.includes(key)) {
+					try {
+						if(row[key]){
+							row[key] = moment(row[key]).format('YYYY-MM-DD HH:mm:ss');
+						}
+						else
+						{
+							row[key] = null;
+						}
+					} catch (error) {
+						console.error(`Error formatting date field ${key}:`, error);
+						row[key] = row[key]; // retain original value in case of error
+					}
+				}
+				else if(intFields.includes(key))
+				{
+					row[key] = row[key] === '' ? null : row[key];
+				}
+				else {
+					if(row[key] === '' || row[key] === 'N/A'){
+						row[key] = null;
+					}
+				}
+				if(row[key]){
+					if(typeof row[key] === 'string'){
+						row[key] = row[key].replace(/'/g, "''");
+						row[key] = row[key].replace(/\\/g, '');
+
+
+					}
+				}
+			});
+		});
+
+		console.log("rows",rows);
+		return rows;
+	},
+	async CorrectFileUploaded() {
+		try {
+			// Expected headers for Content Removal
+			const expectedHeaders = [
+				'id',
+				'number_of_cases',
+				'request_number',
+				'request_date',
+				'basket_cases',
+				'amazon_cases',
+				'on_sale_cases',
+				'open_market_cases',
+				'used_and_new_cases',
+				'noon_cases',
+				'site_cases',
+				'contact_date_amazon',
+				'contact_date_on_sale',
+				'contact_date_used_and_new',
+				'contact_date_basket',
+				'contact_date_noon',
+				'contact_date_open_market',
+				'inquired_owners_number_of_cases',
+				'inquired_owners_date',
+				'blocked_number_of_cases',
+				'blocked_date',
+				'blocked_letter_number',
+				'violation_unproven_number_of_sites',
+				'duplicate_number_of_cases'
+			];
+
+			// Get the uploaded file data from FilePicker
+			const uploadedFile = FilePicker1.files[0]; // Replace FilePicker1 with your actual FilePicker widget name
+
+			if (!uploadedFile) {
+				showAlert("No file uploaded!", "error");
+				return false;
+			}
+
+			try {
+				console.log("uploadedFile", uploadedFile.data);
+				const fileHeaders = Object.keys(uploadedFile.data[0]); // Retrieves the header keys from the first object
+				console.log("fileHeaders", fileHeaders);
+
+				// Check if file headers match the expected headers
+				const isHeadersValid = expectedHeaders.every(header => fileHeaders.includes(header));
+
+				if (isHeadersValid) {
+					showAlert("Headers are valid!", "success");
+				} else {
+					showAlert("Headers do not match! Please Upload Correct Content Removal File", "error");
+				}
+
+				return isHeadersValid;
+			} catch (error) {
+				showAlert("Error reading the file!", "error");
+				return false;
+			}
+		} catch (ex) {
+			showAlert("Error in File Uploading", "error");
+		}
+	},
+
+	async fileUploads() {
+		try {
+			if (FilePicker1.files && FilePicker1.files.length === 0) {
+				showAlert("Please Upload the Insert File", "warning");
+			} else {
+				if (await this.CorrectFileUploaded()) {
+					// Call the upload function specifically for content removal
+					await UploadFileFunction.uploadFile('Content Removal'); // Ensure the correct function name is used
+					showAlert("Data inserted successfully!", 'success');
+					resetWidget(FilePicker1, true);
+					await SelectQueryContentRemoval.run(); // Ensure this runs the correct query for content removal
+				}
+			}
+		} catch (ex) {
+			showAlert("Error in File Upload", "Error");
 		}
 	},
 	async contentRemoval(action) {
@@ -208,14 +376,14 @@ export default {
 				await this.updateData();
 				break;
 			case 'delete':
-				await this.deleteData(data_table.triggeredRow ? data_table.triggeredRow.report_entry_data : null);
+				await this.deleteData(data_table.triggeredRow ? data_table.triggeredRow.id : null);
 				break;
 			case 'deleteMutiple':
-				let ids= data_table.selectedRows ? data_table.selectedRows .length>0 ?  data_table.selectedRows.map(report => report.report_entry_data):[]:[];
-				// await this.deleteMutipleData(ids);
+				let ids= data_table.selectedRows ? data_table.selectedRows .length>0 ?  data_table.selectedRows.map(report => report.id):[]:[];
+				await this.deleteMutipleData(ids);
 				break;
 			case 'fileUploader':
-				// await this.fileUploads();
+				await this.fileUploads();
 				break;
 			default:
 				showAlert('Invalid action specified', 'error');
