@@ -160,6 +160,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.reasonStatus.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -171,6 +174,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.reasonStatus.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -760,7 +766,7 @@
       "id": "reasonStatus",
       "index": 18,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === \"Rejected\" ? true : false ))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,

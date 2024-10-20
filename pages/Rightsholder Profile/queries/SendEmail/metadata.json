@@ -12,8 +12,8 @@
         "send": {
           "bodyType": "text/html",
           "from": "saip@naxap.com",
-          "subject": "Profile {{Select1.selectedOptionLabel}} Notification",
-          "to": "puneet@byetscare.com"
+          "subject": "Profile {{appsmith.store.rightHolderStatus}} Notification",
+          "to": "puneet@bytescare.com"
         }
       },
       "paginationType": "NONE",

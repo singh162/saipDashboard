@@ -3,6 +3,7 @@ export default {
 	validateRightHolderProfile: () => {
 
 		storeValue("rightHolderEmail", Table1.triggeredRow.email);
+		storeValue("rightHolderStatus", Select1.selectedOptionLabel);
 		let isUpdate = true;
 
 		const id = Table1.triggeredRow.id;
