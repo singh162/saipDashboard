@@ -12,7 +12,8 @@
         "send": {
           "bodyType": "text/html",
           "from": "saip@naxap.com",
-          "to": "jasmeet.singh@bytescare.com"
+          "subject": "",
+          "to": "puneet@bytescare.com"
         }
       },
       "paginationType": "NONE",
