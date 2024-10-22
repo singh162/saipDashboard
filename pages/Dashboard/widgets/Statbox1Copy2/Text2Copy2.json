@@ -13,9 +13,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -62,7 +59,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{TotalWebsitesIdentified.data[0].total_websites_identified}}",
+  "text": "1513",
   "textAlign": "LEFT",
   "textColor": "#ffffff",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",

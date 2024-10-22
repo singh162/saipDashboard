@@ -9,9 +9,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -57,7 +54,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Websites Identified \nsince {{moment(TotalWebsitesIdentified.data[0].oldest_date).format(\"MM-DD-YYYY\")}}",
+  "text": "Websites Identified \nsince 08-10-2024",
   "textAlign": "LEFT",
   "textColor": "#ffffff",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",

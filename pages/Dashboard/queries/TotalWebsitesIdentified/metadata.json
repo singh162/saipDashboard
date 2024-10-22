@@ -23,7 +23,7 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "TotalWebsitesIdentified",
     "pageId": "Dashboard",
     "userSetOnLoad": false
