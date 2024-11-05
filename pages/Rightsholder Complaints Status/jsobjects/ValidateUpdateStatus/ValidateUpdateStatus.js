@@ -29,6 +29,8 @@ export default {
 		let tableObject=await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
 		if(isValid){
 			await storeValue("complaintStatus",Select1.selectedOptionLabel);
+			await storeValue("complaintStatusReason",Input1.text);
+
 			// await storeValue("EmailCaseId",tableObject.triggeredRow.complaint_Case_id);
 			// await storeValue("EmailInfringingUrl",tableObject.triggeredRow.infringing_url);
 			await storeValue("SelectedTableObject",tableObject);

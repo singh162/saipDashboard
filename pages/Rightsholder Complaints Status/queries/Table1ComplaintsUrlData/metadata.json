@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n    cf.complaint_request_id,\n    MAX(cs.complaint_status_id) AS complaint_status_id,\n    MAX(cf.complaint_form_id) AS complaint_form_id,\n\t\tMAX(rh.id) AS rightHolderUserId,\n    MAX(rh.username) AS HolderName,\n    MAX(cf.category_type) AS CategoryType,\n    MAX(cf.original_work) AS OrginalWebsite,\n    MAX(cf.inserted_at) AS inserted_at\nFROM \n    complaints_form cf\nINNER JOIN \n    complaint_status cs ON cs.complaint_form_id = cf.complaint_form_id\nINNER JOIN \n    rightHolder rh ON rh.id = cf.rightHolderUserId\nWHERE \n    cs.status = '{{buildTableData.status}}' \n    {{buildTableData.table1QueryWhere}};\n",
+      "body": "SELECT \n    cf.complaint_request_id,\n    MAX(cs.complaint_status_id) AS complaint_status_id,\n    MAX(cf.complaint_form_id) AS complaint_form_id,\n\t\tMAX(rh.id) AS rightHolderUserId,\n    MAX(rh.username) AS HolderName,\n    MAX(cf.category_type) AS CategoryType,\n    MAX(cf.original_work) AS OrginalWebsite,\n    MAX(cf.inserted_at) AS inserted_at\nFROM \n    complaints_form cf\nINNER JOIN \n    complaint_status cs ON cs.complaint_form_id = cf.complaint_form_id\nINNER JOIN \n    rightHolder rh ON rh.id = cf.rightHolderUserId\nWHERE \n    cs.status = '{{buildTableData.status}}' \n    {{buildTableData.table1QueryWhere}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

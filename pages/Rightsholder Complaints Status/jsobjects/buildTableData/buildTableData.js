@@ -14,7 +14,7 @@ OFFSET
 ${(Table1.pageNo - 1) * Table1.pageSize}`,
 
 	table2QueryWhere: `complaints_form.complaint_request_id = '${Table1.selectedRow.complaint_request_id}'
-	ORDER BY ${Table2.sortOrder.column || 'complaints_form.inserted_at'} ${Table2.sortOrder.order || "ASC"}
+	ORDER BY ${'complaints_form.inserted_at'} ${Table2.sortOrder.order || "ASC"}
 LIMIT ${Table2.pageSize}
 OFFSET ${(Table2.pageNo - 1) * Table2.pageSize}`,
 
@@ -24,7 +24,7 @@ OFFSET ${(Table2.pageNo - 1) * Table2.pageSize}`,
 	setQueryConditions(tabName, table1Widget, table2Widget) {
 		const selectedRow = table1Widget.selectedRow?.complaint_request_id || '';
 		const searchText = table1Widget.searchText || '';
-		const sortOrderColumn = table2Widget.sortOrder?.column || 'complaints_form.inserted_at';
+		const sortOrderColumn = 'complaints_form.inserted_at';
 		const sortOrderOrder = table2Widget.sortOrder?.order || 'ASC';
 		const pageSize = table2Widget.pageSize || 10;
 		const pageNo = (table2Widget.pageNo - 1) || 0;
@@ -63,6 +63,7 @@ OFFSET ${pageNo * pageSize}`;
 		this.tableComplaintCase = data;
 		let rightHolderId = await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table1.selectedRow.rightHolderUserId
 		this.rightHolderEmail = await RightHolderInfoById.run({id:rightHolderId});
+		await imageParsing.imageRendering();
 		return this.tableComplaintCase;
 	},
 

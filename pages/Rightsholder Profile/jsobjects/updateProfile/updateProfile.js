@@ -111,7 +111,10 @@ export default {
 			const digitalSignature = Input11.text;
 			const status = Select1.selectedOptionLabel;
 			const statusReason = Input13.text;
-			const document = FilePicker1.files.length > 0 ? FilePicker1.files[0].data : Table1.triggeredRow.document;
+			const document = FilePicker1.files.length > 0 ? FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.document.replace(/^data:image\/;base64,/, '') ;
+			const contentOwnerShip = FilePicker1Copy1.files.length>0 ?  FilePicker1Copy1.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.contentOwnerShip.replace(/^data:image\/;base64,/, '') 
+			const copyRightLetter =  FilePicker1Copy.files.length>0 ?  FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.copyRightLetter.replace(/^data:image\/;base64,/, '') 
+			const profileUpdatedBy = `${appsmith.user.name}     ${appsmith.user.email}`;
 
 			// If all fields are valid, proceed with the update
 			const queryResponse = await UpdateRightHolderProfile.run({
@@ -131,6 +134,9 @@ export default {
 				reasonStatus :statusReason ? statusReason : null,
 				digitalSignature: digitalSignature,
 				document: document,
+				copyRightLetter:copyRightLetter,
+				contentOwnerShip:contentOwnerShip,
+				profileUpdatedBy:profileUpdatedBy
 			});
 
 			if (queryResponse) {

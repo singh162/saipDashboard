@@ -106,7 +106,7 @@ export default {
 			case "Rejected":
 				emailBody = `
                     <div class="content">
-                        <p>We regret to inform you that your complaints for ${casePlural} have not been approved by the SAIP team due to insufficient information or documentation.</p>
+                        <p>We regret to inform you that your complaints for ${casePlural} have not been approved by the SAIP team due to ${appsmith.store.complaintStatusReason}.</p>
                         <p>For further assistance and clarification, we kindly encourage you to reach out to the SAIP team directly. The following ${urlPlural} was reviewed during the process.</p>
                     </div>
                 `;

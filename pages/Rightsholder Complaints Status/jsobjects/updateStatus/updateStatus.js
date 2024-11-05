@@ -60,11 +60,13 @@ export default {
 				 Select1.selectedOptionLabel === "Under Review" || 
 				 Select1.selectedOptionLabel === "" || 
 				 Select1.selectedOptionLabel === undefined){
+
+				const base64Data =FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '');
 				await updateComplaintedStatus.run(
 					{			                            complaint_status_id:tableObject.triggeredRow.complaint_status_id,
 					 status: Select1.selectedOptionLabel,
 					 reason_of_approve_reject: Input1.text,
-					 status_updated_proof: FilePicker1.files[0].data,
+					 status_updated_proof: base64Data,
 					 status_updated_by: appsmith.user.email,
 					 updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					}

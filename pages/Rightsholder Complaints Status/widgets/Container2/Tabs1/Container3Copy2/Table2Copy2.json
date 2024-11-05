@@ -45,7 +45,7 @@
     "customColumn1",
     "status"
   ],
-  "columnUpdatedAt": 1728547616755,
+  "columnUpdatedAt": 1730375219558,
   "columnWidthMap": {
     "reason_of_approve_reject": 240,
     "status_updated_by": 258,
@@ -122,6 +122,15 @@
     },
     {
       "key": "primaryColumns.infringing_url.displayText"
+    },
+    {
+      "key": "primaryColumns.documentProof.boxShadow"
+    },
+    {
+      "key": "primaryColumns.documentProof.borderRadius"
+    },
+    {
+      "key": "primaryColumns.documentProof.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -397,15 +406,20 @@
       "alias": "documentProof",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table2Copy2.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table2Copy2.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table2Copy2.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "cellBackground": "",
-      "columnType": "image",
+      "columnType": "iconButton",
       "computedValue": "{{Table2Copy2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"documentProof\"]))}}",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
+      "iconName": "eye-open",
       "id": "documentProof",
       "index": 9,
       "isCellEditable": false,
@@ -418,7 +432,7 @@
       "isVisible": true,
       "label": "Evidence By RightHolder",
       "notation": "standard",
-      "onClick": "{{showModal(Modal3Copy.name);}}",
+      "onClick": "{{showModal(Modal3Copy.name).then(() => {\n  imageParsing.imageRendering();\n});}}",
       "originalId": "documentProof",
       "sticky": "",
       "textColor": "",
@@ -605,7 +619,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "image",
-      "computedValue": "{{Table2Copy2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status_updated_proof\"]))}}",
+      "computedValue": "{{Table2Copy2.processedTableData.map((currentRow, currentIndex) => ( `data:image/;base64,${currentRow.status_updated_proof}`))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

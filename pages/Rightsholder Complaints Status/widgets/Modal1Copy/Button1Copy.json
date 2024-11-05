@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{ValidateUpdateStatus.onCloseStatusModel();}}",
+  "onClick": "{{closeModal(Modal1Copy.name);}}",
   "originalBottomRow": 43,
   "originalTopRow": 39,
   "parentId": "hvgx71d4si",

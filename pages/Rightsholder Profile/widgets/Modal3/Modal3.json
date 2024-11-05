@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 168,
+  "bottomRow": 1733,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1680,
+      "bottomRow": 1710,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -32,7 +32,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 1440,
+      "minHeight": 1680,
       "minWidth": 450,
       "mobileBottomRow": 0,
       "mobileLeftColumn": 0,
@@ -68,7 +68,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 1680,
+  "height": 1710,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
   "isCanvas": true,
@@ -78,7 +78,7 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 1680,
+  "minHeight": 1710,
   "mobileBottomRow": 0,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 0,
@@ -111,5 +111,5 @@
   "version": 2,
   "widgetId": "abcm3dhsju",
   "widgetName": "Modal3",
-  "width": 744
+  "width": 830
 }

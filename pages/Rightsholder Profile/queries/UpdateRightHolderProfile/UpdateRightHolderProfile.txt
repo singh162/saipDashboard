@@ -14,7 +14,10 @@ SET
 	Status='{{this.params.Status}}',
 	reasonStatus='{{this.params.reasonStatus}}',
   digitalSignature = '{{this.params.digitalSignature}}',
-  document = '{{this.params.document}}',
+  document = FROM_BASE64('{{this.params.document}}'),
+	copyRightLetter =FROM_BASE64('{{this.params.copyRightLetter}}'),
+	contentOwnerShip=FROM_BASE64('{{this.params.contentOwnerShip}}'),
+	profileUpdatedBy='{{this.params.profileUpdatedBy}}',
   updated_at = CURRENT_TIMESTAMP
 WHERE
   id = '{{this.params.id}}';

@@ -95,7 +95,7 @@ body {
 					Dear ${appsmith.store.rightHolderNameEmail},
 						</div>
 		<div class="content">
-			<p>We regret to inform you that your profile has not been approved by the SAIP team due to insufficient information or documentation.</p>
+			<p>We regret to inform you that your profile has not been approved by the SAIP team due to ${Input13.text}.</p>
 		<p>For further assistance and clarification, we kindly encourage you to reach out to the SAIP team directly.</p>
 			</div>
 			<div class="footer">

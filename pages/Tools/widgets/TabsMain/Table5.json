@@ -33,9 +33,9 @@
   "columnOrder": [
     "SNO",
     "columnName",
-    "g_laroza_net"
+    "idoc_tips"
   ],
-  "columnUpdatedAt": 1728459036053,
+  "columnUpdatedAt": 1730699668666,
   "columnWidthMap": {
     "fmovies_ps": 462.99999999999994
   },
@@ -66,7 +66,7 @@
       "key": "primaryColumns.columnName.computedValue"
     },
     {
-      "key": "primaryColumns.g_laroza_net.computedValue"
+      "key": "primaryColumns.idoc_tips.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -174,20 +174,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "g_laroza_net": {
-      "alias": "g.laroza.net",
+    "idoc_tips": {
+      "alias": "idoc.tips",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table5.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"g.laroza.net\"]))}}",
+      "computedValue": "{{Table5.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"idoc.tips\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "g_laroza_net",
+      "id": "idoc_tips",
       "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -197,9 +197,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "g.laroza.net",
+      "label": "idoc.tips",
       "notation": "standard",
-      "originalId": "g.laroza.net",
+      "originalId": "idoc.tips",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

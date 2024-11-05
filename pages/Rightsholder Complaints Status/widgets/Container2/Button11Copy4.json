@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 13,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -44,8 +44,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{DownloadXlsx.downloadAllXlsxFile();}}",
-  "originalBottomRow": 16,
-  "originalTopRow": 12,
+  "originalBottomRow": 13,
+  "originalTopRow": 9,
   "parentColumnSpace": 20.728515625,
   "parentId": "66b5tl342b",
   "parentRowSpace": 10,
@@ -64,7 +64,7 @@
   ],
   "text": "Download All",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 12,
+  "topRow": 9,
   "topRowBeforeCollapse": 1,
   "type": "BUTTON_WIDGET",
   "version": 1,

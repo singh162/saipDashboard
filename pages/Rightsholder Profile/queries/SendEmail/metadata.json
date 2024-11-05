@@ -13,7 +13,7 @@
           "bodyType": "text/html",
           "from": "saip@naxap.com",
           "subject": "Profile {{appsmith.store.rightHolderStatus}} Notification",
-          "to": "puneet@bytescare.com"
+          "to": "jasmeet.singh@bytescare.com"
         }
       },
       "paginationType": "NONE",

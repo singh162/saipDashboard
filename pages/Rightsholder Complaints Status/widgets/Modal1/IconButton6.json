@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 27,
   "bottomRowBeforeCollapse": 26,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -36,7 +36,7 @@
   "isLoading": false,
   "isVisible": "{{ \nSelect1.selectedOptionLabel === \"Approved\" || \nSelect1.selectedOptionLabel === \"Rejected\" || \nSelect1.selectedOptionLabel === \"Under Review\" || \nSelect1.selectedOptionLabel === \"\" || \nSelect1.selectedOptionLabel === undefined\n}}",
   "key": "gmywrfy382",
-  "leftColumn": 60,
+  "leftColumn": 61,
   "minWidth": 50,
   "mobileBottomRow": 26,
   "mobileLeftColumn": 58,
@@ -51,14 +51,14 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{deleteImageModelView.deleteImage(FilePicker1);}}",
-  "originalBottomRow": 26,
-  "originalTopRow": 22,
+  "originalBottomRow": 27,
+  "originalTopRow": 23,
   "parentColumnSpace": 12.59375,
   "parentId": "1rxo3v1u8z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 62,
+  "rightColumn": 63,
   "searchTags": [
     "click",
     "submit"
@@ -67,7 +67,7 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 22,
+  "topRow": 23,
   "topRowBeforeCollapse": 22,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,

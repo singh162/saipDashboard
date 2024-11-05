@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 103,
+  "bottomRow": 105,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,8 +41,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 103,
-  "originalTopRow": 98,
+  "originalBottomRow": 105,
+  "originalTopRow": 100,
   "overflow": "NONE",
   "parentColumnSpace": 11.4375,
   "parentId": "cobguphdou",
@@ -60,11 +60,11 @@
     "Suggested",
     "Content"
   ],
-  "text": "Copyright Ownership Document",
+  "text": "Copyright Ownership Document  <span style=\"color: red;\">*</span>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 98,
+  "topRow": 100,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
