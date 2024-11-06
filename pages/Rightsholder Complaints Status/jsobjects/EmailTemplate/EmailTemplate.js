@@ -121,7 +121,7 @@ export default {
                 `;
 				break;
 
-			case "Submitted for Block":
+			case "Submitted For Blocking":
 				emailBody = `
                     <div class="content">
                         <p>Your complaints for ${casePlural} have been submitted for block review by the SAIP team.</p>

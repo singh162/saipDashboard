@@ -12,9 +12,17 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
@@ -23,7 +31,7 @@
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{Select1.selectedOptionLabel === \"Approved\" || \nSelect1.selectedOptionLabel === \"Rejected\" || \nSelect1.selectedOptionLabel === \"Under Review\" || \nSelect1.selectedOptionLabel === \"\" || \nSelect1.selectedOptionLabel === undefined}}",
   "key": "2jtrrv01es",
   "leftColumn": 3,
   "maxDynamicHeight": 9000,

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 122,
+  "bottomRow": 121,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Table1.triggeredRow.Status))(Select1.options, Select1.serverSideFiltering) }}",
   "displayName": "Select",
@@ -76,7 +76,7 @@
     "Select"
   ],
   "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
-  "topRow": 115,
+  "topRow": 114,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "tzg34up8dc",

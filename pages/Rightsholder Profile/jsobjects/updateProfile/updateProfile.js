@@ -80,7 +80,7 @@ export default {
 			showAlert("Status is required", "error");
 			isUpdate = false;
 		}
-		if(status === "Rejected" && !statusReason){
+		if(status === "Rejected" && (!statusReason || ! Select2.selectedOptionLabel) ){
 			showAlert("Reason For Status is required", "error");
 			isUpdate = false;
 		}
@@ -110,7 +110,10 @@ export default {
 			const acknowledgement = Checkbox1Copy.isChecked;
 			const digitalSignature = Input11.text;
 			const status = Select1.selectedOptionLabel;
-			const statusReason = Input13.text;
+			let statusReason = Input13.text;
+			if(Select1.selectedOptionValue === "Rejected") {
+				statusReason = Select2.selectedOptionLabel + "  "+Input13.text 
+			}
 			const document = FilePicker1.files.length > 0 ? FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.document.replace(/^data:image\/;base64,/, '') ;
 			const contentOwnerShip = FilePicker1Copy1.files.length>0 ?  FilePicker1Copy1.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.contentOwnerShip.replace(/^data:image\/;base64,/, '') 
 			const copyRightLetter =  FilePicker1Copy.files.length>0 ?  FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.copyRightLetter.replace(/^data:image\/;base64,/, '') 

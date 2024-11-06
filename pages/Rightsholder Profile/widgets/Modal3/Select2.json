@@ -1,0 +1,78 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 128,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.c94480439adb48de6883bb496aa5ef7d.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "t2n4rjwy16",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 30,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 135,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 128,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 12.78125,
+  "parentId": "cobguphdou",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 51,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Right Holder Name  is not Correct\",\n    \"code\": \"Holder Name\"\n  },\n  {\n    \"name\": \"We did not find the company\",\n    \"code\": \"Company name\"\n  },\n  {\n    \"name\": \"Email format is incorrect\",\n    \"code\": \"Email\"\n  },\n  {\n    \"name\": \"Phone Number is missing or incorrect\",\n    \"code\": \"PhoneNumber\"\n  },\n  {\n    \"name\": \"Address is missing or incorrect\",\n    \"code\": \"Address\"\n  },\n  {\n    \"name\": \"City name is missing or incorrect\",\n    \"code\": \"City\"\n  },\n  {\n    \"name\": \"State name is missing or incorrect\",\n    \"code\": \"State\"\n  },\n  {\n    \"name\": \"Country name is missing or incorrect\",\n    \"code\": \"Country\"\n  },\n  {\n    \"name\": \"Acknowledgement is missing\",\n    \"code\": \"Acknowledgement\"\n  },\n  {\n    \"name\": \"Document is invalid or incomplete\",\n    \"code\": \"Document\"\n  },\n  {\n    \"name\": \"Digital Signature is incorrect or missing\",\n    \"code\": \"DigitalSignature\"\n  },\n  {\n    \"name\": \"Content Ownership is invalid\",\n    \"code\": \"ContentOwnership\"\n  },\n  {\n    \"name\": \"Copy Right Letter is invalid or missing\",\n    \"code\": \"CopyRightLetter\"\n  }\n]",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
+  "topRow": 121,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "gnf1zkdhai",
+  "widgetName": "Select2"
+}

@@ -25,8 +25,6 @@ export default {
 		}
 		if(isValid){
 			await storeValue("complaintStatus",Select1Copy.selectedOptionLabel);
-			await storeValue("complaintStatusReason",Input1.text);
-
 			// let caseId=[];
 			// let url = [];
 			// for(let i=0;i<tableObject.selectedRows;i++){

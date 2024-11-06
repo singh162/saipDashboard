@@ -29,7 +29,7 @@
       },
       {
         "name": "table2QueryWhere",
-        "value": "`complaints_form.complaint_request_id = '${Table1.selectedRow.complaint_request_id}'\n\tORDER BY ${'complaints_form.inserted_at'} ${Table2.sortOrder.order || \"ASC\"}\nLIMIT ${Table2.pageSize}\nOFFSET ${(Table2.pageNo - 1) * Table2.pageSize}`"
+        "value": "`complaints_form.complaint_request_id = '${Table1.selectedRow.complaint_request_id}'\n\tORDER BY ${Table2.sortOrder.column || 'complaints_form.inserted_at'} ${Table2.sortOrder.order || \"ASC\"}\nLIMIT ${Table2.pageSize}\nOFFSET ${(Table2.pageNo - 1) * Table2.pageSize}`"
       },
       {
         "name": "tableRequestComplaints",

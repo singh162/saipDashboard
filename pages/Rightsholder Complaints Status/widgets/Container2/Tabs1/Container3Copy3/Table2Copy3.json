@@ -39,13 +39,13 @@
     "complaint_form_id",
     "complaint_status_id",
     "reason_of_approve_reject",
-    "documentProof",
+    "customColumn2",
     "status_updated_proof",
     "status_updated_by",
     "customColumn1",
     "status"
   ],
-  "columnUpdatedAt": 1728547616755,
+  "columnUpdatedAt": 1730895298260,
   "columnWidthMap": {
     "reason_of_approve_reject": 240,
     "status_updated_by": 258,
@@ -97,9 +97,6 @@
       "key": "primaryColumns.status_updated_by.computedValue"
     },
     {
-      "key": "primaryColumns.documentProof.computedValue"
-    },
-    {
       "key": "primaryColumns.status.computedValue"
     },
     {
@@ -124,13 +121,13 @@
       "key": "primaryColumns.infringing_url.displayText"
     },
     {
-      "key": "primaryColumns.documentProof.boxShadow"
+      "key": "primaryColumns.customColumn2.boxShadow"
     },
     {
-      "key": "primaryColumns.documentProof.borderRadius"
+      "key": "primaryColumns.customColumn2.borderRadius"
     },
     {
-      "key": "primaryColumns.documentProof.buttonColor"
+      "key": "primaryColumns.customColumn2.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -155,7 +152,7 @@
       "key": "primaryColumns.status_updated_proof.onClick"
     },
     {
-      "key": "primaryColumns.documentProof.onClick"
+      "key": "primaryColumns.customColumn2.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -371,6 +368,45 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "customColumn2": {
+      "alias": "Evidence By RightHolder",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table2Copy3.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table2Copy3.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table2Copy3.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "eye-open",
+      "id": "customColumn2",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Evidence By RightHolder",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{showModal(Modal3Copy.name).then(() => {\n  imageParsing.imageRendering();\n});}}",
+      "originalId": "customColumn2",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "description": {
       "alias": "description",
       "allowCellWrapping": false,
@@ -397,46 +433,6 @@
       "label": "Description",
       "notation": "standard",
       "originalId": "description",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "documentProof": {
-      "alias": "documentProof",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{Table2Copy3.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{Table2Copy3.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{Table2Copy3.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "cellBackground": "",
-      "columnType": "iconButton",
-      "computedValue": "{{Table2Copy3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"documentProof\"]))}}",
-      "currencyCode": "USD",
-      "customAlias": "",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "iconName": "eye-open",
-      "id": "documentProof",
-      "index": 9,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Evidence By RightHolder",
-      "notation": "standard",
-      "onClick": "{{showModal(Modal3Copy.name).then(() => {\n  imageParsing.imageRendering();\n});}}",
-      "originalId": "documentProof",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

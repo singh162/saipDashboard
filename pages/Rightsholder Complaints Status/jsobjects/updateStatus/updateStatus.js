@@ -35,6 +35,10 @@ export default {
 																					 status: Select1Copy.selectedOptionLabel,
 																					 status_updated_by: appsmith.user.email,
 																					 updated_at: moment().format('YYYY-MM-DD HH:mm:ss')});
+
+				if(Select1Copy.selectedOptionLabel === "Submitted For Blocking"){
+					await SendEmailToCST.run()
+				}
 			}
 			showAlert("Update Mutiple Status Sucessfully Submitted","warning");
 			await SendEmailComplaints.run()
@@ -80,6 +84,9 @@ export default {
 					 status_updated_by: appsmith.user.email,
 					 updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					});
+				if(Select1.selectedOptionLabel === "Submitted For Blocking"){
+					await SendEmailToCST.run()
+				}
 			}
 			showAlert("Update Status Sucessfully Submitted","info");
 			await SendEmailComplaints.run()

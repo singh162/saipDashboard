@@ -2,7 +2,7 @@ export default {
 	imageHTML: "", 
 	async imageRendering() {
 		// Fetch image data from the query
-		let data = await getImageComplaintFormData.data;
+		let data = await getImageComplaintFormData.run();
 		let imageArray = data && data.length > 0 ? data.map(item => item.image_data) : [];
 
 		// Limit the number of images to display to 3
