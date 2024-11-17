@@ -44,7 +44,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 13,
+  "originalBottomRow": 12,
   "originalTopRow": 8,
   "overflow": "NONE",
   "parentColumnSpace": 6.9375,
@@ -63,7 +63,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Are you sure want to {{Select1.selectedOptionLabel}} this complaint",
+  "text": "Are you sure want to {{Select1.selectedOptionLabel}} this complaint ?",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",

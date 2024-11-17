@@ -1,1 +1,1 @@
-SELECT image_data FROM complaint_form_screenshot where complaint_form_id = '{{Table1.selectedRow.complaint_form_id}}';
+SELECT image_data FROM complaint_form_screenshot where complaint_form_id = '{{this.params.complaint_form_id}}';

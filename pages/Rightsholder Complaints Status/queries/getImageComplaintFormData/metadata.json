@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT image_data FROM complaint_form_screenshot where complaint_form_id = '{{Table1.selectedRow.complaint_form_id}}';",
+      "body": "SELECT image_data FROM complaint_form_screenshot where complaint_form_id = '{{this.params.complaint_form_id}}';\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

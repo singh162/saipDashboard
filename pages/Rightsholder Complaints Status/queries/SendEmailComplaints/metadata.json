@@ -12,7 +12,7 @@
         "send": {
           "bodyType": "text/html",
           "from": "saip@naxap.com",
-          "subject": "",
+          "subject": "Complaint Status Update",
           "to": "jasmeet.singh@bytescare.com"
         }
       },

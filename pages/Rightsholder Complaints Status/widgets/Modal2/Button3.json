@@ -44,8 +44,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{ValidateUpdateStatus.onCloseConfirmationModel();}}",
-  "originalBottomRow": 20,
-  "originalTopRow": 16,
+  "originalBottomRow": 19,
+  "originalTopRow": 15,
   "parentId": "8cnshjddr3",
   "placement": "CENTER",
   "recaptchaType": "V3",
