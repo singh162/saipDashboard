@@ -29,7 +29,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "op33c405vo",
-  "leftColumn": 34,
+  "leftColumn": 35,
   "minWidth": 120,
   "mobileBottomRow": 131,
   "mobileLeftColumn": 41,
@@ -54,7 +54,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 50,
+  "rightColumn": 51,
   "searchTags": [
     "click",
     "submit"

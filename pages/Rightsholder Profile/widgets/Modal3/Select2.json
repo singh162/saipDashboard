@@ -12,12 +12,18 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -28,7 +34,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{Select1.selectedOptionLabel === \"Rejected\"}}",
   "key": "t2n4rjwy16",
   "labelAlignment": "left",
   "labelPosition": "Top",
