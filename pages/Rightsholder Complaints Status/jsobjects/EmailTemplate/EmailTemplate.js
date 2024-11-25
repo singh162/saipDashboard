@@ -2,8 +2,9 @@ export default {
 	emailTemplate() {
 		const status = appsmith.store.complaintStatus;
 		const holderName = buildTableData.emailHolderName;
-		let tableObject = appsmith.store.SelectedTableObject;
+		let tableObject = JSON.parse(appsmith.store.SelectedTableObject);
 		let emailCaseId;
+		console.log("tableObject",tableObject)
 		let emailUrls;
 		if(tableObject && tableObject.selectedRows.length>1){
 			let caseId=[];

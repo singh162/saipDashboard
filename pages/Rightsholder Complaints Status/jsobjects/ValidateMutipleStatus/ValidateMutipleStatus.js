@@ -16,6 +16,7 @@ export default {
 				isValid= false;
 				showAlert("Please provide the reason for the selected status","error");
 			}
+			storeValue("complaintStatusReason",Input1.text);
 		}
 		else{
 			if(!Select1Copy.selectedOptionLabel){

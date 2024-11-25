@@ -1,0 +1,7 @@
+UPDATE test_taoq_reach.complaints_title
+SET
+    Status = '{{this.params.Status}}',
+		rejectedReason ='{{this.params.rejectedReason}}',
+    updated_at = '{{this.params.updated_at}}'
+WHERE
+    id = '{{this.params.id}}';

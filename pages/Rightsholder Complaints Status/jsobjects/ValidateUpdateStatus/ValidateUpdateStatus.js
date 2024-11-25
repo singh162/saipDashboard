@@ -19,6 +19,7 @@ export default {
 				isValid= false;
 				showAlert("Please provide the proof for that status","error");
 			}
+			storeValue("complaintStatusReason",Input1.text);
 		}
 		else{
 			if(!Select1.selectedOptionLabel){
@@ -26,12 +27,13 @@ export default {
 				showAlert("Please select the on atleast one status","error")
 			}
 		}
-		let tableObject=await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
+		// let tableObject=await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
 		if(isValid){
-			await storeValue("complaintStatus",Select1.selectedOptionLabel);
+			let tableObject= await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
+			storeValue("complaintStatus",Select1.selectedOptionLabel);
+			storeValue("SelectedTableObject",JSON.stringify(tableObject));
 			// await storeValue("EmailCaseId",tableObject.triggeredRow.complaint_Case_id);
 			// await storeValue("EmailInfringingUrl",tableObject.triggeredRow.infringing_url);
-			await storeValue("SelectedTableObject",tableObject);
 			showModal(Modal2.name);
 
 

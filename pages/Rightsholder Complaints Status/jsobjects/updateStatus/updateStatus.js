@@ -59,6 +59,8 @@ export default {
 		//	write code here
 		try{
 			let tableObject=await handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2;
+
+			console.log("Select1.selectedOptionLabel",Select1.selectedOptionLabel);
 			if(Select1.selectedOptionLabel === "Approved" || 
 				 Select1.selectedOptionLabel === "Rejected" || 
 				 Select1.selectedOptionLabel === "Under Review" || 
@@ -85,6 +87,8 @@ export default {
 					 updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					});
 				if(Select1.selectedOptionLabel === "Submitted For Blocking"){
+
+					console.log("tableObject",tableObject);
 					await SendEmailToCST.run()
 				}
 			}

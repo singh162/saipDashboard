@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_2a4d966d-c3a1-44ab-bf5e-0b9112c6dff3",
+  "id": "Rightsholder Approval_ValidateTitlesObject",
+  "unpublishedCollection": {
+    "name": "ValidateTitlesObject",
+    "pageId": "Rightsholder Approval",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

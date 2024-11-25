@@ -1,7 +1,7 @@
 export default {
 	emailTemplate() {
 		const holderName = buildTableData.emailHolderName;
-		let tableObject = appsmith.store.SelectedTableObject;
+		let tableObject = JSON.parse(appsmith.store.SelectedTableObject);
 		let emailUrls;
 		if(tableObject && tableObject.selectedRows.length>1){
 			let caseId=[];
