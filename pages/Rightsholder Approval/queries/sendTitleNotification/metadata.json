@@ -5,6 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
+      "body": "{{emailTemplateObject.emailHtml()}}",
       "encodeParamsToggle": true,
       "formData": {
         "command": "SEND",
@@ -28,6 +29,9 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.send.subject"
+      },
+      {
+        "key": "body"
       }
     ],
     "executeOnLoad": false,

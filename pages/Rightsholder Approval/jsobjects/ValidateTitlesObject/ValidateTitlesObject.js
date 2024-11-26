@@ -2,7 +2,6 @@ export default {
 	ValidateTitles () {
 		let isValidate = true;
 		const statusReason = Input16.text;
-
 		try {
 			// Check if a status is selected
 			if(Select3.selectedOptionValue === '') {
@@ -14,7 +13,7 @@ export default {
 			if(Select3.selectedOptionLabel === 'Rejected') {
 				if(Select4.selectedOptionLabel === 'Others') {
 					if(!statusReason) {
-						showAlert("Reason For Status is required", "error");
+						showAlert("For other reasons selected, please fill the input which contains reason", "error");
 						isValidate = false;
 					}
 				} else if(Select4.selectedOptionLabel !== 'Others' && Select4.selectedOptionLabel === '') {

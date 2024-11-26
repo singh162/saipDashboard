@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal11.name).then(() => {});}}",
+  "onClick": "{{closeModal(Modal11.name).then(() => {\n  resetWidget(\"Input16\", true);\n  resetWidget(\"Select4\", true);\n});}}",
   "parentId": "lqifunixhd",
   "placement": "CENTER",
   "recaptchaType": "V3",
