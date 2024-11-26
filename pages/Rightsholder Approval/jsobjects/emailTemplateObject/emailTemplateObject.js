@@ -77,14 +77,14 @@ export default {
                         <p>Dear <strong>${Table1Copy.triggeredRow.username}</strong>,</p>
                         <p>We regret to inform you that the SAIP team could not approve the title (<strong>${Table1Copy.triggeredRow.name}</strong>) for the rights holder. The reason for rejection is as follows:</p>
                         <p style="background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 4px;"><strong>Rejection Reason:</strong> ${appsmith.store.TitleReason}</p>
-                        <p>If you need further clarification or wish to discuss this decision, please feel free to reach out to us.</p>
+                        <p>If you need further clarification or wish to discuss this decision, please feel free to reach out to us us via email.</p>
                         <p>Thank you for your understanding.</p>
                       </td>
                     </tr>
                     <tr>
                       <td style="padding-top: 20px; text-align: center;">
                         <p style="font-size: 14px; color: #555555;">Best regards,</p>
-                        <p style="font-size: 14px; color: #555555; font-weight: bold;">SAIP Team</p>
+                        <p style="font-size: 14px; color: #555555; font-weight: bold;"> Online Antipiracy Team - SAIP</p>
                       </td>
                     </tr>
 										 <tr class="contact-info">

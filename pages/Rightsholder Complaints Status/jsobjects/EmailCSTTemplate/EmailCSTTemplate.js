@@ -62,16 +62,16 @@ export default {
 		const emailFooter = `
             <div class="footer">
                 <p>Best regards,</p>
-                <p>SAIP Team</p>
+                <p>Online Antipiracy Team - SAIP</p>
             </div>
         `;
 
 		let emailBody = `
         <div class="content">
-            <p>We have received a complaint from the rights holder, <strong>${holderName}</strong>, regarding the URL(s) listed below:</p>
+            <p>We have received a complaint from the rights holder, <strong>${holderName}</strong>, regarding Pirated URLs listed below:</p>
             <p><strong>Complained URL:</strong> <a href="${urlPlural}">${emailUrls}</a></p>
             <p><strong>Reason:</strong> ${Table2Copy.triggeredRow.reason_of_approve_reject}</p>
-            <p>After reviewing all details and evidence provided related to this complaint, we confirm the need to block this URL as soon as possible.</p>
+            <p>After technical examination and legal review, we confirm that the above URLs are violating Intellectual property laws and we request you to kindly block them and update us.</p>
         </div>
 `;
 

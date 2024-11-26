@@ -75,7 +75,7 @@ export default {
 		const emailFooter = `
             <div class="footer">
                 <p>Best regards,</p>
-                <p>SAIP Team</p>
+                <p>Online Antipiracy Team - SAIP</p>
             </div>
         `;
 
@@ -97,7 +97,7 @@ export default {
 			case "Approved":
 				emailBody = `
                     <div class="content">
-                        <p>We are pleased to inform you that your complaints for ${casePlural} have been successfully approved by the SAIP team.</p>
+                        <p>This is to inform you that your complaint for ${casePlural} has been approved By SAIP.</p>
                         <p>The following ${urlPlural} has been reviewed and approved.</p>
                         <p>Thank you for submitting all the required information and documentation.</p>
                     </div>
@@ -107,8 +107,8 @@ export default {
 			case "Rejected":
 				emailBody = `
                     <div class="content">
-                        <p>We regret to inform you that your complaints for ${casePlural} have not been approved by the SAIP team due to ${appsmith.store.complaintStatusReason}.</p>
-                        <p>For further assistance and clarification, we kindly encourage you to reach out to the SAIP team directly. The following ${urlPlural} was reviewed during the process.</p>
+                        <p>We regret to inform you that your complaints for ${casePlural} Is rejected! due to ${appsmith.store.complaintStatusReason}.</p>
+                        <p>For further assistance and clarification, we kindly encourage you to reach out Via email. The following ${urlPlural} was reviewed during the process.</p>
                     </div>
                 `;
 				break;
@@ -116,8 +116,8 @@ export default {
 			case "Blocked":
 				emailBody = `
                     <div class="content">
-                        <p>Your complaints for ${casePlural} have been blocked by the SAIP team.</p>
-                        <p>The following ${urlPlural} has been blocked. For further information, please contact the SAIP team.</p>
+                        <p>Your complaints for ${casePlural} have been blocked By SAIP.</p>
+                        <p>The following ${urlPlural} has been blocked. For further information, please contact Via email.</p>
                     </div>
                 `;
 				break;
@@ -125,7 +125,7 @@ export default {
 			case "Submitted For Blocking":
 				emailBody = `
                     <div class="content">
-                        <p>Your complaints for ${casePlural} have been submitted for block review by the SAIP team.</p>
+                        <p>Your complaints for ${casePlural} have been Submitted for blocking. .</p>
                         <p>The following ${urlPlural} is under review. You will be notified of further actions taken.</p>
                     </div>
                 `;

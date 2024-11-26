@@ -41,13 +41,13 @@ body {
         Dear ${appsmith.store.rightHolderNameEmail},
     </div>
     <div class="content">
-        <p>We are pleased to inform you that your profile has been successfully approved by the SAIP team.</p>
+        <p>We are pleased to inform you that your profile has been successfully approved By SAIP.</p>
         <p> Now you can log in to add the complaints. </p> 
         <p>Thank you for submitting all the required information and documentation.</p>
     </div>
     <div class="footer">
         <p>Best regards,</p>
-        <p>SAIP Team</p>
+        <p>Online Antipiracy Team - SAIP</p>
     </div>
 </div>
 </body>
@@ -95,12 +95,12 @@ body {
 					Dear ${appsmith.store.rightHolderNameEmail},
 						</div>
 		<div class="content">
-			<p>We regret to inform you that your profile has not been approved by the SAIP team due to ${appsmith.store.statusReason}.</p>
-		<p>For further assistance and clarification, we kindly encourage you to reach out to the SAIP team directly.</p>
+			<p>We regret to inform you that your profile has not been approved By SAIP due to ${appsmith.store.statusReason}.</p>
+		<p>For further assistance and clarification, Please reach out to us via email.</p>
 			</div>
 			<div class="footer">
 			<p>Best regards,</p>
-			<p>SAIP Team</p>
+			<p>Online Antipiracy Team - SAIP</p>
 			</div>
 			</div>
 			</body>
