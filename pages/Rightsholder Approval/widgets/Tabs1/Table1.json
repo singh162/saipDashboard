@@ -193,6 +193,12 @@
     },
     {
       "key": "primaryColumns.reasonStatus.isCellVisible"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -210,6 +216,12 @@
     },
     {
       "key": "primaryColumns.contentOwnerShip.onClick"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -243,6 +255,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onPageChange": "{{RightHolderInfo.run()}}",
+  "onSearchTextChanged": "{{RightHolderInfo.run()}}",
   "originalBottomRow": 59,
   "originalTopRow": 9,
   "parentColumnSpace": 11.53955078125,
