@@ -49,13 +49,13 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 11,
+  "originalBottomRow": 14,
   "originalTopRow": 6,
   "overflow": "NONE",
   "parentId": "le4bdtx7f2",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 26,
+  "rightColumn": 35,
   "searchTags": [
     "typography",
     "paragraph",
