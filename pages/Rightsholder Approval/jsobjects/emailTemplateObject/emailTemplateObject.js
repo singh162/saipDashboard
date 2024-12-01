@@ -28,7 +28,7 @@ export default {
                     <tr>
                       <td style="padding-top: 20px; text-align: center;">
                         <p style="font-size: 14px; color: #555555;">Best regards,</p>
-                        <p style="font-size: 14px; color: #555555; font-weight: bold;">SAIP Team</p>
+                        <p style="font-size: 14px; color: #555555; font-weight: bold;">Online Antipiracy Team - SAIP</p>
                       </td>
                     </tr>
 										 <tr class="contact-info">
