@@ -92,11 +92,11 @@ export default {
 
 	// Main function to update the Right Holder profile
 	updateRightHolderProfile: async () => {
+		const id = Table1.triggeredRow.id;
 		try {
 			storeValue("rightHolderNameEmail", Input3.text);
 			storeValue("RegisterationInfo", Select1.selectedOptionLabel);
 
-			const id = Table1.triggeredRow.id;
 			const rightHolderUserId = Table1.triggeredRow.rightHolderUserId;
 			const fullName = Input2.text;
 			const company_name = Input12.text;
@@ -137,12 +137,14 @@ export default {
 				Status: status,
 				reasonStatus :statusReason ? statusReason : null,
 				digitalSignature: digitalSignature,
-				document: document,
-				copyRightLetter:copyRightLetter,
-				contentOwnerShip:contentOwnerShip,
 				profileUpdatedBy:profileUpdatedBy
 			});
-
+			// Run the update queries concurrently
+			await Promise.all([
+				UpdateContentOwerShip.run({ id: id, contentOwnerShip:contentOwnerShip}),
+				UpdateIndentificationProff.run({ id: id ,document:document}),
+				UpdateCopyRigthLetter.run({ id: id,copyRightLetter: copyRightLetter}),
+			]);
 			if (queryResponse) {
 				showAlert("Update successful", "success");
 				await RightHolderInfo.run();
@@ -157,7 +159,10 @@ export default {
 			}
 
 		} catch (error) {
-			showAlert("An error occurred: " + error.message, "error");
+			if(error.message !='Payload too large. File size cannot exceed 100MB.'){
+				showAlert(`error inserting the form,Please try after some time${error.message}`,"error");
+			}
+			console.log("asdsadsadsadad",error.message);
 		}
-	},
+	}
 };
