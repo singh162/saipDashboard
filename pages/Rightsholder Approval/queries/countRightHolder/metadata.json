@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select count(*) as count from rightHolderProfile;",
+      "body": "select count(*) as count from rightHolderProfile where rightHolderProfile.rightHolderName like '%{{Table1.searchText || \"\"}}%';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,7 +22,11 @@
       "name": "ResearchDB",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": true,
     "name": "countRightHolder",
     "pageId": "Rightsholder Approval",

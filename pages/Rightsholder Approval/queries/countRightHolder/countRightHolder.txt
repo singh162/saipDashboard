@@ -1,1 +1,1 @@
-select count(*) as count from rightHolderProfile;
+select count(*) as count from rightHolderProfile where rightHolderProfile.rightHolderName like '%{{Table1.searchText || ""}}%';

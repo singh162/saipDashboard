@@ -165,7 +165,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onTabSelected": "{{getTitlesServerFilters.run().then(() => {\n  countTitles.run();\n});}}",
-  "originalBottomRow": 71,
+  "originalBottomRow": 50,
   "originalTopRow": 6,
   "parentColumnSpace": 17.828125,
   "parentId": "0",

@@ -157,7 +157,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{getTitlesServerFilters.run()}}",
-  "onSearchTextChanged": "{{getTitlesServerFilters.run()}}",
+  "onSearchTextChanged": "{{getTitlesServerFilters.run();\ncountTitles.run()}}",
   "originalBottomRow": 38,
   "originalTopRow": 6,
   "parentColumnSpace": 6.9375,

@@ -195,10 +195,10 @@
       "key": "primaryColumns.reasonStatus.isCellVisible"
     },
     {
-      "key": "onSearchTextChanged"
+      "key": "onPageChange"
     },
     {
-      "key": "onPageChange"
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -256,7 +256,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{RightHolderInfo.run()}}",
-  "onSearchTextChanged": "{{RightHolderInfo.run()}}",
+  "onSearchTextChanged": "{{RightHolderInfo.run();\ncountRightHolder.run()}}",
   "originalBottomRow": 59,
   "originalTopRow": 9,
   "parentColumnSpace": 11.53955078125,
