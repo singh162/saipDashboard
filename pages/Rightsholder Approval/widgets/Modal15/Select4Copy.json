@@ -72,7 +72,7 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "[\n {\n    \"name\": \"Full Name\",\n    \"code\": \"fullName\"\n  },\n  {\n    \"name\": \"Company Name\",\n    \"code\": \"company_name\"\n  },\n  {\n    \"name\": \"Right Holder Name\",\n    \"code\": \"rightHolderName\"\n  },\n  {\n    \"name\": \"Email Address\",\n    \"code\": \"email\"\n  },\n  {\n    \"name\": \"Authorized Representative Phone Number\",\n    \"code\": \"phoneNumber\"\n  },\n{\n\"name\":\"City\",\n\"code\":\"city\"\n},\n{\n\"name\":\"State\",\n\"code\":\"state\"\n},\n{\n\"name\":\"Country\",\n\"code\":\"country\"\n},\n{\n\"name\":\"Status\",\n\"code\":\"Status\"\n},\n{\n\"name\":\"Inserted Data\",\n\"code\":\"inserted_at\"\n}\n]\n",
+  "sourceData": "[\n {\n    \"name\": \"Full Name\",\n    \"code\": \"fullName\"\n  },\n  {\n    \"name\": \"Company Name\",\n    \"code\": \"company_name\"\n  },\n  {\n    \"name\": \"Right Holder Name\",\n    \"code\": \"rightHolderName\"\n  },\n  {\n    \"name\": \"Email Address\",\n    \"code\": \"email\"\n  },\n  {\n    \"name\": \"Authorized Representative Phone Number\",\n    \"code\": \"phoneNumber\"\n  },\n{\n\"name\":\"City\",\n\"code\":\"city\"\n},\n{\n\"name\":\"State\",\n\"code\":\"state\"\n},\n{\n\"name\":\"Country\",\n\"code\":\"country\"\n},\n{\n\"name\":\"Status\",\n\"code\":\"Status\"\n},\n{\n\"name\":\"Inserted Date\",\n\"code\":\"inserted_at\"\n}\n]\n",
   "tags": [
     "Suggested",
     "Select"

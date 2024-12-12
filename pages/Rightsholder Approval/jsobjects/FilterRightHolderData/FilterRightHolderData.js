@@ -71,26 +71,27 @@ export default {
 					break;
 				case 'Equals':
 					if(field === "inserted_at"){
-						whereClause = `rightHolderProfile.${field} = '${DatePicker1.formattedDate}'`;
+
+						whereClause = `rightHolderProfile.${field} = '${	moment.utc(DatePicker1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					}
 					else{
 						whereClause = `rightHolderProfile.${field} = '${value}'`;
 					}
 					break;
 				case 'Greater Than':
-					whereClause = `rightHolderProfile.${field} > '${DatePicker1.formattedDate}'`;
+					whereClause = `rightHolderProfile.${field} > '${	moment.utc(DatePicker1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				case 'Less Than':
-					whereClause = `rightHolderProfile.${field} < '${DatePicker1.formattedDate}'`;
+					whereClause = `rightHolderProfile.${field} < '${	moment.utc(DatePicker1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				case 'Between':
-					whereClause = `rightHolderProfile.${field} BETWEEN       '${DatePicker1.formattedDate}' AND '${DatePicker1Copy.formattedDate}'`;
+					whereClause = `rightHolderProfile.${field} BETWEEN       '${	moment.utc(DatePicker1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}' AND '${	moment.utc(DatePicker1Copy.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				case 'Greater Than or Equal':
-					whereClause = `rightHolderProfile.${field} >= '${DatePicker1.formattedDate}'`;
+					whereClause = `rightHolderProfile.${field} >= '${	moment.utc(DatePicker1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				case 'Less Than or Equal':
-					whereClause = `rightHolderProfile.${field} <= '${DatePicker1.formattedDate}'`;
+					whereClause = `rightHolderProfile.${field} <= '${	moment.utc(DatePicker1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				default:
 					whereClause = ''; // Default (no filtering)

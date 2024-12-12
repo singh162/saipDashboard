@@ -82,19 +82,19 @@ export default {
 					}
 					break;
 				case 'Greater Than':
-					whereClause = `${tableName}.${field} > '${DatePicker1Copy1.formattedDate}'`;
+					whereClause = `${tableName}.${field} > '${	moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				case 'Less Than':
-					whereClause = `${tableName}.${field} < '${DatePicker1Copy1.formattedDate}'`;
+					whereClause = `${tableName}.${field} < '${	moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				case 'Between':
-					whereClause = `${tableName}.${field} BETWEEN       '${DatePicker1Copy1.formattedDate}' AND '${DatePicker1CopyCopy.formattedDate}'`;
+					whereClause = `${tableName}.${field} BETWEEN       '${	moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}' AND '${	moment.utc(DatePicker1CopyCopy.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				case 'Greater Than or Equal':
-					whereClause = `${tableName}.${field} >= '${DatePicker1Copy1.formattedDate}'`;
+					whereClause = `${tableName}.${field} >= '${	moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				case 'Less Than or Equal':
-					whereClause = `${tableName}.${field} <= '${DatePicker1Copy1.formattedDate}'`;
+					whereClause = `${tableName}.${field} <= '${	moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				default:
 					whereClause = ''; // Default (no filtering)
