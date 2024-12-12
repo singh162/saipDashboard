@@ -1,1 +1,3 @@
-SELECT count(*) as count FROM complaints_title where  name like '%{{Table1Copy.searchText || ""}}%';;
+SELECT count(*) as count FROM complaints_title
+INNER JOIN rightHolder on rightHolder.id = complaints_title.rightHolderUserId
+ where  name like '%{{Table1Copy.searchText || ""}}%' {{filterTitleDataObject.whereFilter}};

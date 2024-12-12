@@ -1,12 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
-  "displayName": "Button",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -15,25 +14,31 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
   "hideCard": false,
-  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
-  "isDefaultClickDisabled": true,
+  "iconName": "cross",
+  "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
+  "iconSize": 24,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "g034x9ny7d",
-  "leftColumn": 1,
-  "minWidth": 120,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 46,
-  "mobileRightColumn": 62,
-  "mobileTopRow": 1,
+  "key": "p3r9nxt6by",
+  "leftColumn": 58,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -42,16 +47,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{downloadXlsx.downloadXlsx();}}",
-  "parentColumnSpace": 14.22998046875,
-  "parentId": "79jwmphj6m",
-  "parentRowSpace": 10,
-  "placement": "CENTER",
-  "recaptchaType": "V3",
+  "onClick": "{{closeModal(Modal15Copy.name);\nresetWidget(\"Select4\", true);\nresetWidget(\"Select4Copy\", true);\nresetWidget(\"Input16\", true);}}",
+  "parentId": "xfzz6152cs",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 13,
+  "rightColumn": 64,
   "searchTags": [
     "click",
     "submit"
@@ -59,11 +59,10 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Download XLSX",
-  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 9,
-  "type": "BUTTON_WIDGET",
+  "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "rdw9d7b53s",
-  "widgetName": "Button13"
+  "widgetId": "yjxp8w20gg",
+  "widgetName": "IconButton22Copy"
 }

@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_8181217f-17fc-46d2-81dd-7414690977b8",
+  "id": "Rightsholder Approval_FilterRightHolderData",
+  "unpublishedCollection": {
+    "name": "FilterRightHolderData",
+    "pageId": "Rightsholder Approval",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "whereFilter",
+        "value": "\"\""
+      },
+      {
+        "name": "filterArray",
+        "value": "[{\n  name: \"\",\n  code: \"\"\n}]"
+      }
+    ]
+  }
+}
