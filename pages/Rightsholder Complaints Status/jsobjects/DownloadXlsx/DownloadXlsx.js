@@ -13,7 +13,7 @@ export default {
 			else if(Tabs1.selectedTab === "Rejected Complaints"){
 				this.downloadStatus='Rejected'
 			}
-			else if(Tabs1.selectedTab === "Submitted for Blocking Complaints"){
+			else if(Tabs1.selectedTab === "Submitted For Blocking Complaints"){
 				this.downloadStatus='Submitted for Blocking'
 			}
 			else if(Tabs1.selectedTab === "Blocked Complaints"){
@@ -21,7 +21,7 @@ export default {
 			}
 			let buffer = await DownloadExcel.run();
 			if (buffer) {
-				download(buffer, `${this.downloadStatus.replace(/\s+/g, '')}.xlsx`);
+				await download(buffer, `${this.downloadStatus.replace(/\s+/g, '')}.xlsx`);
 				showAlert("Xlsx Report Generated Successfully","success");
 			} else {
 				showAlert("Failed to download the Excel file", "error");
