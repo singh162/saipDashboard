@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -29,7 +29,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "yk55k7a6qy",
-  "leftColumn": 53,
+  "leftColumn": 54,
   "minWidth": 120,
   "mobileBottomRow": 5,
   "mobileLeftColumn": 35,
@@ -54,7 +54,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "searchTags": [
     "click",
     "submit"
@@ -64,7 +64,7 @@
   ],
   "text": "Download XLSX",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 1,
+  "topRow": 0,
   "topRowBeforeCollapse": 1,
   "type": "BUTTON_WIDGET",
   "version": 1,

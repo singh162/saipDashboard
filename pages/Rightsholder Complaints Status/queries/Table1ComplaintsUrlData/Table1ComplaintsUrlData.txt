@@ -2,7 +2,7 @@ SELECT
     cf.complaint_request_id,
     MAX(cs.complaint_status_id) AS complaint_status_id,
     MAX(cf.complaint_form_id) AS complaint_form_id,
-		MAX(rh.id) AS rightHolderUserId,
+    MAX(rh.id) AS rightHolderUserId,
     MAX(rh.username) AS HolderName,
     MAX(cf.category_type) AS CategoryType,
     MAX(cf.original_work) AS OrginalWebsite,
@@ -14,5 +14,5 @@ INNER JOIN
 INNER JOIN 
     rightHolder rh ON rh.id = cf.rightHolderUserId
 WHERE 
-    cs.status = '{{buildTableData.status}}' 
-    {{buildTableData.table1QueryWhere}};
+    cs.status = '{{buildTableData.status}}' {{complaintsViewFilters.whereFilter}}
+   {{buildTableData.table1QueryWhere}};

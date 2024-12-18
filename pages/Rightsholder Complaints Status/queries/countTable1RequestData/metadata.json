@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  count(DISTINCT(complaint_request_id)) as count\nFROM \n        complaints_form cf\nINNER JOIN \n    complaint_status cs ON cs.complaint_form_id = cf.complaint_form_id\nINNER JOIN \n    rightHolder rh ON rh.id = cf.rightHolderUserId\nWHERE \n    cs.status = '{{buildTableData.status}}';\n",
+      "body": "SELECT \n  count(DISTINCT(complaint_request_id)) as count\nFROM \n        complaints_form cf\nINNER JOIN \n    complaint_status cs ON cs.complaint_form_id = cf.complaint_form_id\nINNER JOIN \n    rightHolder rh ON rh.id = cf.rightHolderUserId\nWHERE \n    cs.status = '{{buildTableData.status}}'\n\t\t{{buildTableData.table1QueryWhere.split('GROUP BY')[0]}}\n\t\t{{complaintsViewFilters.whereFilter}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

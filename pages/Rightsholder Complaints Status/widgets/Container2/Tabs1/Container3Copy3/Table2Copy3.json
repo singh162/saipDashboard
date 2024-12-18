@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 71,
+  "bottomRow": 72,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -45,7 +45,7 @@
     "customColumn1",
     "status"
   ],
-  "columnUpdatedAt": 1730895298260,
+  "columnUpdatedAt": 1734413542417,
   "columnWidthMap": {
     "reason_of_approve_reject": 240,
     "status_updated_by": 258,
@@ -128,6 +128,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.buttonColor"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -142,6 +145,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onPageSizeChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -153,6 +162,12 @@
     },
     {
       "key": "primaryColumns.customColumn2.onClick"
+    },
+    {
+      "key": "onPageSizeChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -187,6 +202,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onPageSizeChange": "{{onPageComplaintTableChange.complaintTableChanges();}}",
+  "onSearchTextChanged": "{{onPageComplaintTableChange.complaintTableChanges();}}",
   "originalBottomRow": 55,
   "originalTopRow": 7,
   "parentColumnSpace": 20.728515625,
@@ -652,6 +669,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "tableData": "{{buildTableData.tableComplaintCase}}",
   "tags": [
     "Suggested",
@@ -659,8 +677,8 @@
   ],
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 7,
-  "totalRecordsCount": 0,
+  "topRow": 8,
+  "totalRecordsCount": "{{count2Table2CaseData.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

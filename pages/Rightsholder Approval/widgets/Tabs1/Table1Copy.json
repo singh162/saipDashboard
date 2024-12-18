@@ -360,7 +360,7 @@
       "isVisible": true,
       "label": "Owership Image",
       "notation": "standard",
-      "onClick": "{{showModal(Modal9.name);}}",
+      "onClick": "{{showModal(Modal16.name);}}",
       "originalId": "ownershipImage",
       "sticky": "",
       "textColor": "",

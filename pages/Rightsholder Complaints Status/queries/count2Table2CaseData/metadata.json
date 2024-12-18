@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \ncount(*) as count\nFROM complaints_form\nINNER JOIN complaint_status on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nINNER JOIN \nrightHolder on rightHolder.id = complaints_form.rightHolderUserId\nWHERE complaint_status.status = '{{buildTableData.status}}';",
+      "body": "SELECT \ncount(*) as count\nFROM complaints_form\nINNER JOIN complaint_status on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nINNER JOIN \nrightHolder on rightHolder.id = complaints_form.rightHolderUserId\nWHERE complaint_status.status = '{{buildTableData.status}}' and \n{{buildTableData.table2QueryWhere}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "count2Table2CaseData",
     "pageId": "Rightsholder Complaints Status",
     "userSetOnLoad": false

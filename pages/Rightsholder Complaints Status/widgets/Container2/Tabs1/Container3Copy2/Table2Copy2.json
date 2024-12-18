@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 71,
+  "bottomRow": 74,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -128,6 +128,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.buttonColor"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -139,6 +142,12 @@
     },
     {
       "key": "primaryColumns.status.textColor"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -150,6 +159,12 @@
     },
     {
       "key": "primaryColumns.customColumn2.onClick"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -184,6 +199,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onPageChange": "{{onPageComplaintTableChange.complaintTableChanges();}}",
+  "onSearchTextChanged": "{{onPageComplaintTableChange.complaintTableChanges();}}",
   "originalBottomRow": 55,
   "originalTopRow": 7,
   "parentColumnSpace": 20.728515625,
@@ -649,6 +666,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "tableData": "{{buildTableData.tableComplaintCase}}",
   "tags": [
     "Suggested",
@@ -656,8 +674,8 @@
   ],
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 7,
-  "totalRecordsCount": 0,
+  "topRow": 10,
+  "totalRecordsCount": "{{count2Table2CaseData.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

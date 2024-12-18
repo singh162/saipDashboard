@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_4303183c-f207-48ed-9272-d74b5330c100",
+  "id": "Rightsholder Complaints Status_onPageComplaintTableChange",
+  "unpublishedCollection": {
+    "name": "onPageComplaintTableChange",
+    "pageId": "Rightsholder Complaints Status",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

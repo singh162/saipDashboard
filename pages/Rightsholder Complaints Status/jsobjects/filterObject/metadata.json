@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_50d230d7-2507-4381-8db4-57674f93d408",
+  "id": "Rightsholder Complaints Status_filterObject",
+  "unpublishedCollection": {
+    "name": "filterObject",
+    "pageId": "Rightsholder Complaints Status",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "filterArray",
+        "value": "[{\n  name: \"\",\n  code: \"\"\n}]"
+      }
+    ]
+  }
+}

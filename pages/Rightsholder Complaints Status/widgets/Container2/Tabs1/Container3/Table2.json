@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 69,
+  "bottomRow": 70,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -128,6 +128,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.buttonColor"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -142,6 +145,9 @@
     },
     {
       "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -153,6 +159,12 @@
     },
     {
       "key": "primaryColumns.customColumn2.onClick"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "enableClientSideSearch": true,
@@ -166,7 +178,7 @@
   "isSortable": true,
   "isVisible": true,
   "isVisibleDownload": false,
-  "isVisibleFilters": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "k1giwejo0c",
@@ -187,9 +199,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onSearchTextChanged": "{{}}",
-  "originalBottomRow": 69,
-  "originalTopRow": 5,
+  "onPageChange": "{{onPageComplaintTableChange.complaintTableChanges();}}",
+  "onSearchTextChanged": "{{onPageComplaintTableChange.complaintTableChanges();}}",
+  "originalBottomRow": 73,
+  "originalTopRow": 9,
   "parentColumnSpace": 20.728515625,
   "parentId": "dbdgchf8cs",
   "parentRowSpace": 10,
@@ -653,6 +666,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "tableData": "{{buildTableData.tableComplaintCase}}",
   "tags": [
     "Suggested",
@@ -660,8 +674,8 @@
   ],
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 5,
-  "totalRecordsCount": 0,
+  "topRow": 6,
+  "totalRecordsCount": "{{count2Table2CaseData.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

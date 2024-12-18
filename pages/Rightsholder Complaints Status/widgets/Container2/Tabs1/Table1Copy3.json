@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 82,
+  "bottomRow": 83,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -40,7 +40,7 @@
     "complaint_form_id",
     "rightHolderUserId"
   ],
-  "columnUpdatedAt": 1728628890424,
+  "columnUpdatedAt": 1734413542424,
   "columnWidthMap": {
     "CaseId": 231,
     "StatusUpdatedBy": 247,
@@ -93,9 +93,6 @@
       "key": "defaultSelectedRowIndex"
     },
     {
-      "key": "totalRecordsCount"
-    },
-    {
       "key": "tableData"
     },
     {
@@ -103,6 +100,9 @@
     },
     {
       "key": "primaryColumns.rightHolderUserId.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -111,6 +111,12 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -119,6 +125,9 @@
     },
     {
       "key": "onRowSelected"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -132,7 +141,7 @@
   "isSortable": true,
   "isVisible": true,
   "isVisibleDownload": true,
-  "isVisibleFilters": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "7b76udh912",
@@ -153,8 +162,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onPageChange": "{{Table1ComplaintsUrlData.run()}}",
+  "onPageChange": "{{onPageRequestTableChange.requestTableChanges();}}",
+  "onPageSizeChange": "{{}}",
   "onRowSelected": "{{buildTableData.tableData();}}",
+  "onSearchTextChanged": "{{onPageRequestTableChange.requestTableChanges();}}",
   "originalBottomRow": 71,
   "originalTopRow": 17,
   "parentColumnSpace": 14.807510375976562,
@@ -441,8 +452,8 @@
   ],
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 4,
-  "totalRecordsCount": "{{Table1Copy3.pageNo}}",
+  "topRow": 5,
+  "totalRecordsCount": "{{countTable1RequestData.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

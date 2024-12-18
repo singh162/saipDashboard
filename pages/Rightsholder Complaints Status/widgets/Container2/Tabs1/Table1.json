@@ -33,16 +33,17 @@
   "columnOrder": [
     "inserted_at",
     "complaint_request_id",
-    "HolderName",
-    "CategoryType",
-    "OrginalWebsite",
     "complaint_status_id",
     "complaint_form_id",
-    "rightHolderUserId"
+    "rightHolderUserId",
+    "HolderName",
+    "CategoryType",
+    "OrginalWebsite"
   ],
-  "columnUpdatedAt": 1728628857860,
+  "columnUpdatedAt": 1734541020904,
   "columnWidthMap": {
     "CaseId": 231,
+    "CategoryType": 223,
     "StatusUpdatedBy": 247,
     "complaint_request_id": 285,
     "customColumn2": 243,
@@ -52,6 +53,7 @@
     "statusProff": 199
   },
   "defaultPageSize": 0,
+  "defaultSearchText": "",
   "defaultSelectedRowIndex": "{{Table1.pageNo-1}}",
   "defaultSelectedRowIndices": [
     0
@@ -69,27 +71,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "primaryColumns.CategoryType.computedValue"
-    },
-    {
-      "key": "primaryColumns.OrginalWebsite.computedValue"
-    },
-    {
-      "key": "primaryColumns.HolderName.computedValue"
-    },
-    {
-      "key": "primaryColumns.complaint_status_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.complaint_form_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.complaint_request_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.inserted_at.computedValue"
-    },
-    {
       "key": "defaultSelectedRowIndex"
     },
     {
@@ -99,10 +80,28 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.OrginalWebsite.displayText"
+      "key": "primaryColumns.complaint_request_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.complaint_status_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.complaint_form_id.computedValue"
     },
     {
       "key": "primaryColumns.rightHolderUserId.computedValue"
+    },
+    {
+      "key": "primaryColumns.HolderName.computedValue"
+    },
+    {
+      "key": "primaryColumns.CategoryType.computedValue"
+    },
+    {
+      "key": "primaryColumns.OrginalWebsite.computedValue"
+    },
+    {
+      "key": "primaryColumns.inserted_at.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -111,6 +110,15 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "dynamicTriggerPathList": [
@@ -119,6 +127,9 @@
     },
     {
       "key": "onRowSelected"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -132,7 +143,7 @@
   "isSortable": false,
   "isVisible": true,
   "isVisibleDownload": false,
-  "isVisibleFilters": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "7b76udh912",
@@ -153,10 +164,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onPageChange": "{{Table1ComplaintsUrlData.run()}}",
+  "onPageChange": "{{onPageRequestTableChange.requestTableChanges();}}",
   "onRowSelected": "{{buildTableData.tableData();}}",
-  "originalBottomRow": 71,
-  "originalTopRow": 17,
+  "onSearchTextChanged": "{{onPageRequestTableChange.requestTableChanges();}}",
+  "originalBottomRow": 75,
+  "originalTopRow": 6,
   "parentColumnSpace": 14.807510375976562,
   "parentId": "d5sz77r16e",
   "parentRowSpace": 10,
@@ -175,7 +187,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "CategoryType",
-      "index": 3,
+      "index": 5,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -184,7 +196,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Category Type",
+      "label": "CategoryType",
       "notation": "standard",
       "originalId": "CategoryType",
       "sticky": "",
@@ -209,7 +221,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "HolderName",
-      "index": 0,
+      "index": 4,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -234,17 +246,16 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "url",
+      "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"OrginalWebsite\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
-      "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"OrginalWebsite\"]))}}",
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "OrginalWebsite",
-      "index": 11,
+      "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -253,7 +264,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Copyright Work",
+      "label": "OrginalWebsite",
       "notation": "standard",
       "originalId": "OrginalWebsite",
       "sticky": "",
@@ -268,15 +279,17 @@
       "alias": "complaint_form_id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"complaint_form_id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "complaint_form_id",
-      "index": 11,
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -289,6 +302,7 @@
       "notation": "standard",
       "originalId": "complaint_form_id",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -333,15 +347,17 @@
       "alias": "complaint_status_id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"complaint_status_id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "complaint_status_id",
-      "index": 10,
+      "index": 1,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -354,6 +370,7 @@
       "notation": "standard",
       "originalId": "complaint_status_id",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -374,7 +391,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "inserted_at",
-      "index": 14,
+      "index": 7,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -442,7 +459,7 @@
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
   "topRow": 6,
-  "totalRecordsCount": "{{Table1.pageNo}}",
+  "totalRecordsCount": "{{countTable1RequestData.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

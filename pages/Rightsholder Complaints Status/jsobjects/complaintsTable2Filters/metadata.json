@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66fe3a88af2b8e5a2a63fbe1_cd82169e-048d-4490-a67f-7fd1e3880c4c",
+  "id": "Rightsholder Complaints Status_complaintsTable2Filters",
+  "unpublishedCollection": {
+    "name": "complaintsTable2Filters",
+    "pageId": "Rightsholder Complaints Status",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "whereFilter",
+        "value": "\"\""
+      }
+    ]
+  }
+}

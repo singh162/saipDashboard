@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 7,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -37,7 +37,7 @@
   "isLoading": false,
   "isVisible": "{{handleTabChange.handleTabChange()[`${Tabs1.selectedTab}`].table2.selectedRows.length >0 ? true: false}}",
   "key": "naihqdsri6",
-  "leftColumn": 47,
+  "leftColumn": 2,
   "minWidth": 120,
   "mobileBottomRow": 6,
   "mobileLeftColumn": 48,
@@ -62,7 +62,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 63,
+  "rightColumn": 23,
   "searchTags": [
     "click",
     "submit"

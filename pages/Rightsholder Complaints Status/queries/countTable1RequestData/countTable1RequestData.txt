@@ -7,4 +7,6 @@ INNER JOIN
 INNER JOIN 
     rightHolder rh ON rh.id = cf.rightHolderUserId
 WHERE 
-    cs.status = '{{buildTableData.status}}';
+    cs.status = '{{buildTableData.status}}'
+		{{buildTableData.table1QueryWhere.split('GROUP BY')[0]}}
+		{{complaintsViewFilters.whereFilter}};
