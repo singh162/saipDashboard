@@ -14,11 +14,6 @@
       "position": "static",
       "showNavbar": true,
       "showSignIn": true
-    },
-    "themeSetting": {
-      "appMaxWidth": "LARGE",
-      "density": 1.0,
-      "sizing": 1.0
     }
   },
   "applicationVersion": 2,
@@ -107,11 +102,6 @@
       "position": "static",
       "showNavbar": true,
       "showSignIn": true
-    },
-    "themeSetting": {
-      "appMaxWidth": "LARGE",
-      "density": 1.0,
-      "sizing": 1.0
     }
   }
 }
