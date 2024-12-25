@@ -2,7 +2,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 11,
+  "bottomRow": 9,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -26,7 +26,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "6okc3awmbc",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -42,13 +42,13 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 11,
-  "originalTopRow": 6,
+  "originalBottomRow": 10,
+  "originalTopRow": 5,
   "overflow": "NONE",
   "parentId": "i0tseradnf",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 36,
+  "rightColumn": 37,
   "searchTags": [
     "typography",
     "paragraph",
@@ -59,11 +59,11 @@
     "Suggested",
     "Content"
   ],
-  "text": "1914",
+  "text": "1915",
   "textAlign": "LEFT",
   "textColor": "#ffffff",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 6,
+  "topRow": 5,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
