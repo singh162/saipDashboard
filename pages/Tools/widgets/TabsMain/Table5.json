@@ -33,9 +33,9 @@
   "columnOrder": [
     "SNO",
     "columnName",
-    "idoc_tips"
+    "facebook_com"
   ],
-  "columnUpdatedAt": 1730699668666,
+  "columnUpdatedAt": 1735112526907,
   "columnWidthMap": {
     "fmovies_ps": 462.99999999999994
   },
@@ -66,7 +66,7 @@
       "key": "primaryColumns.columnName.computedValue"
     },
     {
-      "key": "primaryColumns.idoc_tips.computedValue"
+      "key": "primaryColumns.facebook_com.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -174,20 +174,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "idoc_tips": {
-      "alias": "idoc.tips",
+    "facebook_com": {
+      "alias": "facebook.com",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table5.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"idoc.tips\"]))}}",
+      "computedValue": "{{Table5.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"facebook.com\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "idoc_tips",
+      "id": "facebook_com",
       "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -197,9 +197,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "idoc.tips",
+      "label": "facebook.com",
       "notation": "standard",
-      "originalId": "idoc.tips",
+      "originalId": "facebook.com",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
