@@ -101,6 +101,15 @@
     },
     {
       "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.ownershipImage.boxShadow"
+    },
+    {
+      "key": "primaryColumns.ownershipImage.borderRadius"
+    },
+    {
+      "key": "primaryColumns.ownershipImage.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -109,6 +118,9 @@
     },
     {
       "key": "primaryColumns.Status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.ownershipImage.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -339,15 +351,20 @@
       "alias": "ownershipImage",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "cellBackground": "",
-      "columnType": "image",
+      "columnType": "iconButton",
       "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( 'data:image/png;base64,' + currentRow[\"ownershipImage\"]))}}",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
+      "iconName": "eye-open",
       "id": "ownershipImage",
       "index": 2,
       "isCellEditable": false,
@@ -360,7 +377,7 @@
       "isVisible": true,
       "label": "Owership Image",
       "notation": "standard",
-      "onClick": "{{showModal(Modal16.name);}}",
+      "onClick": "{{getTitleImageQuery.run().then(() => {\n  showModal(Modal16.name);\n});}}",
       "originalId": "ownershipImage",
       "sticky": "",
       "textColor": "",

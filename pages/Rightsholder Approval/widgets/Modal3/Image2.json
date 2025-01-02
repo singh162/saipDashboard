@@ -23,7 +23,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{FilePicker1Copy.files.length >0 ? FilePicker1Copy.files[0].data:Table1.triggeredRow.copyRightLetter}}",
+  "image": "{{FilePicker1Copy.files.length >0 ? FilePicker1Copy.files[0].data:\"data:image/;base64,\" +copyRightLetter.data[0].copyRightLetter}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,

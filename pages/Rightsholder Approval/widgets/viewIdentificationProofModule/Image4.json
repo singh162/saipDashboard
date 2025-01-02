@@ -19,7 +19,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{Table1.triggeredRow.document}}",
+  "image": "data:image/;base64,\n{{getIndentificationProff.data[0].document}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,

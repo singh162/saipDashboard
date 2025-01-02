@@ -1,4 +1,8 @@
-SELECT * FROM rightHolderProfile 
+SELECT id, rightHolderUserId,fullName,company_name,
+rightHolderProfile.rightHolderName,
+rightHolderProfile.email,rightHolderProfile.phoneNumber,
+rightHolderProfile.address,rightHolderProfile.city,rightHolderProfile.state,
+rightHolderProfile.country,rightHolderProfile.digitalSignature,rightHolderProfile.Status,rightHolderProfile.profileUpdatedBy,rightHolderProfile.updated_at FROM rightHolderProfile 
 WHERE
 rightHolderProfile.rightHolderName like '%{{Table1.searchText || ""}}%' {{FilterRightHolderData.whereFilter}}
 ORDER BY {{Table1.sortOrder.column || 'rightHolderProfile.inserted_at'}} {{Table1.sortOrder.order || "DESC"}}

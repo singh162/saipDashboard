@@ -42,21 +42,18 @@
     "city",
     "state",
     "country",
-    "acknowledgement",
+    "customColumn4",
+    "customColumn5",
+    "customColumn6",
     "digitalSignature",
-    "contentOwnerShip",
-    "document",
-    "copyRightLetter",
-    "inserted_at",
     "updated_at",
     "Status",
-    "reasonStatus",
     "profileUpdatedBy",
     "customColumn3",
     "customColumn1",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1732599330995,
+  "columnUpdatedAt": 1735800932422,
   "columnWidthMap": {
     "contentOwnerShip": 341,
     "customColumn3": 216,
@@ -118,16 +115,7 @@
       "key": "primaryColumns.country.computedValue"
     },
     {
-      "key": "primaryColumns.acknowledgement.computedValue"
-    },
-    {
       "key": "primaryColumns.digitalSignature.computedValue"
-    },
-    {
-      "key": "primaryColumns.document.computedValue"
-    },
-    {
-      "key": "primaryColumns.inserted_at.computedValue"
     },
     {
       "key": "primaryColumns.updated_at.computedValue"
@@ -151,9 +139,6 @@
       "key": "primaryColumns.customColumn2.boxShadow"
     },
     {
-      "key": "primaryColumns.copyRightLetter.computedValue"
-    },
-    {
       "key": "primaryColumns.Status.computedValue"
     },
     {
@@ -163,22 +148,40 @@
       "key": "primaryColumns.Status.textColor"
     },
     {
-      "key": "primaryColumns.reasonStatus.computedValue"
-    },
-    {
       "key": "totalRecordsCount"
-    },
-    {
-      "key": "primaryColumns.reasonStatus.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.contentOwnerShip.computedValue"
     },
     {
       "key": "primaryColumns.profileUpdatedBy.computedValue"
     },
     {
       "key": "primaryColumns.customColumn3.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn4.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn4.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn4.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn5.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn5.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn5.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn6.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn6.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn6.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -192,13 +195,19 @@
       "key": "primaryColumns.customColumn1.onClick"
     },
     {
-      "key": "primaryColumns.reasonStatus.isCellVisible"
-    },
-    {
       "key": "onPageChange"
     },
     {
       "key": "onSearchTextChanged"
+    },
+    {
+      "key": "primaryColumns.customColumn4.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn5.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn6.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -209,19 +218,19 @@
       "key": "primaryColumns.customColumn2.onClick"
     },
     {
-      "key": "primaryColumns.document.onClick"
-    },
-    {
-      "key": "primaryColumns.copyRightLetter.onClick"
-    },
-    {
-      "key": "primaryColumns.contentOwnerShip.onClick"
-    },
-    {
       "key": "onPageChange"
     },
     {
       "key": "onSearchTextChanged"
+    },
+    {
+      "key": "primaryColumns.customColumn4.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn5.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn6.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -291,37 +300,6 @@
       "originalId": "Status",
       "sticky": "",
       "textColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.backgroundColor)))}}",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "acknowledgement": {
-      "alias": "acknowledgement",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "checkbox",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"acknowledgement\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "acknowledgement",
-      "index": 11,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Acknowledgement",
-      "notation": "standard",
-      "originalId": "acknowledgement",
-      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -421,76 +399,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "contentOwnerShip": {
-      "alias": "contentOwnerShip",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "image",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( `data:image/;base64,${currentRow.contentOwnerShip}`))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "contentOwnerShip",
-      "index": 19,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "content Owner Ship Certificate",
-      "notation": "standard",
-      "onClick": "{{showModal(viewContentOwnershipModuleCopy.name);}}",
-      "originalId": "contentOwnerShip",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "copyRightLetter": {
-      "alias": "copyRightLetter",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "image",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( `data:image/;base64,${currentRow.copyRightLetter}`))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "copyRightLetter",
-      "index": 16,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Copyright Letter",
-      "notation": "standard",
-      "onClick": "{{showModal(viewCopyRightModule.name);}}",
-      "originalId": "copyRightLetter",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "country": {
       "alias": "country",
       "allowCellWrapping": false,
@@ -552,7 +460,7 @@
       "label": "Edit",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{resetWidget(\"Modal3\", true).then(() => {\n\tstoreValue(\"initialStatus\", Table1.triggeredRow.Status);\n\tstoreValue(\"rightHolderNameEmail\", Input3.text);\n\tstoreValue(\"RegisterationInfo\",Select1.selectedOptionLabel);\n\tshowModal(Modal3.name);\n});}}",
+      "onClick": "{{editFunctionCall.editFunctionCallFunction();}}",
       "originalId": "customColumn1",
       "sticky": "right",
       "textSize": "0.875rem",
@@ -634,6 +542,123 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "customColumn4": {
+      "alias": "Identification Proff",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "eye-open",
+      "id": "customColumn4",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Identification Proff",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{getIndentificationProff.run().then(() => {\n  showModal(viewIdentificationProofModule.name);\n});}}",
+      "originalId": "customColumn4",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn5": {
+      "alias": "Content Owership Certificate",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "eye-open",
+      "id": "customColumn5",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Content Owership Certificate",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{getContentOwershipCertificate.run().then(() => {\n  showModal(viewContentOwnershipImage.name);\n});}}",
+      "originalId": "customColumn5",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn6": {
+      "alias": "Copy Right Letter",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "eye-open",
+      "id": "customColumn6",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Copy Right Letter",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{copyRightLetter.run().then(() => {\n  showModal(viewCopyRightModule.name);\n});}}",
+      "originalId": "customColumn6",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "digitalSignature": {
       "alias": "digitalSignature",
       "allowCellWrapping": false,
@@ -658,38 +683,6 @@
       "label": "Digital Signature",
       "notation": "standard",
       "originalId": "digitalSignature",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "document": {
-      "alias": "document",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "image",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( `data:image/;base64,${currentRow.document}`))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "document",
-      "index": 13,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Identification Proof",
-      "notation": "standard",
-      "onClick": "{{showModal(viewIdentificationProofModule.name);}}",
-      "originalId": "document",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -790,37 +783,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "inserted_at": {
-      "alias": "inserted_at",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"inserted_at\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "inserted_at",
-      "index": 14,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "inserted_at",
-      "notation": "standard",
-      "originalId": "inserted_at",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "phoneNumber": {
       "alias": "phoneNumber",
       "allowCellWrapping": false,
@@ -878,40 +840,6 @@
       "label": "Profile Update By",
       "notation": "standard",
       "originalId": "profileUpdatedBy",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "reasonStatus": {
-      "alias": "reasonStatus",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reasonStatus\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "reasonStatus",
-      "index": 18,
-      "isCellEditable": false,
-      "isCellVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === \"Rejected\" ? true : false ))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Reason By SAIP",
-      "notation": "standard",
-      "originalId": "reasonStatus",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
