@@ -115,9 +115,9 @@ export default {
 				statusReason = Select2.selectedOptionLabel + "  "+Input13.text 
 			}
 			storeValue("statusReason",statusReason);
-			const document = FilePicker1.files.length > 0 ? FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.document.replace(/^data:image\/;base64,/, '') ;
-			const contentOwnerShip = FilePicker1Copy1.files.length>0 ?  FilePicker1Copy1.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.contentOwnerShip.replace(/^data:image\/;base64,/, '') 
-			const copyRightLetter =  FilePicker1Copy.files.length>0 ?  FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : Table1.triggeredRow.copyRightLetter.replace(/^data:image\/;base64,/, '') 
+			const document = FilePicker1.files.length > 0 ? FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')  :  await getIndentificationProff.data[0].document.replace(/^data:image\/;base64,/, '') ;
+			const contentOwnerShip = FilePicker1Copy1.files.length>0 ?  FilePicker1Copy1.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : getContentOwershipCertificate.data[0].contentOwnerShip.replace(/^data:image\/;base64,/, '') 
+			const copyRightLetter1 =  FilePicker1Copy.files.length>0 ?  FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '')  : copyRightLetter.data[0].copyRightLetter.replace(/^data:image\/;base64,/, '') 
 			const profileUpdatedBy = `${appsmith.user.name}     ${appsmith.user.email}`;
 
 			// If all fields are valid, proceed with the update
@@ -143,7 +143,7 @@ export default {
 			await Promise.all([
 				UpdateContentOwerShip.run({ id: id, contentOwnerShip:contentOwnerShip}),
 				UpdateIndentificationProff.run({ id: id ,document:document}),
-				UpdateCopyRigthLetter.run({ id: id,copyRightLetter: copyRightLetter}),
+				UpdateCopyRigthLetter.run({ id: id,copyRightLetter: copyRightLetter1}),
 			]);
 			if (queryResponse) {
 				showAlert("Update successful", "success");
