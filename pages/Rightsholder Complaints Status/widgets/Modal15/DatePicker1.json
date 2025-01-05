@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 19,
   "bottomRowBeforeCollapse": 19,
   "boxShadow": "none",
   "closeOnSelection": true,
@@ -60,7 +60,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 19,
+  "originalBottomRow": 14,
   "originalTopRow": 14,
   "parentColumnSpace": 11.46875,
   "parentId": "2b0k424uyj",

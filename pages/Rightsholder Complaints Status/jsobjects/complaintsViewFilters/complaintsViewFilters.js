@@ -37,7 +37,7 @@ export default {
 			}
 			await countTable1RequestData.run();
 			await Table1ComplaintsUrlData.run();
-
+			await buildTableData.tableData();
 			if(Tabs1.selectedTab === "Pending Complaints"){
 				closeModal(Modal15.name);
 			}
@@ -66,6 +66,7 @@ export default {
 			this.whereFilter = "";
 			await countTable1RequestData.run();
 			await Table1ComplaintsUrlData.run();
+			await buildTableData.tableData();
 			if(Tabs1.selectedTab === "Pending Complaints"){
 				resetWidget("Select4", true);
 				resetWidget("Select4Copy", true);
@@ -105,7 +106,7 @@ export default {
 				tableName = "complaint_status";
 			}
 			if(field === "username"){
-				tableName = "rightHolder";
+				tableName = "rh";
 			}
 			switch (condition) {
 				case 'Contains':
